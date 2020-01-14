@@ -1,3 +1,5 @@
+/* EXAMPLE 2 */
+
 body {
   font-family: Times, serif;
   width: 600px;
@@ -20,3 +22,18 @@ a:hover {
   max-width: 100px;
   transform: rotate(10deg);
 }
+
+
+/* EXAMPLE ONE  */
+
+/* body {
+  font-family: Helvetica, sans-serif;
+}
+#main-heading {
+  font-size: 2em;
+  color: red;
+}
+.game-icon {
+  padding: 10px;
+  max-width: 100px;
+} */
