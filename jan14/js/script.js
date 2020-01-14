@@ -1,11 +1,8 @@
 "use strict";
 
-/********************************************************************
+window.onload = setup;
 
-Title of Project
-Author Name
-
-This is a template. Fill in the title, author, and this description
-to match your project! Write JavaScript to do amazing things below!
-
-*********************************************************************/
+function setup() {
+  console.log("The page has loaded!");
+  console.log("Now we can do stuff with the DOM of the page!");
+}
