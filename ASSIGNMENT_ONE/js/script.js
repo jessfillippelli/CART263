@@ -33,4 +33,11 @@ function setup(){
 function paint(e){
 let pixel = e.target;
 pixel.style.backgroundColor = 'white';
+// setTimeout(resetPixel);
+setTimeout(resetPixel, 1000, pixel);
+}
+
+//can pass a element to another function
+function resetPixel(pixel){
+  pixel.style.backgroundColor = 'black';
 }
