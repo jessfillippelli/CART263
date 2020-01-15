@@ -12,8 +12,10 @@ to match your project! Write JavaScript to do amazing things below!
 
 
 window.onload = setup;
+document.addEventListener('keydown', rotate);
 
-// let = 1000;
+//global variable
+ let rotation = 0;
 
 function setup(){
   console.log("is this shit working or nah");
@@ -24,7 +26,9 @@ function setup(){
     //add a event to a pixel
     pixel.addEventListener('mouseover', paint);
     pixel.addEventListener('click', remove);
+
     document.body.appendChild(pixel);
+
   }
 }
 
@@ -36,7 +40,9 @@ let g = Math.floor(Math.random()*256);
 let b = Math.floor(Math.random()*256);
 let rgb = 'rgb(' + r + ',' + g + ',' + b + ')';
  pixel.style.backgroundColor = rgb;
-// setTimeout(resetPixel);
+ //make pixel active so only the color ones will move
+ pixel.classList.add("active");
+ console.log(pixel);
 setTimeout(resetPixel, 1000, pixel);
 }
 
@@ -44,10 +50,34 @@ setTimeout(resetPixel, 1000, pixel);
 //can pass a element to another function
 function resetPixel(pixel){
   pixel.style.backgroundColor = 'black';
+   pixel.classList.remove("active");
 }
 
 //e instead of pixels
 function remove(e){
   e.target.style.opacity = '0';
+pixel.classList.remove("active");
 
+}
+
+function rotate(){
+  console.log(event.keyCode)
+  //right clockwise 1 degree
+  if(event.keyCode ===39 ){
+    rotation = rotation+1;
+
+    //had to make a active class so only the color pixels use roataion if not than the black ones will move too.
+    let allPixels = document.getElementsByClassName("active");
+      for (let i = 0; i < allPixels.length; i++) {
+       allPixels[i].style.transform = 'rotate(' + rotation + 'deg)';
+     }
+ }
+  //left counter cc 1 degree
+  else if (event.keyCode ===37 ){
+    rotation = rotation-1;
+    let allPixels = document.getElementsByClassName("active");
+      for (let i = 0; i < allPixels.length; i++) {
+       allPixels[i].style.transform = 'rotate(' + rotation + 'deg)';
+     }
+  }
 }
