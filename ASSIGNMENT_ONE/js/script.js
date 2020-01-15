@@ -58,7 +58,7 @@ function resetPixel(pixel){
 //e instead of pixels
 function remove(e){
   e.target.style.opacity = '0';
-pixel.classList.remove("active");
+  pixel.classList.remove("active");
 
 }
 
