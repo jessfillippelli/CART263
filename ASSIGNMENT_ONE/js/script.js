@@ -13,6 +13,7 @@ to match your project! Write JavaScript to do amazing things below!
 
 window.onload = setup;
 document.addEventListener('keydown', rotate);
+document.addEventListener('keydown', typed);
 
 //global variable
  let rotation = 0;
