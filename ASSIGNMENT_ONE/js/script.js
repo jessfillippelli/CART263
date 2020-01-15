@@ -16,6 +16,7 @@ document.addEventListener('keydown', rotate);
 
 //global variable
  let rotation = 0;
+ let currentKey = "";
 
 function setup(){
   console.log("is this shit working or nah");
