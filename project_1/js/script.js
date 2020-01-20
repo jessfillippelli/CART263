@@ -13,34 +13,28 @@ window.onload = setup;
 //rockSpeed = 0;
 
 //window.requestAnimationFrame();
+//document.addEventListener('mousedown', animate);
 
 function setup(){
   console.log("is this shit working or nah");
-  let triangle = document.createElement('');
-  let rock = (canvas.Context);
-  let context = canvas.getContext('2d');
+  //let triangle = document.createElement('');
+  //let rock = (canvas.Context);
+  let mycanvas = document.getElementById("myCanvas");
+  let context = mycanvas.getContext('2d');
 
 
+// circle
    context.fillstyle = "brown";
+   context.arc(100, 75, 50, 0, 2 * Math.PI);
+   context.stroke();
+
+   //triangle
    context.beginPath();
-   context.moveTo(500,100);
-   context.lineTo(100,175);
-   context.lineTo(101, 215);
+    context.moveTo(0,mycanvas.height);
+    context.lineTo(mycanvas.width, 0);
+    context.lineTo(mycanvas.width,mycanvas.height);
+    context.fill();
 
 
- let rock = rock.getContext("2d");
- rock.beginPath();
- rock.arc(95,50,40,0,2*Math.PI);
- rock.fillstyle();
 
-  }
-
-  function rock(){
-    let rock = e.target;
-    let rock = document.getElementsByClassName('rock');
-  }
-
-
-function climb(){
-  let rock = document.getElementById("animate"); 
 }
