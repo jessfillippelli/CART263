@@ -129,18 +129,3 @@ climb(){
 }
 
 } //end of rock class
-
-
-
-
-
-// function rock(e){
-//   let rock = e.target;
-//   let rock = document.getElementsByClassName('rock');
-// }
-//
-//
-// function climb(){
-// let rock = document.getElementById("animate");
-//   console.log("u alive");
-// }
