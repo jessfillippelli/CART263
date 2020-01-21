@@ -18,3 +18,7 @@ function setup() {
 function update(){
   console.log("Update!");
 }
+
+function updateSpan(){
+  console.log("Updating span!");
+}
