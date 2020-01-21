@@ -10,16 +10,23 @@ to match your project! Write JavaScript to do amazing things below!
 
 *********************************************************************/
 
+
+
 $(document).ready(setup);
+//declair v
+let $spans;
+
 function setup() {
+
   setInterval(update, 500);
+  $spans = $('span');
   //when u click on a red sentence
-  $('span').click(spanClicked);
+  $spans.click(spanClicked);
 }
 
 function update(){
   //console.log("Update!");
-  $('span').each(updateSpan);
+$spans.each(updateSpan);
     console.log('u ok?');
 
 }
