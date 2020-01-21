@@ -13,7 +13,7 @@ to match your project! Write JavaScript to do amazing things below!
 $(document).ready(setup);
 function setup() {
   console.log("u loaded");
-  let $divs = $('div');
+  let $divs = $('#first');
   $divs.hide();
   $divs.fadeIn(2000);
 }
