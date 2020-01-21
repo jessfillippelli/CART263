@@ -4,4 +4,10 @@ body {
 
 #button{
   padding-bottom: 100%;
+  margin-left: 30%;
+}
+
+#myCanvas{
+
+  margin-left: 30%;
 }

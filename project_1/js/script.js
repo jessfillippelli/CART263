@@ -1,14 +1,4 @@
 "use strict";
-
-/********************************************************************
-
-Title of Project
-Author Name
-
-This is a template. Fill in the title, author, and this description
-to match your project! Write JavaScript to do amazing things below!
-
-*********************************************************************/
 window.onload = setup;
 let rockSpeed = 0;
 let rock;
@@ -29,36 +19,26 @@ function setup(){
 
 
 //the rock
-  rock = new Rock(100, 75, 50, 0, 2 * Math.PI);
-  mountain = new Mountain(0,mycanvas.height, mycanvas.width, 0, mycanvas.width,mycanvas.height);
+rock = new Rock(55, 460, 10, 0, 2 * Math.PI);
+  //rock = new Rock(100, 75, 50, 0, 2 * Math.PI);
+  mountain = new Mountain(100,mycanvas.height, mycanvas.width, 0, mycanvas.width,mycanvas.height);
 //make the rock show itself
   rock.displayRock();
   mountain.displayMountain();
   requestAnimationFrame(animate);
-
-
-
-
-
 }
 
 function animate(){
-    console.log("u ani? or nah");
+    //console.log("u ani? or nah");
     context.clearRect(0,0,mycanvas.width,mycanvas.height);
+  
 
-  //  context.arc(0,0,canvas.width,canvas.height);
-  rock.rockX ++;
+  //what
+  //rock.rockX ++;
     rock.displayRock();
     mountain.displayMountain();
-
-
-
-
-      requestAnimationFrame(animate);
+    requestAnimationFrame(animate);
 }
-
-
-
 
 //https://maxhalford.github.io/blog/stella-triangles-with-javascript/
 class Mountain {
@@ -77,16 +57,12 @@ class Mountain {
      context.moveTo(this.a,this.b);
      context.lineTo(this.c,this.d);
      context.lineTo(this.e,this.f);
+     context.fillStyle = "brown";
      context.fill();
      context.closePath();
-     console.log("mountain is here");
+     //console.log("mountain is here");
   }
 }
-
-
-
-
-
 
 
 class Rock{
@@ -96,10 +72,7 @@ class Rock{
   this.rockR = rockR;
   this.rockS = rockS;
   this.rockE = rockE;
-
   }
-
-
 
 displayRock(){
   context.fillstyle = "brown";
@@ -111,9 +84,8 @@ displayRock(){
 }
 
 updateRock(){
-
+rock.rockX ++;
 }
-
 
 //when click "yes button" rock will move
 climb(){
