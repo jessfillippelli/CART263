@@ -68,6 +68,7 @@ function rotate(){
   if(event.keyCode ===39 ){
     rotation = rotation+1;
 
+//got help from sabine 
     //had to make a active class so only the color pixels use roataion if not than the black ones will move too.
     let allPixels = document.getElementsByClassName("active");
       for (let i = 0; i < allPixels.length; i++) {
