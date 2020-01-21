@@ -13,7 +13,14 @@ to match your project! Write JavaScript to do amazing things below!
 $(document).ready(setup);
 function setup() {
   console.log("u loaded");
-$('div').slideToggle();
+
+
+  $('div').on('click',divClicked); // Add a click listener to ever div
+  function divClicked() {
+    $(this).fadeOut(); // Tell the div cliked to fade out
+  }
+
+// $('div').slideToggle(2000);
 
 //this
 // $('div').hide().fadeIn(2000);
