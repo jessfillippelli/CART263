@@ -13,6 +13,8 @@ to match your project! Write JavaScript to do amazing things below!
 $(document).ready(setup);
 function setup() {
   setInterval(update, 500);
+  //when u click on a red sentence
+  $('span').click(spanClicked);
 }
 
 function update(){
@@ -31,3 +33,8 @@ function updateSpan(){
     $(this).addClass('revealed');
   }
 }
+
+ function spanClicked(){
+       $(this).removeClass('revealed');
+     $(this).addClass('redacted');
+ }
