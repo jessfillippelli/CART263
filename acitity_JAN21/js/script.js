@@ -16,9 +16,12 @@ function setup() {
 }
 
 function update(){
-  console.log("Update!");
+  //console.log("Update!");
+  $('span').each(updateSpan);
+    console.log('u ok?');
+
 }
 
 function updateSpan(){
-  console.log("Updating span!");
+  //console.log("Updating span!");
 }
