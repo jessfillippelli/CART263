@@ -7,5 +7,11 @@ p {
   margin-left:9%;
   margin-right:50%;
   font-size: 19px;
+  font-family: 'PT Mono', monospace;
 
+}
+
+.revealed{
+  background-color: transparent;
+  color: red;
 }
