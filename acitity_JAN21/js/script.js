@@ -24,4 +24,10 @@ function update(){
 
 function updateSpan(){
   //console.log("Updating span!");
+  //random number
+  let random = Math.random();
+  if (random < 0.1){
+    $(this).removeClass('redacted');
+    $(this).addClass('revealed');
+  }
 }
