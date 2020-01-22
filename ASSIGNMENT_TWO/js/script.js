@@ -61,4 +61,5 @@ function updateSpan(){
 
  function pinkSecret(){
    $(this).addClass('found');
+   $(this).off('found');
  }
