@@ -30,7 +30,7 @@ function setup() {
 
   //Calculate the total number of secrets found
   $secretsFound = $('.secret').length;
-  //total number of secrets found 
+  //total number of secrets 
   $('#total').text($secretsFound);
 
 }
