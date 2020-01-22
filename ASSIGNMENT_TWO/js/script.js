@@ -17,7 +17,7 @@ $(document).ready(setup);
 let $spans;
 
 //var
-let $secretsFound;
+let $secretsFound =0;
 let $secretsTotal;
 
 function setup() {
@@ -55,11 +55,13 @@ function updateSpan(){
 }
 
  function spanClicked(){
-       $(this).removeClass('revealed');
+    $(this).removeClass('revealed');
      $(this).addClass('redacted');
  }
 
  function pinkSecret(){
    $(this).addClass('found');
-   $(this).off('mouseover','found');
+   //$(this).off('mouseover','found');
+  $secretsFound++;
+  $('#found').text($secretsFound);
  }
