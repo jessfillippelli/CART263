@@ -32,7 +32,7 @@ function setup() {
   $secretsFound = $('.secret').length;
   //total number of secrets
   $('#total').text($secretsFound);
-  $('.secret').("mouseover");
+  $('.secret').("mouseover", pinkSecret);
 
 }
 
