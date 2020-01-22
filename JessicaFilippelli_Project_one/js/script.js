@@ -14,40 +14,48 @@ $(document).ready(setup);
 let count=7;
 let godQuestion = [{
  question:"am I A GOD?",
- choices: ["YES", "NO" ]
+ correct: "yes",
+ incorrect: "no",
 
 }, {
 question:"am I A GOD?",
-choices: ["YES", "NO" ]
-
-
-}, {
-question:"am I A GOD?",
-choices: ["YES", "NO" ]
+correct: "yes",
+incorrect: "no",
 
 
 }, {
 question:"am I A GOD?",
-choices: ["YES", "NO" ]
+correct: "yes",
+incorrect: "no",
 
 
 }, {
 question:"am I A GOD?",
-choices: ["YES", "NO" ]
+correct: "yes",
+incorrect: "no",
+
+
+}, {
+question:"am I A GOD?",
+correct: "yes",
+incorrect: "no",
 
 
  }, {
 question:"am I A GOD?",
-choices: ["YES", "NO" ]
+correct: "yes",
+incorrect: "no",
 
 }, {
 question:"am I A GOD?",
-choices: ["YES", "NO" ]
+correct: "yes",
+incorrect: "no",
 
 
 }, {
 question:"am I A GOD?",
-choices: ["YES", "NO" ]
+correct: "yes",
+incorrect: "no",
 
 
 }
@@ -55,5 +63,5 @@ choices: ["YES", "NO" ]
 ];
 
 function setup(){
-  
+
 }
