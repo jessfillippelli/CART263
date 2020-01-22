@@ -10,7 +10,7 @@ to match your project! Write JavaScript to do amazing things below!
 
 *********************************************************************/
 
-secretsFound
+
 
 $(document).ready(setup);
 //declair v
@@ -25,6 +25,7 @@ function setup() {
   $spans = $('span');
   //when u click on a red sentence
   $spans.click(spanClicked);
+  let $secretsFound = $('.secret').length;
 }
 
 function update(){
