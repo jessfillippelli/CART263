@@ -15,6 +15,7 @@ to match your project! Write JavaScript to do amazing things below!
 $(document).ready(setup);
 //declair v
 let $spans;
+
 //var
 let $secretsFound;
 let $secretsTotal;
@@ -23,9 +24,15 @@ function setup() {
 
   setInterval(update, 500);
   $spans = $('span');
+
   //when u click on a red sentence
   $spans.click(spanClicked);
-  let $secretsFound = $('.secret').length;
+
+  //Calculate the total number of secrets found
+  $secretsFound = $('.secret').length;
+  //total number of secrets found 
+  $('#total').text($secretsFound);
+
 }
 
 function update(){
