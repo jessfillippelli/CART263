@@ -58,3 +58,7 @@ function updateSpan(){
        $(this).removeClass('revealed');
      $(this).addClass('redacted');
  }
+
+ function pinkSecret(){
+   
+ }
