@@ -32,6 +32,7 @@ function setup() {
   $secretsFound = $('.secret').length;
   //total number of secrets
   $('#total').text($secretsFound);
+  //for the mouse handler 
   $('.secret').("mouseover", pinkSecret);
 
 }
