@@ -3,10 +3,20 @@ background-color:  #87ceeb;
 }
 
 /* https://css-tricks.com/the-shapes-of-css/ */
-/* i made it bigger */
+/* i made them the size i want */
 .triangle{
      width: 0;
      height: 0;
      border-bottom: 630px solid brown;
      border-right: 950px solid transparent;
    }
+
+   .circle {
+         width: 20px;
+         height: 20px;
+         background: grey;
+         border-radius: 50%;
+         position: relative;
+         bottom:20px;
+         left:1000px;
+       }
