@@ -60,5 +60,5 @@ function updateSpan(){
  }
 
  function pinkSecret(){
-   
+   $(this).addClass('found');
  }
