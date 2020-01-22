@@ -10,11 +10,14 @@ to match your project! Write JavaScript to do amazing things below!
 
 *********************************************************************/
 
-
+secretsFound
 
 $(document).ready(setup);
 //declair v
 let $spans;
+//var
+let $secretsFound;
+let $secretsTotal;
 
 function setup() {
 
