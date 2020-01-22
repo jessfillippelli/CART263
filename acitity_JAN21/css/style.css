@@ -1,0 +1,21 @@
+body {
+
+}
+
+p {
+
+  margin-left:9%;
+  margin-right:50%;
+  font-size: 19px;
+  font-family: 'PT Mono', monospace;
+
+}
+
+.redacted {
+  background-color: black;
+  color: transparent;
+}
+.revealed {
+  background-color: transparent;
+  color: red;
+}
