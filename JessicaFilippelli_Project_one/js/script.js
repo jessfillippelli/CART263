@@ -12,54 +12,54 @@ to match your project! Write JavaScript to do amazing things below!
 
 $(document).ready(setup);
 
-let count=7;
+let count=8;
 //helps to go on two the next question in the array
 let currentQuestionNum =0;
 
 let godQuestion = [{
- question:"Does Sisyphus roll a rock up a mountain as punishedment for his arrogance and decitfulness?",
+ question:"ONE: Does Sisyphus roll a rock up a mountain as punishedment for his arrogance and decitfulness?",
  correct: "Yes",
  incorrect: "No",
 
 }, {
-question:"The rock stood up at the top of the hill and Sisyphus hung out near it and took a nap. ",
+question:"TWO: The rock stood up at the top of the hill and Sisyphus hung out near it and took a nap. ",
 correct: "No",
 incorrect: "Yes",
 
 
 }, {
-question:"Eternity was how long he had to repeat roling the rock up the mountain because it kept rolling down? ",
+question:"THREE: Eternity was how long he had to repeat roling the rock up the mountain because it kept rolling down? ",
 correct: "Yes",
 incorrect: "No",
 
 
 }, {
-question:"Is Sisyphus the son of KingAeolus of thessaly and Enarete?",
+question:"FOUR: Is Sisyphus the son of KingAeolus of thessaly and Enarete?",
 correct: "Yes",
 incorrect: "No",
 
 
 }, {
-question:"am I A GOD?",
-correct: "yes",
-incorrect: "no",
+question:"FIVE: King Sisyphus betrayed one of Zeus's secrets? ",
+correct: "Yes",
+incorrect: "No",
 
 
  }, {
-question:"am I A GOD?",
-correct: "yes",
-incorrect: "no",
+question:"SIX: Sisyphus died and told his wife to not throw his body into the middle of the public square.",
+correct: "No",
+incorrect: "Yes",
 
 }, {
-question:"am I A GOD?",
-correct: "yes",
-incorrect: "no",
+question:"SEVEN: Is King Sisyphus is the disk of the sun that rises everyday in the east and then sinks into the west?",
+correct: "Yes",
+incorrect: "No",
 
 
 }, {
-question:"am I A GOD?",
-correct: "yes",
-incorrect: "no",
+question:"EIGHT: Did Sisyphus have 7 wives?",
+correct: "Yes",
+incorrect: "No",
 
 
 }
@@ -67,7 +67,7 @@ incorrect: "no",
 ];
 
 function setup(){
-  console.log("etattatatta")
+  console.log("YOU WORKING?")
   $("#question").text(godQuestion[currentQuestionNum].question);
   $("#correct").text(godQuestion[currentQuestionNum].correct);
   $("#incorrect").text(godQuestion[currentQuestionNum].incorrect);
