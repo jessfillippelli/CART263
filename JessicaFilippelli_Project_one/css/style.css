@@ -33,5 +33,19 @@ background-color:  #87ceeb;
   bottom:600px;
   left:1000px;
   font-family: 'Ruda', sans-serif;
-  
+
+}
+
+#correct{
+  position: relative;
+  bottom:500px;
+  left:1300px;
+  font-family: 'Ruda', sans-serif;
+}
+
+#incorrect{
+  position: relative;
+  bottom:500px;
+  left:1300px;
+  font-family: 'Ruda', sans-serif;
 }
