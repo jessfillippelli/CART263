@@ -84,4 +84,23 @@ function setup(){
 
 
   });
+
+  $( "#incorrect" ).click(function() {
+    event.preventDefault();
+    console.log("clicked button for wrong");
+
+    //now we move on to the next question
+    currentQuestionNum++;
+    $("#question").text(godQuestion[currentQuestionNum].question);
+    $("#correct").text(godQuestion[currentQuestionNum].correct);
+    $("#incorrect").text(godQuestion[currentQuestionNum].incorrect);
+
+
+  });
+
+
+
+
+
+
 }
