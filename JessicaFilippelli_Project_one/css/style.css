@@ -26,6 +26,12 @@ background-color:  #87ceeb;
          width: 2000px;
          background-color: green;
          margin-top: -30px;
-         /* position: relative;
-        top: 5px; */
        }
+
+#question{
+  position: relative;
+  bottom:600px;
+  left:1000px;
+  font-family: 'Ruda', sans-serif;
+  
+}
