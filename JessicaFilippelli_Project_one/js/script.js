@@ -17,26 +17,26 @@ let count=7;
 let currentQuestionNum =0;
 
 let godQuestion = [{
- question:"am I A GOD?",
- correct: "yes",
- incorrect: "no",
+ question:"Does Sisyphus roll a rock up a mountain as punishedment for his arrogance and decitfulness?",
+ correct: "Yes",
+ incorrect: "No",
 
 }, {
-question:"am I A GOD?e",
-correct: "yes",
-incorrect: "no",
-
-
-}, {
-question:"am I A GOD?",
-correct: "yes",
-incorrect: "no",
+question:"The rock stood up at the top of the hill and Sisyphus hung out near it and took a nap. ",
+correct: "No",
+incorrect: "Yes",
 
 
 }, {
-question:"am I A GOD?",
-correct: "yes",
-incorrect: "no",
+question:"Eternity was how long he had to repeat roling the rock up the mountain because it kept rolling down? ",
+correct: "Yes",
+incorrect: "No",
+
+
+}, {
+question:"Is Sisyphus the son of KingAeolus of thessaly and Enarete?",
+correct: "Yes",
+incorrect: "No",
 
 
 }, {
