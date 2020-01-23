@@ -16,6 +16,7 @@ let count=8;
 //helps to go on two the next question in the array
 let currentQuestionNum =0;
 
+//got the question info from here https://en.wikipedia.org/wiki/Sisyphus
 let godQuestion = [{
  question:"ONE: Does Sisyphus roll a rock up a mountain as punishedment for his arrogance and decitfulness?",
  correct: "Yes",
