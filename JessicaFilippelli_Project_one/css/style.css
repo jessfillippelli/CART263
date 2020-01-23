@@ -7,44 +7,46 @@ background-color:  #87ceeb;
 .triangle{
      width: 0;
      height: 0;
-     border-bottom: 630px solid brown;
-     border-right: 950px solid transparent;
+     border-bottom: 80vh solid brown;
+     border-right: 50vw solid transparent;
    }
 
    .circle {
+        position:absolute;
          width: 20px;
          height: 20px;
          background: grey;
          border-radius: 50%;
-         position: relative;
-         bottom:20px;
-         left:1000px;
+         bottom:20vh;
+         left:48vw;
        }
 
        .rectangle {
-         height: 200px;
-         width: 2000px;
+         position:absolute;
+         bottom:0;
+         height: 20vh;
+         width: 100vw;
          background-color: green;
-         margin-top: -30px;
+
        }
 
-#question{
-  position: relative;
+ #question{
+  position: absolute;
   bottom:600px;
   left:1000px;
   font-family: 'Ruda', sans-serif;
 
 }
 
-#correct{
-  position: relative;
+ #correct{
+  position: absolute;
   bottom:500px;
-  left:1300px;
+  left:1400px;
   font-family: 'Ruda', sans-serif;
 }
 
 #incorrect{
-  position: relative;
+  position: absolute;
   bottom:500px;
   left:1300px;
   font-family: 'Ruda', sans-serif;
