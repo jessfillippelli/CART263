@@ -29,9 +29,9 @@ function setup() {
   $spans.click(spanClicked);
 
   //Calculate the total number of secrets found
-  $secretsFound = $('.secret').length;
+  $secretsTotal = $('.secret').length;
   //total number of secrets
-  $('#total').text($secretsFound);
+  $('#total').text($secretsTotal);
   //for the mouse handler
   $('.secret').on("mouseover", pinkSecret);
 
