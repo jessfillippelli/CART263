@@ -61,7 +61,7 @@ function updateSpan(){
 
  function pinkSecret(){
    $(this).addClass('found');
-   //$(this).off('mouseover','found');
+   $(this).off('mouseover');
   $secretsFound++;
   $('#found').text($secretsFound);
  }
