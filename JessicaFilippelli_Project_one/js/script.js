@@ -12,6 +12,7 @@ to match your project! Write JavaScript to do amazing things below!
 
 $(document).ready(setup);
 
+
 let count=8;
 //helps to go on two the next question in the array
 let currentQuestionNum =0;
@@ -84,6 +85,16 @@ function setup(){
     $("#correct").text(godQuestion[currentQuestionNum].correct);
     $("#incorrect").text(godQuestion[currentQuestionNum].incorrect);
 
+    //this makes the rock move with a animate function
+   $("#rock").
+   animate({
+    left: "+=50",
+    /*height: "toggle"*/
+    //5000 is that it moves for 5 seconds
+  }, 5000,
+  function() {
+    // Animation complete.
+  });
 
   });
 
@@ -100,6 +111,13 @@ function setup(){
 
   });
 
+//when you are not done the game and there is no questions left that means you lose.
+//this shows the text saying you lose
+//it resets the whole game
+
+// function resetGame(){
+//
+// }
 
 
 
