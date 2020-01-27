@@ -86,6 +86,7 @@ function setup(){
     $("#incorrect").text(godQuestion[currentQuestionNum].incorrect);
 
     //this makes the rock move with a animate function
+    //got help from this link: https://api.jquery.com/animate/#animate-properties-duration-easing-complete
    $("#rock").
    animate({
     left: "+=50",
