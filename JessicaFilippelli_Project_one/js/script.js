@@ -86,11 +86,11 @@ function setup(){
     $("#incorrect").text(godQuestion[currentQuestionNum].incorrect);
 
     //this makes the rock move with a animate function
+  //rock moves UP when the answer is YES
     //got help from this link: https://api.jquery.com/animate/#animate-properties-duration-easing-complete
-   $("#rock").
-   animate({
-    left: "+=50",
-    /*height: "toggle"*/
+   $("#rock").animate({
+    top: "-=50",
+    left: "-=50",
     //5000 is that it moves for 5 seconds
   }, 5000,
   function() {
@@ -108,6 +108,18 @@ function setup(){
     $("#question").text(godQuestion[currentQuestionNum].question);
     $("#correct").text(godQuestion[currentQuestionNum].correct);
     $("#incorrect").text(godQuestion[currentQuestionNum].incorrect);
+
+
+//rock moves down when the answer is NO
+    $("#rock").animate({
+      top: "+=50",
+      left: "+=50",
+     //5000 is that it moves for 5 seconds
+   }, 5000,
+   function() {
+     // Animation complete.
+   });
+
 
 
   });
