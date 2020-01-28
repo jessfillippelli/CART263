@@ -31,4 +31,13 @@ $('#fly').draggable();
    function onDrop(event, ui) {
      console.log("Dropped!");
      $fly.remove();
+     setInterval(chew, 300);
+   }
+
+   function chew() {
+     if ($mouth.attr("src") === "assets/images/mouth-open.png") {
+       $mouth.attr("src", "assets/images/mouth-closed.png");
+     } else {
+       $mouth.attr("src", "assets/images/mouth-open.png");
+     }
    }
