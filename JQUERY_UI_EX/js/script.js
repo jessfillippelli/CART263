@@ -11,7 +11,7 @@ to match your project! Write JavaScript to do amazing things below!
 *********************************************************************/
 
 $(document).ready(setup);
-
+const ANIMATION_TIME = 2000;
 function setup() {
 
 
@@ -21,7 +21,7 @@ $('.square').draggable({
 }
 });
 //ami colors
-const ANIMATION_TIME = 2000;
+
 $('.square').animate({
   backgroundColor: 'green'
 },{
