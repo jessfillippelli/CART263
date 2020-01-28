@@ -1,5 +1,6 @@
 body {
 background-color:  #87ceeb;
+
 }
 
 /* https://css-tricks.com/the-shapes-of-css/ */
@@ -40,15 +41,15 @@ background-color:  #87ceeb;
 
  #correct{
   position: absolute;
-  bottom:90%;
-  left:30%;
+  bottom:0px;
+  left :550px;
   font-family: 'Ruda', sans-serif;
 }
 
 #incorrect{
   position: absolute;
-  bottom:90%;
-  left:10%;
+  bottom:0px;
+  left:50px;
   font-family: 'Ruda', sans-serif;
   z-index: 1;
 }

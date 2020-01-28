@@ -91,6 +91,7 @@ function setup(){
     $("#question").text(godQuestion[currentQuestionNum].question);
     $("#correct").text(godQuestion[currentQuestionNum].correct);
     $("#incorrect").text(godQuestion[currentQuestionNum].incorrect);
+    right.play();
 
     //this makes the rock move with a animate function
   //rock moves UP when the answer is YES
@@ -115,6 +116,7 @@ function setup(){
     $("#question").text(godQuestion[currentQuestionNum].question);
     $("#correct").text(godQuestion[currentQuestionNum].correct);
     $("#incorrect").text(godQuestion[currentQuestionNum].incorrect);
+     wrong.play();
 
 
 //rock moves down when the answer is NO
