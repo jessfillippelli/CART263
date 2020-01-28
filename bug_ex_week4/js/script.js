@@ -16,6 +16,19 @@ let $fly;
 let $mouth;
 
 function setup(){
-  $fly = $('#mouth');
-  $mouth = $('#fly');
+  $mouth = $('#mouth');
+  $fly = $('#fly');
+
+
+$('#fly').draggable();
+  $('#mouth').droppable({
+    drop: onDrop
+  });
+
 }
+
+
+   function onDrop(event, ui) {
+     console.log("Dropped!");
+     $fly.remove();
+   }
