@@ -40,16 +40,29 @@ background-color:  #87ceeb;
 }
 
  #correct{
-  position: absolute;
-  bottom:0px;
-  left :550px;
-  font-family: 'Ruda', sans-serif;
-}
-
-#incorrect{
-  position: absolute;
-  bottom:0px;
-  left:50px;
+  /* position: absolute; */
+  /* left :20px; */
+  margin-left: 4em;
+  margin-right: 4em;
   font-family: 'Ruda', sans-serif;
   z-index: 1;
 }
+
+#incorrect{
+  /* position: absolute; */
+  /* left:50px; */
+
+  font-family: 'Ruda', sans-serif;
+  z-index: 1;
+}
+
+.buttons{
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  width:50%;
+  border: 1px solid black;
+  z-index: 2;
+}
+
+.buttons p{text-align: center;}
