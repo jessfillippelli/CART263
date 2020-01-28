@@ -32,22 +32,22 @@ background-color:  #87ceeb;
 
  #question{
   position: absolute;
-  bottom:600px;
-  left:1000px;
+  bottom:60%;
+  left:10%;
   font-family: 'Ruda', sans-serif;
 
 }
 
  #correct{
   position: absolute;
-  bottom:500px;
-  left:1400px;
+  bottom:60%;
+  left:10%;
   font-family: 'Ruda', sans-serif;
 }
 
 #incorrect{
   position: absolute;
-  bottom:500px;
-  left:1300px;
+  bottom:70%;
+  left:20%;
   font-family: 'Ruda', sans-serif;
 }
