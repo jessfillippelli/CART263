@@ -14,6 +14,13 @@ $(document).ready(setup);
 const ANIMATION_TIME = 2000;
 function setup() {
 
+//dialog
+
+$('#question').dialog();
+
+
+
+
 
 $('.square').draggable({
   stop: function(event, ui){
