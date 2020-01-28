@@ -19,6 +19,16 @@ let $mouth;
 function setup(){
   $mouth = $('#mouth');
   $fly = $('#fly');
+  buzz.loop = true;
+
+  //fly Audio
+  $fly.mousedown(function() {
+   buzz.play();
+});
+
+$fly.mouseup(function() {
+ buzz.pause();
+});
 
 
 $('#fly').draggable();
@@ -38,7 +48,10 @@ $('#fly').draggable();
    function chew() {
      if ($mouth.attr("src") === "assets/images/mouth-open.png") {
        $mouth.attr("src", "assets/images/mouth-closed.png");
+//where the cruch is hapeng
+      crunch.play();
      } else {
        $mouth.attr("src", "assets/images/mouth-open.png");
+
      }
    }
