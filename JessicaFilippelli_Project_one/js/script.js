@@ -11,7 +11,8 @@ to match your project! Write JavaScript to do amazing things below!
 *********************************************************************/
 
 $(document).ready(setup);
-
+let wrong = new Audio("assets/sounds/Male_Laugh.mp3");
+let right = new Audio("assets/sounds/Splashing_Around.mp3");
 
 let count=8;
 //helps to go on two the next question in the array
