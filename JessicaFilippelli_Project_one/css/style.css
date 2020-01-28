@@ -40,14 +40,15 @@ background-color:  #87ceeb;
 
  #correct{
   position: absolute;
-  bottom:10%;
+  bottom:90%;
   left:30%;
   font-family: 'Ruda', sans-serif;
 }
 
 #incorrect{
   position: absolute;
-  bottom:70%;
-  left:40%;
+  bottom:90%;
+  left:10%;
   font-family: 'Ruda', sans-serif;
+  z-index: 1;
 }

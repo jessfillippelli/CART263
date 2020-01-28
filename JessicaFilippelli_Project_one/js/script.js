@@ -14,6 +14,8 @@ $(document).ready(setup);
 let wrong = new Audio("assets/sounds/Male_Laugh.mp3");
 let right = new Audio("assets/sounds/Splashing_Around.mp3");
 
+let rockStart;
+
 let count=8;
 //helps to go on two the next question in the array
 let currentQuestionNum =0;
@@ -71,6 +73,10 @@ incorrect: "No",
 ];
 
 function setup(){
+  //find whre the rock is
+  rockStart = $('#rock').css("left");
+  console.log(rockStart);
+
   console.log("YOU WORKING?")
   $("#question").text(godQuestion[currentQuestionNum].question);
   $("#correct").text(godQuestion[currentQuestionNum].correct);
