@@ -13,7 +13,18 @@ to match your project! Write JavaScript to do amazing things below!
 $(document).ready(setup);
 
 function setup() {
-  $('.square').draggable({
-    axis: 'x'
-  });
+
+
+$('.square').draggable({
+  stop: function(event, ui){
+  $(this).draggable('disable');
+}
+});
+
+
+
+
+  // $('.square').draggable({
+  //   axis: 'x'
+  // });
 }
