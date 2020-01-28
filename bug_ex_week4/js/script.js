@@ -11,7 +11,8 @@ to match your project! Write JavaScript to do amazing things below!
 *********************************************************************/
 
 $(document).ready(setup);
-
+let buzz = new Audio("assets/sounds/buzz.mp3");
+let crunch = new Audio("assets/sounds/crunch.wav");
 let $fly;
 let $mouth;
 
