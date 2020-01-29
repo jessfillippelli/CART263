@@ -12,7 +12,7 @@ to match your project! Write JavaScript to do amazing things below!
 
 $(document).ready(setup);
 let wrong = new Audio("assets/sounds/Male_Laugh.mp3");
-let right = new Audio("assets/sounds/Splashing_Around.mp3");
+let right = new Audio("assets/sounds/Splashing_Around.mp4");
 
 let rockStart;
 
