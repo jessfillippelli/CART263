@@ -74,8 +74,24 @@ incorrect: "No",
 
 function setup(){
   //find whre the rock is
-  rockStart = $('#rock').css("left");
-  console.log(rockStart);
+  let rockStartTop = $('#rock').css("top");
+
+  //here is where we find out the left and top of where the rock is
+  //these two line are to help make the string (the OG starting point of the rock ) into a number
+  let rockStartTopFloat = parseFloat(rockStartTop.substring(0,rockStartTop.length-2));
+
+  let rockStartLeft = $('#rock').css("left");
+  let rockStartLeftFloat = parseFloat(rockStartLeft.substring(0,rockStartLeft.length-2));
+
+//these guys are to make the current rock postion = the left and top so they are the same
+  let currentRockX=rockStartLeftFloat;
+  let currentRockY= rockStartTopFloat;
+
+  console.log(rockStartTop);
+  console.log(rockStartTopFloat);
+
+  console.log(rockStartLeft);
+  console.log(rockStartLeftFloat);
 
   console.log("YOU WORKING?")
   $("#question").text(godQuestion[currentQuestionNum].question);
@@ -103,6 +119,8 @@ function setup(){
   }, 5000,
   function() {
     // Animation complete.
+    currentRockY-=50;
+    currentRockX-=50;
   });
 
   });
@@ -120,6 +138,9 @@ function setup(){
 
 
 //rock moves down when the answer is NO
+//the if statement is: if is the current rock top postion (currentRockY) is not the starting point for the rock. than move rock down and right
+// bascally if the rock  is where it stated when you started the game than it cant move down.
+if(currentRockY!==rockStartTopFloat){
     $("#rock").animate({
       top: "+=50",
       left: "+=50",
@@ -127,19 +148,19 @@ function setup(){
    }, 5000,
    function() {
      // Animation complete.
+     currentRockY+=50;
+     currentRockX+=50;
    });
 
+}
+else{
+  console.log("same");
+}
 
 
   });
 
-//when you are not done the game and there is no questions left that means you lose.
-//this shows the text saying you lose
-//it resets the whole game
 
-// function resetGame(){
-//
-// }
 
 
 
