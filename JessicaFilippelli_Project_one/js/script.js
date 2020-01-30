@@ -66,8 +66,6 @@ incorrect: "No",
 question:"EIGHT: Did Sisyphus have 7 wives?",
 correct: "Yes",
 incorrect: "No",
-
-
 }
 
 ];
@@ -98,12 +96,19 @@ function setup(){
   $("#correct").text(godQuestion[currentQuestionNum].correct);
   $("#incorrect").text(godQuestion[currentQuestionNum].incorrect);
 
+//WHEN WE CLICK ON THE CORRECT OPTION 
   $( "#correct" ).click(function() {
     event.preventDefault();
     console.log("clicked button");
 
     //now we move on to the next question
+      if(currentQuestionNum ===7){
+        currentQuestionNum =0;
+      }
+      else{
     currentQuestionNum++;
+  }
+
     $("#question").text(godQuestion[currentQuestionNum].question);
     $("#correct").text(godQuestion[currentQuestionNum].correct);
     $("#incorrect").text(godQuestion[currentQuestionNum].incorrect);
@@ -124,13 +129,19 @@ function setup(){
   });
 
   });
-
+// WHEN WE CLICK ON THE IN CORRECT OPTION
   $( "#incorrect" ).click(function() {
     event.preventDefault();
     console.log("clicked button for wrong");
 
     //now we move on to the next question
+    //now we move on to the next question
+      if(currentQuestionNum ===7){
+        currentQuestionNum =0;
+      }
+      else{
     currentQuestionNum++;
+  }
     $("#question").text(godQuestion[currentQuestionNum].question);
     $("#correct").text(godQuestion[currentQuestionNum].correct);
     $("#incorrect").text(godQuestion[currentQuestionNum].incorrect);
@@ -157,13 +168,6 @@ else{
   console.log("same");
 }
 
-
   });
-
-
-
-
-
-
 
 }
