@@ -2,11 +2,7 @@
 
 /********************************************************************
 
-Title of Project
-Author Name
-
-This is a template. Fill in the title, author, and this description
-to match your project! Write JavaScript to do amazing things below!
+By: Jessica Filippelli
 
 *********************************************************************/
 
@@ -76,6 +72,7 @@ function setup(){
 
   //here is where we find out the left and top of where the rock is
   //these two line are to help make the string (the OG starting point of the rock ) into a number
+  //sabine helped with finding the rock placement (parseFloat)
   let rockStartTopFloat = parseFloat(rockStartTop.substring(0,rockStartTop.length-2));
 
   let rockStartLeft = $('#rock').css("left");
@@ -96,7 +93,7 @@ function setup(){
   $("#correct").text(godQuestion[currentQuestionNum].correct);
   $("#incorrect").text(godQuestion[currentQuestionNum].incorrect);
 
-//WHEN WE CLICK ON THE CORRECT OPTION 
+//WHEN WE CLICK ON THE CORRECT OPTION
   $( "#correct" ).click(function() {
     event.preventDefault();
     console.log("clicked button");
