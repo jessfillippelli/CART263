@@ -62,7 +62,7 @@ correct: "No",
 incorrect: "Yes",
 
 }, {
-question:"SEVEN: Is King Sisyphus is the disk of the sun that rises everyday in the east and then sinks into the west?",
+question:"SEVEN: Is King Sisyphus the disk of the sun that rises everyday in the east and then sinks into the west?",
 correct: "Yes",
 incorrect: "No",
 
