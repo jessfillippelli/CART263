@@ -129,7 +129,7 @@ function setup(){
     top: `-=${yMoveAmount}`,
     left: `-=${xMoveAmount}`,
     //5000 is that it moves for 5 seconds
-  }, 50,
+  }, 5000,
   function() {
     // Animation complete.
     currentRockY-=yMoveAmount;
@@ -179,7 +179,7 @@ if(currentRockY!==rockStartTopFloat){
       top: `+=${yMoveAmount}`,
       left: `+=${xMoveAmount}`,
      //5000 is that it moves for 5 seconds
-   }, 50,
+   }, 5000,
    function() {
      // Animation complete.
      currentRockY+=yMoveAmount;
