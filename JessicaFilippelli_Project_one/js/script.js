@@ -13,6 +13,12 @@ let right = new Audio("assets/sounds/Splashing_Around.mp4");
 let currentRockY = 657;
 let currentRockX = 624.4;
 
+let rockStartLeftFloat;
+let rockStartTopFloat;
+
+let yMoveAmount = 36;
+let xMoveAmount = 50;
+
 let rockStart;
 
 let count=8;
@@ -76,10 +82,10 @@ function setup(){
   //here is where we find out the left and top of where the rock is
   //these two line are to help make the string (the OG starting point of the rock ) into a number
   //sabine helped with finding the rock placement (parseFloat)
-  let rockStartTopFloat = parseFloat(rockStartTop.substring(0,rockStartTop.length-2));
+   rockStartTopFloat = parseFloat(rockStartTop.substring(0,rockStartTop.length-2));
 
   let rockStartLeft = $('#rock').css("left");
-  let rockStartLeftFloat = parseFloat(rockStartLeft.substring(0,rockStartLeft.length-2));
+   rockStartLeftFloat = parseFloat(rockStartLeft.substring(0,rockStartLeft.length-2));
 
 //these guys are to make the current rock postion = the left and top so they are the same
   let currentRockX=rockStartLeftFloat;
@@ -120,18 +126,18 @@ function setup(){
   //rock moves UP when the answer is YES
     //got help from this link: https://api.jquery.com/animate/#animate-properties-duration-easing-complete
    $("#rock").animate({
-    top: "-=50",
-    left: "-=52",
+    top: `-=${yMoveAmount}`,
+    left: `-=${xMoveAmount}`,
     //5000 is that it moves for 5 seconds
   }, 50,
   function() {
     // Animation complete.
-    currentRockY-=50;
-    currentRockX-=50;
+    currentRockY-=yMoveAmount;
+    currentRockX-=xMoveAmount;
 
     //when rock is at the top is goes back to the start
     if(currentRockX < 74){
-       currentRockY = 657; currentRockX = 624.4;
+       currentRockY = rockStartTopFloat; currentRockX = rockStartLeftFloat;
       $('#rock').css({
         //MAKE THE VAR IN A STRING OF TEXT
         top:`${currentRockY}px`,
@@ -170,14 +176,14 @@ function setup(){
 // bascally if the rock  is where it stated when you started the game than it cant move down.
 if(currentRockY!==rockStartTopFloat){
     $("#rock").animate({
-      top: "+=50",
-      left: "+=50",
+      top: `+=${yMoveAmount}`,
+      left: `+=${xMoveAmount}`,
      //5000 is that it moves for 5 seconds
    }, 50,
    function() {
      // Animation complete.
-     currentRockY+=50;
-     currentRockX+=50;
+     currentRockY+=yMoveAmount;
+     currentRockX+=xMoveAmount;
 
 
    });
