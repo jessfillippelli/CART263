@@ -60,8 +60,8 @@ incorrect: "No",
 
 }, {
 question:"EIGHT: Did Sisyphus have 7 wives?",
-correct: "Yes",
-incorrect: "No",
+correct: "No",
+incorrect: "Yes",
 }
 
 ];
@@ -83,10 +83,12 @@ function setup(){
   let currentRockY= rockStartTopFloat;
 
   console.log(rockStartTop);
-  console.log(rockStartTopFloat);
+
 
   console.log(rockStartLeft);
-  console.log(rockStartLeftFloat);
+
+
+
 
   console.log("YOU WORKING?")
   $("#question").text(godQuestion[currentQuestionNum].question);
@@ -116,13 +118,17 @@ function setup(){
     //got help from this link: https://api.jquery.com/animate/#animate-properties-duration-easing-complete
    $("#rock").animate({
     top: "-=50",
-    left: "-=50",
+    left: "-=52",
     //5000 is that it moves for 5 seconds
   }, 5000,
   function() {
     // Animation complete.
     currentRockY-=50;
     currentRockX-=50;
+
+    console.log(currentRockY);
+    console.log(currentRockX);
+
   });
 
   });
@@ -158,6 +164,8 @@ if(currentRockY!==rockStartTopFloat){
      // Animation complete.
      currentRockY+=50;
      currentRockX+=50;
+
+
    });
 
 }
