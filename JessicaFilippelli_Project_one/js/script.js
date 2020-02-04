@@ -131,13 +131,14 @@ function setup(){
 
     //when rock is at the top is goes back to the start
     if(currentRockX < 74){
-       currentRockY.length;
-       currentRockX.length;
+       currentRockY = 657; currentRockX = 624.4;
       $('#rock').css({
-        top:"657px",
-        left:"624.4px"
+        //MAKE THE VAR IN A STRING OF TEXT
+        top:`${currentRockY}px`,
+        left:`${currentRockX}px`
       })
     }
+
 
     console.log(currentRockY);
     console.log(currentRockX);
