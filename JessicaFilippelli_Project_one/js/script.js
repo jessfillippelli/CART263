@@ -10,6 +10,9 @@ $(document).ready(setup);
 let wrong = new Audio("assets/sounds/Male_Laugh.mp3");
 let right = new Audio("assets/sounds/Splashing_Around.mp4");
 
+let currentRockY = 657;
+let currentRockX = 624.4;
+
 let rockStart;
 
 let count=8;
@@ -128,7 +131,8 @@ function setup(){
 
     //when rock is at the top is goes back to the start
     if(currentRockX < 74){
-       currentRockY = 657; currentRockX = 624.4;
+       currentRockY.length;
+       currentRockX.length;
       $('#rock').css({
         top:"657px",
         left:"624.4px"
