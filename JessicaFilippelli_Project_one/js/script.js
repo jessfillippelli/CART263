@@ -120,11 +120,20 @@ function setup(){
     top: "-=50",
     left: "-=52",
     //5000 is that it moves for 5 seconds
-  }, 5000,
+  }, 50,
   function() {
     // Animation complete.
     currentRockY-=50;
     currentRockX-=50;
+
+    //when rock is at the top is goes back to the start
+    if(currentRockX < 74){
+       currentRockY = 657; currentRockX = 624.4;
+      $('#rock').css({
+        top:"657px",
+        left:"624.4px"
+      })
+    }
 
     console.log(currentRockY);
     console.log(currentRockX);
@@ -159,7 +168,7 @@ if(currentRockY!==rockStartTopFloat){
       top: "+=50",
       left: "+=50",
      //5000 is that it moves for 5 seconds
-   }, 5000,
+   }, 50,
    function() {
      // Animation complete.
      currentRockY+=50;
@@ -175,4 +184,8 @@ else{
 
   });
 
-}
+
+
+
+
+} // end of set up
