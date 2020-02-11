@@ -21,5 +21,6 @@ $(document).on('click',talk)
 }
 
 function talk(){
-  responsiveVoice.speak("hello world");
+  //responsiveVoice.speak("Baby shark, doo doo doo doo doo doo");
+  responsiveVoice.speak("hello world", "UK English Male");
 }
