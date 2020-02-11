@@ -22,5 +22,11 @@ $(document).on('click',talk)
 
 function talk(){
   //responsiveVoice.speak("Baby shark, doo doo doo doo doo doo");
-  responsiveVoice.speak("hello world", "UK English Male");
+  responsiveVoice.speak("hello world", "UK English Male",{
+    pitch: 0
+  }
+
+
+
+);
 }
