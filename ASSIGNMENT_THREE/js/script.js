@@ -173,6 +173,30 @@ sayBackwards(correctAnimal);
    $('body').append($button);
  }
 
+
+ if (annyang) {
+   let commands = {
+     'i give up': function() {
+       //console.log("u working");
+       //pointto all guesses
+       $('.guess').each(checkAnswer);
+
+
+     }
+   };
+   annyang.addCommands(commands);
+   annyang.start();
+ }
+
+function checkAnswer(){
+//$("this").text();
+  if($("this").text() == correctAnimal){
+    $('this').css("background-color","green");
+     console.log("u working ");
+  }
+
+}
+
 function handler(){
 if ($(this).text() == correctAnimal){
      $('.guess').remove();
