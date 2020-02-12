@@ -202,10 +202,15 @@ sayBackwards(correctAnimal);
 
 
    let commandsThree = {
-     'i think it is': function() {
-    sayBackwards(correctAnimal);
+     'i think it is *animal': function(animal) {
+       if (animal == correctAnimal){
+         //$(this).css("background-color","red");
+       }
+    //sayBackwards(correctAnimal);
+     setTimeout(newRound, 1000);
      }
-   }; // end of let #2
+
+   }; // end of let #3
 
 
 
