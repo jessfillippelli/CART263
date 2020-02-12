@@ -201,11 +201,19 @@ sayBackwards(correctAnimal);
    }; // end of let #2
 
 
+   let commandsThree = {
+     'i think it is': function() {
+    sayBackwards(correctAnimal);
+     }
+   }; // end of let #2
 
 
-//need needs guys to work - every command needs one 
+
+
+//need needs guys to work - every command needs one
    annyang.addCommands(commands);
    annyang.addCommands(commandsTwo);
+    annyang.addCommands(commandsThree);
    annyang.start();
  }// end of annyang
 
