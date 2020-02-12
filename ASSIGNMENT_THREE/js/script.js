@@ -149,6 +149,7 @@ newRound();
 }
 
 function newRound(){
+  $(".guess").remove();
   answers = [];
   for (let i = 0; i < NUM_OPTIONS; i++) {
        let answer = animals[Math.floor(Math.random() * animals.length)];
@@ -158,6 +159,7 @@ function newRound(){
    correctAnimal = answers[Math.floor(Math.random() * answers.length)];
 
 sayBackwards(correctAnimal);
+
 
 
 
@@ -180,6 +182,7 @@ sayBackwards(correctAnimal);
        //console.log("u working");
        //pointto all guesses
        $('.guess').each(checkAnswer);
+       setTimeout(newRound, 1000);
 
 
      }
@@ -190,8 +193,8 @@ sayBackwards(correctAnimal);
 
 function checkAnswer(){
 //$("this").text();
-  if($("this").text() == correctAnimal){
-    $('this').css("background-color","green");
+  if($(this).text() == correctAnimal){
+    $(this).css("background-color","green");
      console.log("u working ");
   }
 
