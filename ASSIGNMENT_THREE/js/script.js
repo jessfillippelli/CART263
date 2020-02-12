@@ -175,6 +175,14 @@ sayBackwards(correctAnimal);
    $('body').append($button);
  }
 
+//say it again
+
+
+
+
+
+
+
 
  if (annyang) {
    let commands = {
@@ -183,13 +191,26 @@ sayBackwards(correctAnimal);
        //pointto all guesses
        $('.guess').each(checkAnswer);
        setTimeout(newRound, 1000);
-
-
      }
-   };
+   }; // end of let
+
+   let commandsTwo = {
+     'say it again': function() {
+    sayBackwards(correctAnimal);
+     }
+   }; // end of let #2
+
+
+
+
+//need needs guys to work - every command needs one 
    annyang.addCommands(commands);
+   annyang.addCommands(commandsTwo);
    annyang.start();
- }
+ }// end of annyang
+
+
+
 
 function checkAnswer(){
 //$("this").text();
@@ -207,7 +228,7 @@ if ($(this).text() == correctAnimal){
 
 }
 else ($('.guess').effect('shake'));
-//sayBackwards(correctAnimal);
+sayBackwards(correctAnimal);
 
 }
 
