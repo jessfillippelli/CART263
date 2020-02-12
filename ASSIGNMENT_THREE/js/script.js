@@ -203,10 +203,22 @@ sayBackwards(correctAnimal);
 
    let commandsThree = {
      'i think it is *animal': function(animal) {
-       if (animal == correctAnimal){
-         //$(this).css("background-color","red");
+       console.log("guess:: "+animal);
+
+       if (animal === correctAnimal){
+          console.log("correct:: "+animal);
+         $(".guess").each(function(index, value){
+          // console.log($(value).text());
+           if(correctAnimal ===$(value).text()){
+              $(value).css("background-color","red");
+
+           }
+         });
+        // console.log(this);
+
        }
-    //sayBackwards(correctAnimal);
+
+
      setTimeout(newRound, 1000);
      }
 
