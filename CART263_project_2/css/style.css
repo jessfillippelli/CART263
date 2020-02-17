@@ -1,0 +1,46 @@
+body {
+  background: pink;
+}
+
+.photo_style{
+  width:20px;
+  height: 20px;
+  position: absolute;
+  left:10px;
+  top:10px;
+}
+#wrapper{
+
+/* position: relative; */
+background: black;
+border: 1px solid white;
+margin: 0 auto;
+
+width: 1500px;
+height: 800px;
+}
+
+#container{
+margin-top: 20em;
+
+
+
+}
+.imagestoclick{
+/* margin-left: 30vh;
+margin-top: 73vh; */
+position: relative;
+}
+
+ #one{
+  margin-left: 5%;
+  margin-right: 5%;
+}
+ #two{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+ #three{
+    margin-left: 5%;
+    margin-right: 5%;
+}
