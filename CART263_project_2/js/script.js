@@ -9,7 +9,7 @@ class Photo{
 //create element
     this.photoBox = document.createElement("img");
     this.photoBox.src = this.imageSrc;
-    document.getElementById("container").appendChild(this.photoBox);
+    document.getElementById("wrapper").appendChild(this.photoBox);
 //over write the style
     this.photoBox.className = "photo_style";
     this.photoBox.style.left = this.x+"px";
@@ -84,8 +84,8 @@ changeImage();
 function changeImage(){
 
   let index = Math.floor(Math.random()* imgArrayone.length);
-  let x = Math.floor(Math.random()*800);
-   let y = Math.floor(Math.random()*500);
+  let x = Math.floor(Math.random()*2000);
+   let y = Math.floor(Math.random()*800);
   let imageSrc = imgArrayone[index];
   console.log("clicked "+imageSrc);
   photoArray.push(new Photo(x,y,imageSrc));
