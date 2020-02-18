@@ -186,9 +186,10 @@ function addButton(label){
 if (annyang) {
   let commands = {
     'i give up': function() {
-      //console.log("u working");
-      //pointto all guesses
+      //point to all guesses
       $('.guess').each(checkAnswer);
+      score = 0;
+      resetScore();
       setTimeout(newRound, 1000);
     }
   }; // end of let
@@ -236,7 +237,7 @@ if (annyang) {
 function checkAnswer(){
   //$("this").text();
   if($(this).text() == correctAnimal){
-    $(this).css("background-color","green");
+    $(this).css("background-color","red");
     console.log("u working ");
   }
 
@@ -250,6 +251,7 @@ function handler(){
 
   }
   else ($('.guess').effect('shake'));
+  resetScore();
   sayBackwards(correctAnimal);
 
 }
