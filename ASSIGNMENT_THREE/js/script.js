@@ -150,10 +150,7 @@ function setup(){
 }
 
 
-function showScore(){
-  let $score = $('#score');
-  $score.text ("SCORE " + score);
-}
+
 
 function newRound(){
   $(".guess").remove();
@@ -204,13 +201,12 @@ if (annyang) {
   let commandsThree = {
     'i think it is *animal': function(animal) {
       console.log("guess:: "+animal);
-
       if (animal === correctAnimal){
         console.log("correct:: "+animal);
-        $(".guess").each(function(index, value){
+        $(".guess").each(function(index){
           // console.log($(value).text());
-          if(correctAnimal ===$(value).text()){
-            $(value).css("background-color","green");
+          if(correctAnimal ===$(this).text()){
+            $(this).css("background-color","green");
             updateScore();
           }
         });
@@ -231,12 +227,11 @@ if (annyang) {
 
 
 function checkAnswer(){
-  //$("this").text();
+  console.log("u working ");
   if($(this).text() == correctAnimal){
     $(this).css("background-color","green");
-    console.log("u working ");
-  }
 
+  }
 }
 
 function handler(){
@@ -266,4 +261,8 @@ function sayBackwards(text){
   let options = {rate: 1, pitch:1 };
 
   responsiveVoice.speak(backwardsText, "UK English Male", options);
+}
+function showScore(){
+  let $score = $('#score');
+  $score.text ("SCORE " + score);
 }
