@@ -148,6 +148,12 @@ function setup(){
 newRound();
 }
 
+
+function showScore(){
+let $score = $('#score');
+
+}
+
 function newRound(){
   answers = [];
   for (let i = 0; i < NUM_OPTIONS; i++) {
