@@ -139,7 +139,7 @@ let animals = [    "aardvark",
 
 let answers = [];
 const NUM_OPTIONS = 5;
-
+let score = 0;
 
 let correctAnimal;
 $(document).ready(setup);
@@ -153,9 +153,15 @@ showScore();
 function showScore(){
 let $score = $('#score');
 $score.text ("SCORE " + score);
-$score.appendTo("body");
-
 }
+
+
+function updateScore(){
+showScore();
+score++;
+}
+
+
 
 function newRound(){
   $(".guess").remove();
@@ -214,7 +220,7 @@ sayBackwards(correctAnimal);
 
            }
          });
-        // console.log(this);
+
 
        }
 
@@ -227,7 +233,7 @@ sayBackwards(correctAnimal);
 //need needs guys to work - every command needs one
    annyang.addCommands(commands);
    annyang.addCommands(commandsTwo);
-  annyang.addCommands(commandsThree);
+   annyang.addCommands(commandsThree);
    annyang.start();
  }// end of annyang
 
