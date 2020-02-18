@@ -146,6 +146,15 @@ $(document).ready(setup);
 
 function setup(){
 newRound();
+showScore();
+}
+
+
+function showScore(){
+let $score = $('#score');
+$score.text ("SCORE " + score);
+$score.appendTo("body");
+
 }
 
 function newRound(){
@@ -160,9 +169,6 @@ function newRound(){
 
 sayBackwards(correctAnimal);
 
-
-
-
 } // end
 
 
@@ -176,12 +182,6 @@ sayBackwards(correctAnimal);
  }
 
 //say it again
-
-
-
-
-
-
 
 
  if (annyang) {
@@ -224,13 +224,10 @@ sayBackwards(correctAnimal);
 
    }; // end of let #3
 
-
-
-
 //need needs guys to work - every command needs one
    annyang.addCommands(commands);
    annyang.addCommands(commandsTwo);
-    annyang.addCommands(commandsThree);
+  annyang.addCommands(commandsThree);
    annyang.start();
  }// end of annyang
 
