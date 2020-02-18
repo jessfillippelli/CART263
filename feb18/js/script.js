@@ -38,14 +38,33 @@
 // }
 
 // EX 4
-let whiteNoise = new Pizzicato.Sound(noiseGenerator);
+// let whiteNoise = new Pizzicato.Sound(noiseGenerator);
+// function setup() {}
+// function mousePressed() {
+//   whiteNoise.play();
+// }
+// function noiseGenerator(e) {
+//   let output = e.outputBuffer.getChannelData(0);
+//   for (let i = 0; i < e.outputBuffer.length; i++) {
+//     output[i] = Math.random();
+//   }
+// }
+
+
+//FADE IN AND OUT
+let sineWave = new Pizzicato.Sound({
+  source: 'wave',
+  options: {
+    frequency: 440,
+    attack: 2,
+    release: 2
+  }
+});
 function setup() {}
 function mousePressed() {
-  whiteNoise.play();
+  sineWave.play();
+  setTimeout(stopSineWave, 2000);
 }
-function noiseGenerator(e) {
-  let output = e.outputBuffer.getChannelData(0);
-  for (let i = 0; i < e.outputBuffer.length; i++) {
-    output[i] = Math.random();
-  }
+function stopSineWave() {
+  sineWave.stop();
 }
