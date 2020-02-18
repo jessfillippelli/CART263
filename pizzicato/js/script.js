@@ -10,11 +10,26 @@ const frequencies = [
 698.46
 ];
 
-
+let pattern = [
+"x",
+"",
+"o",
+"*",
+"x",
+"",
+"o+",
+"*"
+];
+let beat = 0;
 let notes =[];
 let synth = new Pizzicato.Sound({
   source: 'wave'
 });
+
+
+// let x = kick;
+// let o = snare;
+// let * = hihat;
 
 //sound files
 let kick = new Pizzicato.Sound('./assets/sounds/kick.wav');
