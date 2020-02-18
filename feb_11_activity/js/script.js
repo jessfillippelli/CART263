@@ -139,18 +139,21 @@ let animals = [    "aardvark",
 
 let answers = [];
 const NUM_OPTIONS = 5;
-
+let score = 0;
 
 let correctAnimal;
 $(document).ready(setup);
 
 function setup(){
 newRound();
+showScore();
 }
 
 
 function showScore(){
 let $score = $('#score');
+$score.text ("SCORE " + score);
+$score.appendTo("body");
 
 }
 
