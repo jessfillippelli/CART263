@@ -163,7 +163,7 @@ function newRound(){
   correctAnimal = answers[Math.floor(Math.random() * answers.length)];
 
   sayBackwards(correctAnimal);
-  updateScore();
+  //updateScore();
 
 } // end
 
@@ -201,15 +201,20 @@ if (annyang) {
   let commandsThree = {
     'i think it is *animal': function(animal) {
       console.log("guess:: "+animal);
-      if (animal === correctAnimal){
+      if (animal.toLowerCase() === correctAnimal.toLowerCase()){
         console.log("correct:: "+animal);
         $(".guess").each(function(index){
           // console.log($(value).text());
-          if(correctAnimal ===$(this).text()){
+          let temp = $(this).text();
+          if(correctAnimal.toLowerCase() ===temp.toLowerCase()){
             $(this).css("background-color","green");
             updateScore();
           }
         });
+      } // correct
+      //incorrect
+      else{
+        resetScore();
       }
       setTimeout(newRound, 1000);
     }
@@ -249,12 +254,15 @@ function handler(){
   }
 }
 function updateScore(){
+    score++;
   showScore();
-  score++;
+
 }
+
 
 function resetScore(){
   score = 0;
+  showScore();
 }
 function sayBackwards(text){
   let backwardsText = text.split('').reverse().join('');
