@@ -36,7 +36,19 @@ let kick = new Pizzicato.Sound('./assets/sounds/kick.wav');
 let snare = new Pizzicato.Sound('./assets/sounds/snare.wav');
 let hihat = new Pizzicato.Sound('./assets/sounds/hihat.wav');
 
-
+function playDrum() {
+  let symbols = pattern[beat];
+  if (symbols.includes('x')) {
+    kick.play();
+  }
+  if (symbols.includes('o')) {
+    snare.play();
+  }
+  if (symbols.includes('*')) {
+    hihat.play();
+  }
+  beat = (beat + 1) % pattern.length;
+}
 function preload() {
 
 }
@@ -44,9 +56,9 @@ function preload() {
 function setup() {
 }
 
-function mousePressed(){
-    setInterval(playNote, 500);
-    console.log("hi");
+function mousePressed() {
+  setInterval(playNote,500);
+  setInterval(playDrum,250);
 }
 
 function playNote(){
