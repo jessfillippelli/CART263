@@ -49,6 +49,13 @@ function playDrum() {
   }
   beat = (beat + 1) % pattern.length;
 }
+beat++;
+if (beat >= pattern.length) {
+ beat = 0;
+}
+
+
+
 function preload() {
 
 }
