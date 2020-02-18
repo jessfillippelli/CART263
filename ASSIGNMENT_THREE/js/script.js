@@ -210,15 +210,11 @@ if (annyang) {
         $(".guess").each(function(index, value){
           // console.log($(value).text());
           if(correctAnimal ===$(value).text()){
-            $(value).css("background-color","red");
+            $(value).css("background-color","green");
             updateScore();
           }
         });
-
-
       }
-
-
       setTimeout(newRound, 1000);
     }
 
@@ -237,7 +233,7 @@ if (annyang) {
 function checkAnswer(){
   //$("this").text();
   if($(this).text() == correctAnimal){
-    $(this).css("background-color","red");
+    $(this).css("background-color","green");
     console.log("u working ");
   }
 
@@ -250,12 +246,13 @@ function handler(){
 
 
   }
-  else ($('.guess').effect('shake'));
-  resetScore();
-  sayBackwards(correctAnimal);
-
+  else {
+    $('.guess').effect('shake');
+    sayBackwards(correctAnimal);
+    score = 0;
+    resetScore();
+  }
 }
-
 function updateScore(){
   showScore();
   score++;
