@@ -83,22 +83,21 @@ function setup() {
 
   $( "#one" ).click(function() {
     changeImage();
+    speak()
     responsiveVoice.speak("NEW POKEMON CARDS BATTLE! EVERY SWORD AND SHIELD PRODUCT OPENING! BEST PRERELEASE KIT BATTLE!", "UK English Male");
 
- //    //, {
- //   onstart: showSpeaking,
- //   onend: hideSpeaking
- // });
   }); // END OF ONE
 
 
   $( "#two" ).click(function() {
     changeMakeup()
+    speak()
   });
 
 
   $( "#three" ).click(function() {
     changeImage();
+    speak()
   });
 
   function changeImage(){
@@ -125,17 +124,14 @@ function setup() {
 } // end of function
 
 function speak(){
-
-
 if (annyang) {
   let commands = {
     'stop the madness': function() {
       //point to all guesses
-      $('.one').each(changeImage);
-      $('.two').each(changeMakeup);
-      // score = 0;
-      // resetScore();
-      // setTimeout(newRound, 1000);
+      $('#one').each(changeImage);
+      $('#two').each(changeMakeup);
+      $('#one').remove();
+      $('#two').remove();
     }
   };
 annyang.addCommands(commands);
