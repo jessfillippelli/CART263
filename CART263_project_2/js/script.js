@@ -62,12 +62,6 @@ let imgArraytwo =[
   'assets/images/makeup_16.jpg'
 ];
 
-
-
-
-
-
-
 let $one;
 let $two;
 let $three;
@@ -78,6 +72,8 @@ let img = 0;
 let photoArray =[];
 let photoArraytwo =[];
 
+$(document).ready(setup);
+let speech = ["hello people of planent ear"]
 function setup() {
 
   let imageIndex = 1;
@@ -121,3 +117,20 @@ function setup() {
 
 
 } // end of function
+
+// function speak(){
+//
+//
+// if (annyang) {
+//   let commands = {
+//     'i give up': function() {
+//       //point to all guesses
+//       $('.guess').each(checkAnswer);
+//       // score = 0;
+//       // resetScore();
+//       // setTimeout(newRound, 1000);
+//     }
+//   };
+// annyang.addCommands(commands);
+// } // end of annyang
+// }// end of speak function
