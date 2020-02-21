@@ -44,7 +44,7 @@ let imgArrayone =[
 ];
 
 let imgArraytwo =[
-  'assets/images/makeup_1.jpg',
+  'assets/images/m1.png',
   'assets/images/makeup_2.jpg',
   'assets/images/makeup_3.jpg',
   'assets/images/makeup_4.jpg',
