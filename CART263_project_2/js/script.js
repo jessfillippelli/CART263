@@ -128,8 +128,8 @@ if (annyang) {
   let commands = {
     'stop the madness': function() {
       //point to all guesses
-      $('#one').each(changeImage);
-      $('#two').each(changeMakeup);
+      //$('#one').each(YoutubeZone);
+      //$('#two').each(changeMakeup);
       $('#one').remove();
       $('#two').remove();
     }
@@ -140,10 +140,9 @@ annyang.start();
 }// end of speak function
 
 
-//
-// function YoutubeZone(){
-//   console.log("u working ");
-//
-//
-//   }
-// }
+//what happens when you say 'stop the madness'
+function YoutubeZone(){
+  console.log("u working ");
+
+
+  }
