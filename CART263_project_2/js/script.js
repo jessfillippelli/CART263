@@ -73,7 +73,7 @@ let photoArray =[];
 let photoArraytwo =[];
 
 $(document).ready(setup);
-let speech = ["hello people of planent ear"]
+let speech = []
 function setup() {
 
   let imageIndex = 1;
@@ -83,6 +83,12 @@ function setup() {
 
   $( "#one" ).click(function() {
     changeImage();
+    responsiveVoice.speak("NEW POKEMON CARDS BATTLE! EVERY SWORD AND SHIELD PRODUCT OPENING! BEST PRERELEASE KIT BATTLE!", "UK English Male");
+
+ //    //, {
+ //   onstart: showSpeaking,
+ //   onend: hideSpeaking
+ // });
   }); // END OF ONE
 
 
@@ -118,19 +124,21 @@ function setup() {
 
 } // end of function
 
-// function speak(){
-//
-//
-// if (annyang) {
-//   let commands = {
-//     'i give up': function() {
-//       //point to all guesses
-//       $('.guess').each(checkAnswer);
-//       // score = 0;
-//       // resetScore();
-//       // setTimeout(newRound, 1000);
-//     }
-//   };
-// annyang.addCommands(commands);
-// } // end of annyang
-// }// end of speak function
+function speak(){
+
+
+if (annyang) {
+  let commands = {
+    'stop the madness': function() {
+      //point to all guesses
+      $('.one').each(changeImage);
+      $('.two').each(changeMakeup);
+      // score = 0;
+      // resetScore();
+      // setTimeout(newRound, 1000);
+    }
+  };
+annyang.addCommands(commands);
+annyang.start();
+} // end of annyang
+}// end of speak function
