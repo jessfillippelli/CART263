@@ -21,8 +21,8 @@ let imgArrayone =[
 
 //makeup array
 let imgArraytwo =[
-  'assets/images/m1.png',
   'assets/images/makeup_1.jpg',
+  'assets/images/makeup_2.jpg',
   'assets/images/makeup_3.jpg',
   'assets/images/makeup_4.jpg',
   'assets/images/makeup_5.jpg',
