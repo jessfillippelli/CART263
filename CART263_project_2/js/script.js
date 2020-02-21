@@ -83,7 +83,7 @@ function setup() {
 
   $( "#one" ).click(function() {
     changeImage();
-    speak()
+    // speak()
     responsiveVoice.speak("NEW POKEMON CARDS BATTLE! EVERY SWORD AND SHIELD PRODUCT OPENING! BEST PRERELEASE KIT BATTLE!", "UK English Male");
 
   }); // END OF ONE
@@ -91,13 +91,13 @@ function setup() {
 
   $( "#two" ).click(function() {
     changeMakeup()
-    speak()
+    // speak();
   });
 
 
   $( "#three" ).click(function() {
     changeImage();
-    speak()
+    // speak();
   });
 
   function changeImage(){
@@ -138,3 +138,12 @@ annyang.addCommands(commands);
 annyang.start();
 } // end of annyang
 }// end of speak function
+
+
+//
+// function YoutubeZone(){
+//   console.log("u working ");
+//
+//
+//   }
+// }
