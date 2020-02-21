@@ -1,4 +1,4 @@
-
+//kids array
 let imgArrayone =[
   'assets/images/1.png',
   'assets/images/2.png',
@@ -18,6 +18,8 @@ let imgArrayone =[
   'assets/images/16.png'
 ];
 
+
+//makeup array
 let imgArraytwo =[
   'assets/images/m1.png',
   'assets/images/makeup_1.jpg',
