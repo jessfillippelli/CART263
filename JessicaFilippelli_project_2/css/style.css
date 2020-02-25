@@ -46,3 +46,11 @@ position: relative;
     margin-left: 5%;
     margin-right: 5%;
 }
+
+
+
+/* text style */
+p{
+  text-align: center;
+  font-family: 'Roboto';
+}
