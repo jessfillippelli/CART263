@@ -27,6 +27,7 @@ $(document).ready(setup);
 
 const MAX_PHOTOS = 16;
 const MAX_PHOTOSTWO = 16;
+const MAX_PHOTOSTHREE = 16;
 
 
 
@@ -40,6 +41,7 @@ let img = 0;
 
 let photoArray =[];
 let photoArraytwo =[];
+let photoArraythree =[];
 
 $(document).ready(setup);
 let speech = []
@@ -60,13 +62,13 @@ function setup() {
 
 
   $( "#two" ).click(function() {
-    changeMakeup()
+    changeMakeup();
     // speak();
   });
 
 
   $( "#three" ).click(function() {
-    changeImage();
+    changeLearn();
     // speak();
   });
 
@@ -89,10 +91,19 @@ function setup() {
     photoArraytwo.push(new Photo(x,y,imageSrc));
 
   }
+  function changeLearn(){
+    let index = Math.floor(Math.random()* imgArraythree.length);
+    let x = Math.floor(Math.random()*2000);
+    let y = Math.floor(Math.random()*800);
+    let imageSrc = imgArraythree[index];
+    console.log("clicked "+imageSrc);
+    photoArraythree.push(new Photo(x,y,imageSrc));
 
+  }
 
-} // end of function
+} // end of setup function
 
+//stop the madness would clear all the images that were clicked on to the screen.
 function speak(){
 if (annyang) {
   let commands = {
