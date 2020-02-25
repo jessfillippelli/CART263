@@ -38,6 +38,7 @@ let photoArraythree =[];
 $(document).ready(setup);
 let speech = []
 function setup() {
+  speak();
   $one = $("#one");
   $two = $("#two");
   $three = $("#three");
@@ -45,7 +46,7 @@ function setup() {
   $( "#one" ).click(function() {
     changeImage();
     //  speak()
-    responsiveVoice.speak("NEW POKEMON CARDS BATTLE! EVERY SWORD AND SHIELD PRODUCT OPENING! BEST PRERELEASE KIT BATTLE!", "UK English Male");
+    responsiveVoice.speak("NEW POKEMON CARDS BATTLE. EVERY SWORD AND SHIELD PRODUCT OPENING. BEST PRERELEASE KIT BATTLE", "UK English Male");
 
   }); // END OF ONE
 
@@ -53,12 +54,14 @@ function setup() {
   $( "#two" ).click(function() {
     changeMakeup();
     // speak();
+    responsiveVoice.speak("I'VE NEVER TRIED ANYTHING QUITE LIKE THIS. BITE CHANGE MAKER FOUNDATION AND POWDER REVIEW AND WEAR TESTS", "UK English Female");
   });
 
 
   $( "#three" ).click(function() {
     changeLearn();
     // speak();
+    responsiveVoice.speak("College Algebra Introduction Review. Basic Overview, Study Guide, Examples and Practice Problems", "UK English Female");
   });
 
   function changeImage(){
@@ -109,9 +112,11 @@ function speak(){
         //point to all guesses
         //$('#one').each(YoutubeZone);
         //$('#two').each(changeMakeup);
-        $('#one').remove();
+        console.log("test");
+      /*  $('#one').remove();
         $('#two').remove();
-        $('#three').remove();
+        $('#three').remove();*/
+          $('.photo_style').remove();
       }
     };
     annyang.addCommands(commands);
