@@ -20,17 +20,9 @@ class Photo{
   }
 } //end of photo class
 
-
-$(document).ready(setup);
-
-
-
 const MAX_PHOTOS = 16;
 const MAX_PHOTOSTWO = 16;
 const MAX_PHOTOSTHREE = 16;
-
-
-
 
 let $one;
 let $two;
@@ -46,16 +38,13 @@ let photoArraythree =[];
 $(document).ready(setup);
 let speech = []
 function setup() {
-
-  let imageIndex = 1;
-  let imageIndextwo = 1;
   $one = $("#one");
   $two = $("#two");
   $three = $("#three");
 
   $( "#one" ).click(function() {
     changeImage();
-    // speak()
+    //  speak()
     responsiveVoice.speak("NEW POKEMON CARDS BATTLE! EVERY SWORD AND SHIELD PRODUCT OPENING! BEST PRERELEASE KIT BATTLE!", "UK English Male");
 
   }); // END OF ONE
@@ -73,51 +62,60 @@ function setup() {
   });
 
   function changeImage(){
-    let index = Math.floor(Math.random()* imgArrayone.length);
-    let x = Math.floor(Math.random()*2000);
-    let y = Math.floor(Math.random()*800);
-    let imageSrc = imgArrayone[index];
-    console.log("clicked "+imageSrc);
-    photoArray.push(new Photo(x,y,imageSrc));
+    //randomtimes is every time you click one, two or three images will appear
+    let randomTimes =  Math.floor(Math.random()* 3)+1;
+    for(let i =0; i<randomTimes; i++){
+      let index = Math.floor(Math.random()* imgArrayone.length);
+      let x = Math.floor(Math.random()*2000);
+      let y = Math.floor(Math.random()*800);
+      let imageSrc = imgArrayone[index];
+      console.log("clicked "+imageSrc);
+      photoArray.push(new Photo(x,y,imageSrc));
+    }
 
   }
 
   function changeMakeup(){
-    let index = Math.floor(Math.random()* imgArraytwo.length);
-    let x = Math.floor(Math.random()*2000);
-    let y = Math.floor(Math.random()*800);
-    let imageSrc = imgArraytwo[index];
-    console.log("clicked "+imageSrc);
-    photoArraytwo.push(new Photo(x,y,imageSrc));
-
+    let randomTimes =  Math.floor(Math.random()* 3)+1;
+    for(let i =0; i<randomTimes; i++){
+      let index = Math.floor(Math.random()* imgArraytwo.length);
+      let x = Math.floor(Math.random()*2000);
+      let y = Math.floor(Math.random()*800);
+      let imageSrc = imgArraytwo[index];
+      console.log("clicked "+imageSrc);
+      photoArraytwo.push(new Photo(x,y,imageSrc));
+    }
   }
-  function changeLearn(){
-    let index = Math.floor(Math.random()* imgArraythree.length);
-    let x = Math.floor(Math.random()*2000);
-    let y = Math.floor(Math.random()*800);
-    let imageSrc = imgArraythree[index];
-    console.log("clicked "+imageSrc);
-    photoArraythree.push(new Photo(x,y,imageSrc));
 
+  function changeLearn(){
+    let randomTimes =  Math.floor(Math.random()* 3)+1;
+    for(let i =0; i<randomTimes; i++){
+      let index = Math.floor(Math.random()* imgArraythree.length);
+      let x = Math.floor(Math.random()*2000);
+      let y = Math.floor(Math.random()*800);
+      let imageSrc = imgArraythree[index];
+      console.log("clicked "+imageSrc);
+      photoArraythree.push(new Photo(x,y,imageSrc));
+    }
   }
 
 } // end of setup function
 
 //stop the madness would clear all the images that were clicked on to the screen.
 function speak(){
-if (annyang) {
-  let commands = {
-    'stop the madness': function() {
-      //point to all guesses
-      //$('#one').each(YoutubeZone);
-      //$('#two').each(changeMakeup);
-      $('#one').remove();
-      $('#two').remove();
-    }
-  };
-annyang.addCommands(commands);
-annyang.start();
-} // end of annyang
+  if (annyang) {
+    let commands = {
+      'stop the madness': function() {
+        //point to all guesses
+        //$('#one').each(YoutubeZone);
+        //$('#two').each(changeMakeup);
+        $('#one').remove();
+        $('#two').remove();
+      }
+    };
+    annyang.addCommands(commands);
+    annyang.start();
+  } // end of annyang
 }// end of speak function
 
 
@@ -126,4 +124,4 @@ function YoutubeZone(){
   console.log("u working ");
 
 
-  }
+}

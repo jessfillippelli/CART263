@@ -11,40 +11,43 @@ body {
 }
 #wrapper{
 
-/* position: relative; */
-background: yellow;
-border: 1px solid white;
-margin: 0 auto;
+  /* position: relative; */
+  background: yellow;
+  border: 1px solid white;
+  margin: 0 auto;
 
-width: 1500px;
-height: 800px;
+  width: 1500px;
+  height: 800px;
 }
 
-#container{
-margin-top: 20em;
-background: white;
-margin-left: 20em;
 
-
-
-}
 .imagestoclick{
-/* margin-left: 30vh;
-margin-top: 73vh; */
-position: relative;
+  margin-left: 30vh;
+  margin-top: 30vh;
+  position: relative;
+  width:100vh;
+  height:20vh;
+  background: red;
+
 }
 
- #one{
+#one{
   margin-left: 5%;
   margin-right: 5%;
+  position:absolute;
+  z-index:1000;
 }
- #two{
-    margin-left: 5%;
-    margin-right: 5%;
+#two{
+  margin-left: 35%;
+  margin-right: 5%;
+  position:absolute;
+  z-index:1000;
 }
- #three{
-    margin-left: 5%;
-    margin-right: 5%;
+#three{
+  margin-left: 65%;
+  margin-right: 5%;
+  position:absolute;
+  z-index:1000;
 }
 
 
@@ -53,4 +56,8 @@ position: relative;
 p{
   text-align: center;
   font-family: 'Roboto';
+  /* margin-left: 35%;
+  margin-right: 5%;
+  position:absolute;
+  z-index:1000; */
 }
