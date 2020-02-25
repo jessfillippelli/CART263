@@ -111,6 +111,7 @@ function speak(){
         //$('#two').each(changeMakeup);
         $('#one').remove();
         $('#two').remove();
+        $('#three').remove();
       }
     };
     annyang.addCommands(commands);
@@ -120,8 +121,8 @@ function speak(){
 
 
 //what happens when you say 'stop the madness'
-function YoutubeZone(){
-  console.log("u working ");
-
-
-}
+// function YoutubeZone(){
+//   console.log("u working ");
+//
+//
+// }
