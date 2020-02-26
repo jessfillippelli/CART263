@@ -42,10 +42,10 @@ function setup() {
   $one = $("#one");
   $two = $("#two");
   $three = $("#three");
+  $yellow = $("#yellow");
 
   $( "#one" ).click(function() {
     changeImage();
-    //  speak()
     responsiveVoice.speak("NEW POKEMON CARDS BATTLE. EVERY SWORD AND SHIELD PRODUCT OPENING. BEST PRERELEASE KIT BATTLE", "UK English Male");
 
   }); // END OF ONE
@@ -53,20 +53,23 @@ function setup() {
 
   $( "#two" ).click(function() {
     changeMakeup();
-    // speak();
     responsiveVoice.speak("I'VE NEVER TRIED ANYTHING QUITE LIKE THIS. BITE CHANGE MAKER FOUNDATION AND POWDER REVIEW AND WEAR TESTS", "UK English Female");
   });
 
 
   $( "#three" ).click(function() {
     changeLearn();
-    // speak();
     responsiveVoice.speak("College Algebra Introduction Review. Basic Overview, Study Guide, Examples and Practice Problems", "UK English Female");
   });
 
+  $( "#yellow" ).click(function() {
+    responsiveVoice.speak("Youtube madness", "UK English Female");
+  });
+
+
   function changeImage(){
     //randomtimes is every time you click one, two or three images will appear
-    let randomTimes =  Math.floor(Math.random()* 3)+1;
+    let randomTimes =  Math.floor(Math.random()* 10)+1;
     for(let i =0; i<randomTimes; i++){
       let index = Math.floor(Math.random()* imgArrayone.length);
       let x = Math.floor(Math.random()*2000);
@@ -79,7 +82,7 @@ function setup() {
   }
 
   function changeMakeup(){
-    let randomTimes =  Math.floor(Math.random()* 3)+1;
+    let randomTimes =  Math.floor(Math.random()* 10)+1;
     for(let i =0; i<randomTimes; i++){
       let index = Math.floor(Math.random()* imgArraytwo.length);
       let x = Math.floor(Math.random()*2000);
@@ -91,7 +94,7 @@ function setup() {
   }
 
   function changeLearn(){
-    let randomTimes =  Math.floor(Math.random()* 3)+1;
+    let randomTimes =  Math.floor(Math.random()* 10)+1;
     for(let i =0; i<randomTimes; i++){
       let index = Math.floor(Math.random()* imgArraythree.length);
       let x = Math.floor(Math.random()*2000);
