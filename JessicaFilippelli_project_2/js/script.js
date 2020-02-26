@@ -1,11 +1,11 @@
 "use strict";
 
+//By: Jessica Filippelli
+
 class Photo{
   constructor(x,y,imageSrc){
     this.x = x;
     this.y = y;
-    // this.w = w;
-    // this.h = h;
     this.imageSrc = imageSrc;
 
     //create element
@@ -24,10 +24,9 @@ const MAX_PHOTOS = 16;
 const MAX_PHOTOSTWO = 16;
 const MAX_PHOTOSTHREE = 16;
 
-let $one;
-let $two;
-let $three;
-
+let $kids;
+let $makeup;
+let $learn;
 
 let img = 0;
 
@@ -39,33 +38,39 @@ $(document).ready(setup);
 let speech = []
 function setup() {
   speak();
-  $one = $("#one");
-  $two = $("#two");
-  $three = $("#three");
-  $yellow = $("#yellow");
+  $kids = $("#kids");
+  $makeup = $("#makeup");
+  $learn = $("#learn");
 
-  $( "#one" ).click(function() {
+//when you click on one of the three clowns
+  $( "#kids" ).click(function() {
     changeImage();
     responsiveVoice.speak("NEW POKEMON CARDS BATTLE. EVERY SWORD AND SHIELD PRODUCT OPENING. BEST PRERELEASE KIT BATTLE", "UK English Male");
 
-  }); // END OF ONE
+  }); // END OF kids
 
 
-  $( "#two" ).click(function() {
+  $( "#makeup" ).click(function() {
     changeMakeup();
     responsiveVoice.speak("I'VE NEVER TRIED ANYTHING QUITE LIKE THIS. BITE CHANGE MAKER FOUNDATION AND POWDER REVIEW AND WEAR TESTS", "UK English Female");
   });
 
 
-  $( "#three" ).click(function() {
+  $( "#learn" ).click(function() {
     changeLearn();
     responsiveVoice.speak("College Algebra Introduction Review. Basic Overview, Study Guide, Examples and Practice Problems", "UK English Female");
   });
 
-  $( "#yellow" ).click(function() {
+//when you click on BG is says the title
+  $("#container").click(function() {
+    console.log("clicke yellow")
     responsiveVoice.speak("Youtube madness", "UK English Female");
   });
 
+  $("#wrapper").click(function() {
+    console.log("clicke yellow")
+    responsiveVoice.speak("Youtube madness", "UK English Female");
+  });
 
   function changeImage(){
     //randomtimes is every time you click one, two or three images will appear
@@ -112,25 +117,13 @@ function speak(){
   if (annyang) {
     let commands = {
       'stop the madness': function() {
-        //point to all guesses
-        //$('#one').each(YoutubeZone);
-        //$('#two').each(changeMakeup);
+
         console.log("test");
-      /*  $('#one').remove();
-        $('#two').remove();
-        $('#three').remove();*/
-          $('.photo_style').remove();
+
+        $('.photo_style').remove();
       }
     };
     annyang.addCommands(commands);
     annyang.start();
   } // end of annyang
 }// end of speak function
-
-
-//what happens when you say 'stop the madness'
-// function YoutubeZone(){
-//   console.log("u working ");
-//
-//
-// }
