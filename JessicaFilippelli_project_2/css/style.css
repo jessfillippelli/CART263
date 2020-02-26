@@ -50,7 +50,12 @@ body {
   z-index:1000;
 }
 
-
+#text{
+  margin-left: 30%;
+  margin-right: 10%;
+  position:absolute;
+  z-index:1000;
+}
 
 /* text style */
 p{
