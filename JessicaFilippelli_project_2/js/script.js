@@ -48,6 +48,7 @@ function setup() {
 
 //when you click on one of the three clowns
   $( "#kids" ).click(function() {
+    $("#kids").effect('shake');
     changeImage();
     responsiveVoice.speak("NEW POKEMON CARDS BATTLE. EVERY SWORD AND SHIELD PRODUCT OPENING. BEST PRERELEASE KIT BATTLE", "UK English Male");
 
@@ -55,12 +56,14 @@ function setup() {
 
 
   $( "#makeup" ).click(function() {
+      $("#makeup").effect('shake');
     changeMakeup();
     responsiveVoice.speak("I'VE NEVER TRIED ANYTHING QUITE LIKE THIS. BITE CHANGE MAKER FOUNDATION AND POWDER REVIEW AND WEAR TESTS", "UK English Female");
   });
 
 
   $( "#learn" ).click(function() {
+      $("#learn").effect('shake');
     changeLearn();
     responsiveVoice.speak("College Algebra Introduction Review. Basic Overview, Study Guide, Examples and Practice Problems", "UK English Female");
   });
@@ -138,6 +141,7 @@ function speak(){
     let commands = {
       'stop the madness': function() {
         $('.photo_style').remove();
+        window.close();
       }
     };
 
