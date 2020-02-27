@@ -37,6 +37,7 @@ let supriseKids = [];
 let supriseMakeup =[];
 let supriseLearn =[];
 
+
 $(document).ready(setup);
 let speech = []
 function setup() {
@@ -115,6 +116,15 @@ function setup() {
 
 } // end of setup function
 
+//this function help make the  suprise images pop up random everytime you say the word 
+function generateSuprise(supriseImageArray,photoArraySuprise){
+    let index = Math.floor(Math.random()* supriseImageArray.length);
+    let x = Math.floor(Math.random()*2000);
+    let y = Math.floor(Math.random()*800);
+    let imageSrc = supriseImageArray[index];
+    photoArraySuprise.push(new Photo(x,y,imageSrc));
+}
+
 //stop the madness would clear all the images that were clicked on to the screen.
 function speak(){
   if (annyang) {
@@ -130,6 +140,7 @@ function speak(){
     let commandstwo = {
       'kids': function() {
         console.log("test_kids");
+        generateSuprise(supriseKidsArray,supriseKids);
       }
     };
 

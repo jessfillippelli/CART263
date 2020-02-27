@@ -8,8 +8,7 @@ body {
   top:10px;
 }
 #wrapper{
-  background: yellow;
-  border: 1px solid white;
+  background: #fceea7;
   margin: 0 auto;
   width: 1500px;
   height: 800px;
@@ -51,6 +50,6 @@ body {
 p{
   text-align: center;
   font-family: 'Roboto';
-  color: black;
+  color:	#00FF00;
   font-size: 300%;
 }

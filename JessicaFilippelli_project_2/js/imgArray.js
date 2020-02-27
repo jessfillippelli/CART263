@@ -53,20 +53,20 @@ let imgArraythree =[
 
 //annyang arrays
 //kids array suprise
-let supriseKids =[
+let supriseKidsArray =[
   'assets/images/kids_suprise_1.png',
   'assets/images/kids_suprise_2.png',
   'assets/images/kids_suprise_3.png'
 ];
 
 //makeup array suprise
-let supriseMakeup =[
+let supriseMakeupArray =[
   'assets/images/makeup_suprise_1.png',
   'assets/images/makeup_suprise_2.png',
   'assets/images/makeup_suprise_3.png'
 ];
 
-let supriseLearn =[
+let supriseLearnArray =[
   'assets/images/learn_suprise_1.png',
   'assets/images/learn_suprise_2.png',
   'assets/images/learn_suprise_3.png'
