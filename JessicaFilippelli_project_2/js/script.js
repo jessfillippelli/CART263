@@ -34,6 +34,8 @@ let photoArray =[];
 let photoArraytwo =[];
 let photoArraythree =[];
 let supriseKids = [];
+let supriseMakeup =[];
+let supriseLearn =[];
 
 $(document).ready(setup);
 let speech = []
