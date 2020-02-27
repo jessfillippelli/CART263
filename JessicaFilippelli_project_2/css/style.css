@@ -8,8 +8,6 @@ body {
   top:10px;
 }
 #wrapper{
-
-  /* position: relative; */
   background: yellow;
   border: 1px solid white;
   margin: 0 auto;
@@ -17,15 +15,9 @@ body {
   height: 800px;
 }
 
-
-.imagestoclick{
-  margin-left: 30vh;
-  margin-top: 30vh;
-  position: relative;
-  width:100vh;
-  height:20vh;
-  background: red;
-
+.column {
+  flex: 30%;
+  padding: 0 4px;
 }
 
 #kids{
@@ -48,8 +40,9 @@ body {
 }
 
 #text{
-  margin-left: 30%;
-  margin-right: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5%;
   position:absolute;
   z-index:1000;
 }
@@ -58,4 +51,6 @@ body {
 p{
   text-align: center;
   font-family: 'Roboto';
+  color: black;
+  font-size: 300%;
 }

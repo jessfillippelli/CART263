@@ -22,7 +22,7 @@ class Photo{
 
 const MAX_PHOTOS = 16;
 const MAX_PHOTOSTWO = 16;
-const MAX_PHOTOSTHREE = 16;
+const MAX_PHOTOSTHREE = 11;
 
 let $kids;
 let $makeup;
@@ -33,6 +33,7 @@ let img = 0;
 let photoArray =[];
 let photoArraytwo =[];
 let photoArraythree =[];
+let supriseKids = [];
 
 $(document).ready(setup);
 let speech = []
@@ -118,12 +119,33 @@ function speak(){
     let commands = {
       'stop the madness': function() {
 
-        console.log("test");
+        //console.log("test");
 
         $('.photo_style').remove();
       }
     };
+
+    let commandstwo = {
+      'kids': function() {
+        console.log("test_kids");
+      }
+    };
+
+    let commandsthree = {
+      'makeup': function() {
+        console.log("test_makeup");
+      }
+    };
+    let commandsfour = {
+      'learn': function() {
+        console.log("test_learn");
+      }
+    };
+
     annyang.addCommands(commands);
+    annyang.addCommands(commandstwo);
+    annyang.addCommands(commandsthree);
+    annyang.addCommands(commandsfour);
     annyang.start();
   } // end of annyang
 }// end of speak function

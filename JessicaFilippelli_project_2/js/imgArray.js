@@ -48,11 +48,14 @@ let imgArraythree =[
   'assets/images/learn_8.png',
   'assets/images/learn_9.png',
   'assets/images/learn_10.png',
-  // 'assets/images/learn_11.png',
-  // 'assets/images/learn_12.png',
-  // 'assets/images/learn_13.png',
-  // 'assets/images/learn_14.png',
-  // 'assets/images/learn_15.png',
-  // 'assets/images/learn_16.png'
+  'assets/images/learn_11.png'
+];
+
+//annyang arrays
+//kids array suprise
+let imgArraythree =[
+  'assets/images/kids_suprise_1.png',
+  'assets/images/kids_suprise_1.png',
+  'assets/images/kids_suprise_1.png'
 
 ];
