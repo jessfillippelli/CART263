@@ -116,7 +116,7 @@ function setup() {
 
 } // end of setup function
 
-//this function help make the  suprise images pop up random everytime you say the word 
+//this function help make the  suprise images pop up random everytime you say the word
 function generateSuprise(supriseImageArray,photoArraySuprise){
     let index = Math.floor(Math.random()* supriseImageArray.length);
     let x = Math.floor(Math.random()*2000);
@@ -147,11 +147,13 @@ function speak(){
     let commandsthree = {
       'makeup': function() {
         console.log("test_makeup");
+        generateSuprise(supriseMakeupArray,supriseMakeup);
       }
     };
     let commandsfour = {
       'learn': function() {
         console.log("test_learn");
+        generateSuprise(supriseLearnArray,supriseLearn);
       }
     };
 

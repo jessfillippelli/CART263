@@ -1,5 +1,5 @@
 body {
-  background: pink;
+
 }
 
 .photo_style{
@@ -8,7 +8,6 @@ body {
   top:10px;
 }
 #wrapper{
-  background: #fceea7;
   margin: 0 auto;
   width: 1500px;
   height: 800px;
@@ -49,7 +48,11 @@ body {
 /* text style */
 p{
   text-align: center;
-  font-family: 'Roboto';
-  color:	#00FF00;
+  color: rgba(255,105,180);
   font-size: 300%;
+  font-weight: 900;
+}
+
+.kids{
+  color: blue;
 }
