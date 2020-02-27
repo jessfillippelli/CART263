@@ -38,7 +38,7 @@ body {
 }
 
 #text{
-  margin-left: 5%;
+  margin-left: 7%;
   margin-right: 5%;
   margin-top: 5%;
   position:absolute;
@@ -53,6 +53,6 @@ p{
   font-weight: 900;
 }
 
-.kids{
+.surprise{
   color: blue;
 }

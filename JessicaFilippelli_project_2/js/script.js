@@ -76,6 +76,13 @@ function setup() {
     responsiveVoice.speak("Youtube madness", "UK English Female");
   });
 
+  $("#text").click(function() {
+    console.log("clicke yellow")
+    responsiveVoice.speak("Youtube madness", "UK English Female");
+  });
+
+
+
   function changeImage(){
     //randomtimes is every time you click one, two or three images will appear
     let randomTimes =  Math.floor(Math.random()* 10)+1;
@@ -130,9 +137,6 @@ function speak(){
   if (annyang) {
     let commands = {
       'stop the madness': function() {
-
-        //console.log("test");
-
         $('.photo_style').remove();
       }
     };
