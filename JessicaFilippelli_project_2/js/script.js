@@ -1,6 +1,11 @@
 "use strict";
 
-//By: Jessica Filippelli
+// By: Jessica Filippelli
+//Name of project: Youtube madness
+//description of project: This project is to showcase the represation how people are bombarded with
+//information at their own will. Becasue with the internet we can chose what we see annd what we dont see.
+//for example if someone does not like a video, they can stop watching it.
+
 
 class Photo{
   constructor(x,y,imageSrc){
