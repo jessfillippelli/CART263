@@ -5,7 +5,7 @@
 //description of project: This project is to showcase the represation how people are bombarded with
 //information at their own will. Becasue with the internet we can chose what we see annd what we dont see.
 //for example if someone does not like a video, they can stop watching it. so a user can pick how much
-//they want to see and not see.  
+//they want to see and not see.
 
 
 class Photo{
@@ -76,17 +76,14 @@ function setup() {
 
 //when you click on BG is says the title
   $("#container").click(function() {
-    console.log("clicke yellow")
     responsiveVoice.speak("Youtube madness", "UK English Female");
   });
 
   $("#wrapper").click(function() {
-    console.log("clicke yellow")
     responsiveVoice.speak("Youtube madness", "UK English Female");
   });
 
   $("#text").click(function() {
-    console.log("clicke yellow")
     responsiveVoice.speak("Youtube madness", "UK English Female");
   });
 
@@ -100,7 +97,6 @@ function setup() {
       let x = Math.floor(Math.random()*2000);
       let y = Math.floor(Math.random()*800);
       let imageSrc = imgArrayone[index];
-      console.log("clicked "+imageSrc);
       photoArray.push(new Photo(x,y,imageSrc));
     }
 
@@ -113,7 +109,6 @@ function setup() {
       let x = Math.floor(Math.random()*2000);
       let y = Math.floor(Math.random()*800);
       let imageSrc = imgArraytwo[index];
-      console.log("clicked "+imageSrc);
       photoArraytwo.push(new Photo(x,y,imageSrc));
     }
   }
@@ -125,7 +120,6 @@ function setup() {
       let x = Math.floor(Math.random()*2000);
       let y = Math.floor(Math.random()*800);
       let imageSrc = imgArraythree[index];
-      console.log("clicked "+imageSrc);
       photoArraythree.push(new Photo(x,y,imageSrc));
     }
   }
@@ -153,20 +147,17 @@ function speak(){
 
     let commandstwo = {
       'kids': function() {
-        console.log("test_kids");
         generateSuprise(supriseKidsArray,supriseKids);
       }
     };
 
     let commandsthree = {
       'makeup': function() {
-        console.log("test_makeup");
         generateSuprise(supriseMakeupArray,supriseMakeup);
       }
     };
     let commandsfour = {
       'learn': function() {
-        console.log("test_learn");
         generateSuprise(supriseLearnArray,supriseLearn);
       }
     };
