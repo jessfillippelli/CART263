@@ -146,18 +146,18 @@ function speak(){
     };
 
     let commandstwo = {
-      'kids': function() {
+      'tools equals toys': function() {
         generateSuprise(supriseKidsArray,supriseKids);
       }
     };
 
     let commandsthree = {
-      'makeup': function() {
+      'puppy equals makeup': function() {
         generateSuprise(supriseMakeupArray,supriseMakeup);
       }
     };
     let commandsfour = {
-      'learn': function() {
+      'cars equals education': function() {
         generateSuprise(supriseLearnArray,supriseLearn);
       }
     };

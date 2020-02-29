@@ -38,9 +38,10 @@ body {
 }
 
 #text{
-  margin-left: 7%;
-  margin-right: 5%;
-  margin-top: 5%;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 10%;
+  margin-bottom: 5%;
   position:absolute;
   z-index:1000;
 }
@@ -49,7 +50,7 @@ body {
 p{
   text-align: center;
   color: rgba(255,105,180);
-  font-size: 300%;
+  font-size: 100%;
   font-weight: 900;
 }
 
