@@ -63,16 +63,16 @@ $(document).ready(setup);
 let speech = []
 function setup() {
 
-//or X pop up image
- $div = $("#no_kids");
- $suprise = $("#suprise");
+  //or X pop up image
+  $div = $("#no_kids");
+  $suprise = $("#suprise");
 
   speak();
   $kids = $("#kids");
   $makeup = $("#makeup");
   $learn = $("#learn");
 
-//when you click on one of the three clowns
+  //when you click on one of the three clowns
   $( "#kids" ).click(function() {
     $("#kids").effect('shake');
     changeImage();
@@ -81,21 +81,21 @@ function setup() {
 
 
   $( "#makeup" ).click(function() {
-      $("#makeup").effect('slide');
+    $("#makeup").effect('slide');
     changeMakeup();
     responsiveVoice.speak("I'VE NEVER TRIED ANYTHING QUITE LIKE THIS. BITE CHANGE MAKER FOUNDATION AND POWDER REVIEW AND WEAR TESTS", "UK English Female");
   });
 
 
   $( "#learn" ).click(function() {
-      $("#learn").effect('pulsate');
+    $("#learn").effect('pulsate');
     changeLearn();
-      learn.play();
+    learn.play();
 
-      //learn.pause();
+    //learn.pause();
   });
 
-//when you click on BG is says a long title of a youtube video
+  //when you click on BG is says a long title of a youtube video
   $("#wrapper").click(function() {
     responsiveVoice.speak("College Algebra Introduction Review. Basic Overview, Study Guide, Examples and Practice Problems", "UK English Female");
   });
@@ -144,11 +144,11 @@ function setup() {
 
 //this function help make the  suprise images pop up random everytime you say the word
 function generateSuprise(supriseImageArray,photoArraySuprise){
-    let index = Math.floor(Math.random()* supriseImageArray.length);
-    let x = Math.floor(Math.random()*2000);
-    let y = Math.floor(Math.random()*800);
-    let imageSrc = supriseImageArray[index];
-    photoArraySuprise.push(new Photo(x,y,imageSrc));
+  let index = Math.floor(Math.random()* supriseImageArray.length);
+  let x = Math.floor(Math.random()*2000);
+  let y = Math.floor(Math.random()*800);
+  let imageSrc = supriseImageArray[index];
+  photoArraySuprise.push(new Photo(x,y,imageSrc));
 }
 
 //stop the madness would clear all the images that were clicked on to the screen.
@@ -173,7 +173,7 @@ function speak(){
         }, 3000); //end of timer
       }
     };
-
+    
     let commandsthree = {
       'dogs and makeup': function() {
         generateSuprise(supriseMakeupArray,supriseMakeup);
