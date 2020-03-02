@@ -62,14 +62,14 @@ function setup() {
 
 
   $( "#makeup" ).click(function() {
-      $("#makeup").effect('shake');
+      $("#makeup").effect('slide');
     changeMakeup();
     responsiveVoice.speak("I'VE NEVER TRIED ANYTHING QUITE LIKE THIS. BITE CHANGE MAKER FOUNDATION AND POWDER REVIEW AND WEAR TESTS", "UK English Female");
   });
 
 
   $( "#learn" ).click(function() {
-      $("#learn").effect('shake');
+      $("#learn").effect('pulsate');
     changeLearn();
     responsiveVoice.speak("College Algebra Introduction Review. Basic Overview, Study Guide, Examples and Practice Problems", "UK English Female");
   });
