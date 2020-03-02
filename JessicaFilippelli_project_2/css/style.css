@@ -58,6 +58,12 @@ p{
   color: blue;
 }
 
+#suprise{
+  left: 30%;
+  top: 10px;
+  position: absolute;
+}
+
 .title{
   font-size: 150%;
 }

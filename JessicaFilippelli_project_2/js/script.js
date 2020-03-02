@@ -53,20 +53,19 @@ let learn = new Audio("assets/sounds/Feel_Nice.mp3");
 
 
 //for X pop up image number one
-// let suprise1 = ("assets/images/no_kids.jpg");
-// let suprise2 = ("assets/images/no_makeup.jpg");
-// let suprise3 = ("assets/images/no_learn.jpg");
-// let $div;
-// let $suprise1img;
+let suprise1 = ("assets/images/no_kids.jpg");
+let suprise2 = ("assets/images/no_makeup.jpg");
+let suprise3 = ("assets/images/no_learn.jpg");
+let $div;
+let $suprise;
 
 $(document).ready(setup);
 let speech = []
 function setup() {
 
-//for X pop up image
-//  $div = $('no_kids');
-// $suprise1img = $("#div", "#suprise");
-
+//or X pop up image
+ $div = $("#no_kids");
+ $suprise = $("#suprise");
 
   speak();
   $kids = $("#kids");
@@ -139,6 +138,8 @@ function setup() {
     }
   }
 
+
+
 } // end of setup function
 
 //this function help make the  suprise images pop up random everytime you say the word
@@ -163,20 +164,39 @@ function speak(){
     let commandstwo = {
       'tools and toys': function() {
         generateSuprise(supriseKidsArray,supriseKids);
-        // $suprise1img.attr("src",suprise1);
-        // $div.append($suprise1img);
 
+        $suprise.attr("src",suprise1);
+        $div.append($suprise);
+
+        setTimeout(function() {
+          $div.hide();
+        }, 3000); //end of timer
       }
     };
 
     let commandsthree = {
       'dogs and makeup': function() {
         generateSuprise(supriseMakeupArray,supriseMakeup);
+
+        $suprise.attr("src",suprise2);
+        $div.append($suprise);
+        console.log("u working?");
+
+        setTimeout(function() {
+          $div.hide();
+        }, 3000); //end of timer
       }
     };
     let commandsfour = {
       'cars and education': function() {
         generateSuprise(supriseLearnArray,supriseLearn);
+
+        $suprise.attr("src",suprise3);
+        $div.append($suprise);
+
+        setTimeout(function() {
+          $div.hide();
+        }, 3000); //end of timer
       }
     };
 
