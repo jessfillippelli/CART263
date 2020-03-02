@@ -53,19 +53,19 @@ let learn = new Audio("assets/sounds/Feel_Nice.mp3");
 
 
 //for X pop up image number one
-let suprise1 = ("assets/images/no_kids.jpg");
-let suprise2 = ("assets/images/no_makeup.jpg");
-let suprise3 = ("assets/images/no_learn.jpg");
-let $div;
-let $suprise1img;
+// let suprise1 = ("assets/images/no_kids.jpg");
+// let suprise2 = ("assets/images/no_makeup.jpg");
+// let suprise3 = ("assets/images/no_learn.jpg");
+// let $div;
+// let $suprise1img;
 
 $(document).ready(setup);
 let speech = []
 function setup() {
 
 //for X pop up image
- $div = $('no_kids');
-$suprise1img = $("#div", "#suprise");
+//  $div = $('no_kids');
+// $suprise1img = $("#div", "#suprise");
 
 
   speak();
@@ -161,21 +161,21 @@ function speak(){
     };
 
     let commandstwo = {
-      'tools equals toys': function() {
+      'tools and toys': function() {
         generateSuprise(supriseKidsArray,supriseKids);
-        $suprise1img.attr("src",suprise1);
-        $div.append($suprise1img);
+        // $suprise1img.attr("src",suprise1);
+        // $div.append($suprise1img);
 
       }
     };
 
     let commandsthree = {
-      'puppy equals makeup': function() {
+      'dogs and makeup': function() {
         generateSuprise(supriseMakeupArray,supriseMakeup);
       }
     };
     let commandsfour = {
-      'cars equals education': function() {
+      'cars and education': function() {
         generateSuprise(supriseLearnArray,supriseLearn);
       }
     };
