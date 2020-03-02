@@ -45,6 +45,7 @@ let supriseLearn =[];
 
 //audio
 let kids = new Audio("assets/sounds/Cat.mp3");
+let learn = new Audio("assets/sounds/Feel_Nice.mp3");
 
 
 $(document).ready(setup);
@@ -73,7 +74,8 @@ function setup() {
   $( "#learn" ).click(function() {
       $("#learn").effect('pulsate');
     changeLearn();
-    //responsiveVoice.speak("College Algebra Introduction Review. Basic Overview, Study Guide, Examples and Practice Problems", "UK English Female");
+      learn.play();
+      learn.pause();
   });
 
 //when you click on BG is says a long title of a youtube video
