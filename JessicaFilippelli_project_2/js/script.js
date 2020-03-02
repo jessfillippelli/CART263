@@ -49,18 +49,18 @@ let learn = new Audio("assets/sounds/Feel_Nice.mp3");
 
 
 
-//for X pop up image
+//for X pop up image number one
 let suprise1 = ("assets/images/no_kids.png");
 let $div;
-let suprise1img;
+let $suprise1img;
 
 $(document).ready(setup);
 let speech = []
 function setup() {
 
 //for X pop up image
-$div = $("#no_kids");
-$suprise1img = $("#div" no_kids);
+ $div = $('no_kids');
+$suprise1img = $("#div" "#suprise");
 
 
   speak();
