@@ -30,15 +30,18 @@ const MAX_PHOTOS = 16;
 const MAX_PHOTOSTWO = 16;
 const MAX_PHOTOSTHREE = 11;
 
+//the varbailes for the three clowns 
 let $kids;
 let $makeup;
 let $learn;
 
 let img = 0;
 
+//the main image arrays
 let photoArray =[];
 let photoArraytwo =[];
 let photoArraythree =[];
+//these three array are for when you say the surprise prase an image will pop up from these arrays
 let supriseKids = [];
 let supriseMakeup =[];
 let supriseLearn =[];
@@ -51,6 +54,8 @@ let learn = new Audio("assets/sounds/Feel_Nice.mp3");
 
 //for X pop up image number one
 let suprise1 = ("assets/images/no_kids.png");
+let suprise2 = ("assets/images/no_kids.png");
+let suprise3 = ("assets/images/no_kids.png");
 let $div;
 let $suprise1img;
 
