@@ -30,7 +30,7 @@ const MAX_PHOTOS = 16;
 const MAX_PHOTOSTWO = 16;
 const MAX_PHOTOSTHREE = 11;
 
-//the varbailes for the three clowns 
+//the varbailes for the three clowns
 let $kids;
 let $makeup;
 let $learn;
@@ -53,9 +53,9 @@ let learn = new Audio("assets/sounds/Feel_Nice.mp3");
 
 
 //for X pop up image number one
-let suprise1 = ("assets/images/no_kids.png");
-let suprise2 = ("assets/images/no_kids.png");
-let suprise3 = ("assets/images/no_kids.png");
+let suprise1 = ("assets/images/no_kids.jpg");
+let suprise2 = ("assets/images/no_makeup.jpg");
+let suprise3 = ("assets/images/no_learn.jpg");
 let $div;
 let $suprise1img;
 
@@ -65,7 +65,7 @@ function setup() {
 
 //for X pop up image
  $div = $('no_kids');
-$suprise1img = $("#div" "#suprise");
+$suprise1img = $("#div", "#suprise");
 
 
   speak();
