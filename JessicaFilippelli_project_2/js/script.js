@@ -51,6 +51,9 @@ let learn = new Audio("assets/sounds/Feel_Nice.mp3");
 $(document).ready(setup);
 let speech = []
 function setup() {
+$suprise_1 = ('#no_kids');
+$suprise_1 = ("src", nokids);
+
   speak();
   $kids = $("#kids");
   $makeup = $("#makeup");
@@ -145,6 +148,8 @@ function speak(){
     let commandstwo = {
       'tools equals toys': function() {
         generateSuprise(supriseKidsArray,supriseKids);
+        $("#no_kids").add('');
+
       }
     };
 
