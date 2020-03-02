@@ -43,6 +43,9 @@ let supriseKids = [];
 let supriseMakeup =[];
 let supriseLearn =[];
 
+//audio
+let kids = new Audio("assets/sounds/Cat.mp3");
+
 
 $(document).ready(setup);
 let speech = []
@@ -56,8 +59,7 @@ function setup() {
   $( "#kids" ).click(function() {
     $("#kids").effect('shake');
     changeImage();
-    responsiveVoice.speak("NEW POKEMON CARDS BATTLE. EVERY SWORD AND SHIELD PRODUCT OPENING. BEST PRERELEASE KIT BATTLE", "UK English Male");
-
+    kids.play();
   }); // END OF kids
 
 
@@ -71,21 +73,14 @@ function setup() {
   $( "#learn" ).click(function() {
       $("#learn").effect('pulsate');
     changeLearn();
+    //responsiveVoice.speak("College Algebra Introduction Review. Basic Overview, Study Guide, Examples and Practice Problems", "UK English Female");
+  });
+
+//when you click on BG is says a long title of a youtube video
+  $("#wrapper").click(function() {
     responsiveVoice.speak("College Algebra Introduction Review. Basic Overview, Study Guide, Examples and Practice Problems", "UK English Female");
   });
 
-//when you click on BG is says the title
-  $("#container").click(function() {
-    responsiveVoice.speak("Youtube madness", "UK English Female");
-  });
-
-  $("#wrapper").click(function() {
-    responsiveVoice.speak("Youtube madness", "UK English Female");
-  });
-
-  $("#text").click(function() {
-    responsiveVoice.speak("Youtube madness", "UK English Female");
-  });
 
 
 
