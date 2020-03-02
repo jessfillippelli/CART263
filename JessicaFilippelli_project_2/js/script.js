@@ -48,11 +48,19 @@ let kids = new Audio("assets/sounds/Cat.mp3");
 let learn = new Audio("assets/sounds/Feel_Nice.mp3");
 
 
+
+//for X pop up image
+let suprise1 = ("assets/images/no_kids.png");
+let $div;
+
 $(document).ready(setup);
 let speech = []
 function setup() {
-$suprise_1 = ('#no_kids');
-$suprise_1 = ("src", nokids);
+
+//for X pop up image
+$div = $("div");
+$suprise1img = $("div");
+
 
   speak();
   $kids = $("#kids");
@@ -78,7 +86,8 @@ $suprise_1 = ("src", nokids);
       $("#learn").effect('pulsate');
     changeLearn();
       learn.play();
-      learn.pause();
+
+      //learn.pause();
   });
 
 //when you click on BG is says a long title of a youtube video
@@ -148,7 +157,8 @@ function speak(){
     let commandstwo = {
       'tools equals toys': function() {
         generateSuprise(supriseKidsArray,supriseKids);
-        $("#no_kids").add('');
+        $suprise1img.attr("src",suprise1);
+        $div.append($suprise1img);
 
       }
     };
