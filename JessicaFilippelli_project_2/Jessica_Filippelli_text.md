@@ -21,9 +21,12 @@ For the images, I removed the background and for others, I just took part of the
 
 (All the audio was taken from the YouTube sound library, where users can take audio for free and use it in their projects. And all images are from google search and Unsplash)
 
-Unsplash images I used 
+Unsplash images I used
+ 
 https://unsplash.com/photos/FoeIOgztCXo
+
 https://unsplash.com/photos/QNWLBff7f9M
+
 https://unsplash.com/photos/P_gQpl-a_R4
 
 
