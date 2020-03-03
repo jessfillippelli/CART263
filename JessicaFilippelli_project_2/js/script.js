@@ -50,8 +50,6 @@ let supriseLearn =[];
 let kids = new Audio("assets/sounds/Cat.mp3");
 let learn = new Audio("assets/sounds/Feel_Nice.mp3");
 
-
-
 //for X pop up image number one
 let suprise1 = ("assets/images/no_kids.jpg");
 let suprise2 = ("assets/images/no_makeup.jpg");
@@ -65,25 +63,22 @@ let clownActive=false;
 
 function setup() {
 
-
+//to know when the voice ended for second clown
   function voiceEndTest(){
     console.log("DONE");
     clownActive =false;
   }
 
-
-
+//to know when the voice ended for first clown
   kids.onended = function(){
     console.log("end");
     clownActive =false;
   }
-
+//to know when the voice ended for first clown
   learn.onended = function(){
     console.log("end");
     clownActive =false;
   }
-
-
 
   //or X pop up image
   $div = $("#no_kids");
@@ -126,8 +121,6 @@ function setup() {
     }
 
   });
-
-
 
 
   function changeImage(){
