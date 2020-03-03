@@ -7,6 +7,8 @@
 //for example if someone does not like a video, they can stop watching it. so a user can pick how much
 //they want to see and not see.
 
+//my Arrays are in a different script to save space in the main JS file 
+
 //the class Photo is what creates a new image and its style
 class Photo{
   constructor(x,y,imageSrc){
