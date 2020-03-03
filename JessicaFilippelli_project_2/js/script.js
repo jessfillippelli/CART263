@@ -60,8 +60,30 @@ let $div;
 let $suprise;
 
 $(document).ready(setup);
-let speech = []
+let speech = [];
+let clownActive=false;
+
 function setup() {
+
+
+  function voiceEndTest(){
+    console.log("DONE");
+    clownActive =false;
+  }
+
+
+
+  kids.onended = function(){
+    console.log("end");
+    clownActive =false;
+  }
+
+  learn.onended = function(){
+    console.log("end");
+    clownActive =false;
+  }
+
+
 
   //or X pop up image
   $div = $("#no_kids");
@@ -76,6 +98,7 @@ function setup() {
   $( "#kids" ).click(function() {
     $("#kids").effect('shake');
     changeImage();
+    clownActive =true;
     kids.play();
   }); // END OF kids
 
@@ -83,20 +106,25 @@ function setup() {
   $( "#makeup" ).click(function() {
     $("#makeup").effect('slide');
     changeMakeup();
-    responsiveVoice.speak("I'VE NEVER TRIED ANYTHING QUITE LIKE THIS. BITE CHANGE MAKER FOUNDATION AND POWDER REVIEW AND WEAR TESTS", "UK English Female");
+    clownActive =true;
+    responsiveVoice.speak("I'VE NEVER TRIED ANYTHING QUITE LIKE THIS. BITE CHANGE MAKER FOUNDATION AND POWDER REVIEW AND WEAR TESTS", "UK English Female", {onend: voiceEndTest});
   });
 
 
   $( "#learn" ).click(function() {
     $("#learn").effect('pulsate');
     changeLearn();
+    clownActive =true;
     learn.play();
   });
 
   //when you click on BG is says a long title of a youtube video
-  $("#container").click(function() {.
-    
-    responsiveVoice.speak("College Algebra Introduction Review. Basic Overview, Study Guide, Examples and Practice Problems", "UK English Female");
+  $("#container").click(function() {
+
+    if(clownActive ===false){
+      responsiveVoice.speak("College Algebra Introduction Review. Basic Overview, Study Guide, Examples and Practice Problems", "UK English Female");
+    }
+
   });
 
 
@@ -107,8 +135,8 @@ function setup() {
     let randomTimes =  Math.floor(Math.random()* 10)+1;
     for(let i =0; i<randomTimes; i++){
       let index = Math.floor(Math.random()* imgArrayone.length);
-      let x = Math.floor(Math.random()*1000);
-      let y = Math.floor(Math.random()*800);
+      let x = Math.floor(Math.random()*window.innerWidth);
+      let y = Math.floor(Math.random()*window.innerHeight);
       let imageSrc = imgArrayone[index];
       photoArray.push(new Photo(x,y,imageSrc));
     }
@@ -119,8 +147,8 @@ function setup() {
     let randomTimes =  Math.floor(Math.random()* 10)+1;
     for(let i =0; i<randomTimes; i++){
       let index = Math.floor(Math.random()* imgArraytwo.length);
-      let x = Math.floor(Math.random()*1000);
-      let y = Math.floor(Math.random()*800);
+      let x = Math.floor(Math.random()*window.innerWidth);
+      let y = Math.floor(Math.random()*window.innerHeight);
       let imageSrc = imgArraytwo[index];
       photoArraytwo.push(new Photo(x,y,imageSrc));
     }
@@ -130,8 +158,8 @@ function setup() {
     let randomTimes =  Math.floor(Math.random()* 10)+1;
     for(let i =0; i<randomTimes; i++){
       let index = Math.floor(Math.random()* imgArraythree.length);
-      let x = Math.floor(Math.random()*1000);
-      let y = Math.floor(Math.random()*800);
+      let x = Math.floor(Math.random()*window.innerWidth);
+      let y = Math.floor(Math.random()*window.innerHeight);
       let imageSrc = imgArraythree[index];
       photoArraythree.push(new Photo(x,y,imageSrc));
     }

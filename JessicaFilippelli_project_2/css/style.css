@@ -15,8 +15,13 @@ width: 100%;
 }
 
 .column {
-  flex: 30%;
-  padding: 0 4px;
+  background:red;
+  height:150px;
+  width:100%;
+  position:absolute;
+  z-index:1;
+  left:0;
+  top:0;
 }
 
 #kids{
