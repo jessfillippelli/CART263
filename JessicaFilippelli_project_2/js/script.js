@@ -91,12 +91,11 @@ function setup() {
     $("#learn").effect('pulsate');
     changeLearn();
     learn.play();
-
-    //learn.pause();
   });
 
   //when you click on BG is says a long title of a youtube video
-  $("#wrapper").click(function() {
+  $("#container").click(function() {.
+    
     responsiveVoice.speak("College Algebra Introduction Review. Basic Overview, Study Guide, Examples and Practice Problems", "UK English Female");
   });
 
@@ -108,7 +107,7 @@ function setup() {
     let randomTimes =  Math.floor(Math.random()* 10)+1;
     for(let i =0; i<randomTimes; i++){
       let index = Math.floor(Math.random()* imgArrayone.length);
-      let x = Math.floor(Math.random()*2000);
+      let x = Math.floor(Math.random()*1000);
       let y = Math.floor(Math.random()*800);
       let imageSrc = imgArrayone[index];
       photoArray.push(new Photo(x,y,imageSrc));
@@ -120,7 +119,7 @@ function setup() {
     let randomTimes =  Math.floor(Math.random()* 10)+1;
     for(let i =0; i<randomTimes; i++){
       let index = Math.floor(Math.random()* imgArraytwo.length);
-      let x = Math.floor(Math.random()*2000);
+      let x = Math.floor(Math.random()*1000);
       let y = Math.floor(Math.random()*800);
       let imageSrc = imgArraytwo[index];
       photoArraytwo.push(new Photo(x,y,imageSrc));
@@ -131,7 +130,7 @@ function setup() {
     let randomTimes =  Math.floor(Math.random()* 10)+1;
     for(let i =0; i<randomTimes; i++){
       let index = Math.floor(Math.random()* imgArraythree.length);
-      let x = Math.floor(Math.random()*2000);
+      let x = Math.floor(Math.random()*1000);
       let y = Math.floor(Math.random()*800);
       let imageSrc = imgArraythree[index];
       photoArraythree.push(new Photo(x,y,imageSrc));
@@ -173,7 +172,7 @@ function speak(){
         }, 3000); //end of timer
       }
     };
-    
+
     let commandsthree = {
       'dogs and makeup': function() {
         generateSuprise(supriseMakeupArray,supriseMakeup);

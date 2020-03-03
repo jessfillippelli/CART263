@@ -1,5 +1,6 @@
 body {
-
+height: 100vh;
+width: 100%;
 }
 
 .photo_style{
@@ -9,7 +10,7 @@ body {
 }
 #wrapper{
   margin: 0 auto;
-  width: 1500px;
+  width: 100%;
   height: 800px;
 }
 
