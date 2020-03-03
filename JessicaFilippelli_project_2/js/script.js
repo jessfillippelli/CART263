@@ -7,7 +7,7 @@
 //for example if someone does not like a video, they can stop watching it. so a user can pick how much
 //they want to see and not see.
 
-
+//the class Photo is what creates a new image and its style
 class Photo{
   constructor(x,y,imageSrc){
     this.x = x;
@@ -26,6 +26,7 @@ class Photo{
   }
 } //end of photo class
 
+//for the 3 image arrays
 const MAX_PHOTOS = 16;
 const MAX_PHOTOSTWO = 16;
 const MAX_PHOTOSTHREE = 11;
@@ -37,7 +38,7 @@ let $learn;
 
 let img = 0;
 
-//the main image arrays
+//the main image arrays wheyou push them in a empty array 
 let photoArray =[];
 let photoArraytwo =[];
 let photoArraythree =[];
@@ -50,7 +51,7 @@ let supriseLearn =[];
 let kids = new Audio("assets/sounds/Cat.mp3");
 let learn = new Audio("assets/sounds/Feel_Nice.mp3");
 
-//for X pop up image number one
+//for X pop up images
 let suprise1 = ("assets/images/no_kids.jpg");
 let suprise2 = ("assets/images/no_makeup.jpg");
 let suprise3 = ("assets/images/no_learn.jpg");
@@ -58,23 +59,25 @@ let $div;
 let $suprise;
 
 $(document).ready(setup);
+
 let speech = [];
+//varable to knwow of the audio is playing
 let clownActive=false;
 
 function setup() {
 
-//to know when the voice ended for second clown
+  //to know when the voice ended for second clown
   function voiceEndTest(){
     console.log("DONE");
     clownActive =false;
   }
 
-//to know when the voice ended for first clown
+  //to know when the voice ended for first clown
   kids.onended = function(){
     console.log("end");
     clownActive =false;
   }
-//to know when the voice ended for first clown
+  //to know when the voice ended for first clown
   learn.onended = function(){
     console.log("end");
     clownActive =false;
@@ -85,19 +88,21 @@ function setup() {
   $suprise = $("#suprise");
 
   speak();
+  //definded which varable goes for which clickabe function
   $kids = $("#kids");
   $makeup = $("#makeup");
   $learn = $("#learn");
 
   //when you click on one of the three clowns
+  //fist image of clowns
   $( "#kids" ).click(function() {
     $("#kids").effect('shake');
-    changeImage();
+    changeKids();
     clownActive =true;
     kids.play();
   }); // END OF kids
 
-
+  //second image of clowns
   $( "#makeup" ).click(function() {
     $("#makeup").effect('slide');
     changeMakeup();
@@ -105,7 +110,7 @@ function setup() {
     responsiveVoice.speak("I'VE NEVER TRIED ANYTHING QUITE LIKE THIS. BITE CHANGE MAKER FOUNDATION AND POWDER REVIEW AND WEAR TESTS", "UK English Female", {onend: voiceEndTest});
   });
 
-
+  //thrid image of clowns
   $( "#learn" ).click(function() {
     $("#learn").effect('pulsate');
     changeLearn();
@@ -115,17 +120,18 @@ function setup() {
 
   //when you click on BG is says a long title of a youtube video
   $("#container").click(function() {
-
+    // this if statement is if
     if(clownActive ===false){
       responsiveVoice.speak("College Algebra Introduction Review. Basic Overview, Study Guide, Examples and Practice Problems", "UK English Female");
     }
 
   });
 
-
-  function changeImage(){
-    //randomtimes is every time you click one, two or three images will appear
+//function that calls the first image array
+  function changeKids(){
+    //randomtimes is every time you click one time on the clown, one to 10 images will appear
     let randomTimes =  Math.floor(Math.random()* 10)+1;
+    //this is the random postion when you click a clown and the images apears on the screen in a random location each time
     for(let i =0; i<randomTimes; i++){
       let index = Math.floor(Math.random()* imgArrayone.length);
       let x = Math.floor(Math.random()*window.innerWidth);
@@ -133,12 +139,15 @@ function setup() {
       let imageSrc = imgArrayone[index];
       photoArray.push(new Photo(x,y,imageSrc));
     }
-
   }
 
+//function that calls the second  image array
   function changeMakeup(){
+    //randomtimes is every time you click one time on the clown, one to 10 images will appear
     let randomTimes =  Math.floor(Math.random()* 10)+1;
+    //this is the random postion when you click a clown and the images apears on the screen in a random location each time
     for(let i =0; i<randomTimes; i++){
+      //this is the random postion when you click a clown and the images apears on the screen in a random location each time
       let index = Math.floor(Math.random()* imgArraytwo.length);
       let x = Math.floor(Math.random()*window.innerWidth);
       let y = Math.floor(Math.random()*window.innerHeight);
@@ -147,9 +156,12 @@ function setup() {
     }
   }
 
+//function that calls the 3rd image array ()
   function changeLearn(){
+    //randomtimes is every time you click one time on the clown, one to 10 images will appear
     let randomTimes =  Math.floor(Math.random()* 10)+1;
     for(let i =0; i<randomTimes; i++){
+      //this is the random postion when you click a clown and the images apears on the screen in a random location each time
       let index = Math.floor(Math.random()* imgArraythree.length);
       let x = Math.floor(Math.random()*window.innerWidth);
       let y = Math.floor(Math.random()*window.innerHeight);
@@ -157,12 +169,10 @@ function setup() {
       photoArraythree.push(new Photo(x,y,imageSrc));
     }
   }
-
-
-
 } // end of setup function
 
 //this function help make the  suprise images pop up random everytime you say the word
+//suprise images: when you say the Suprise Pharse a diffent image will apear each from that zone, that does not appear from that zone
 function generateSuprise(supriseImageArray,photoArraySuprise){
   let index = Math.floor(Math.random()* supriseImageArray.length);
   let x = Math.floor(Math.random()*2000);
@@ -175,6 +185,7 @@ function generateSuprise(supriseImageArray,photoArraySuprise){
 function speak(){
   if (annyang) {
     let commands = {
+
       'stop the madness': function() {
         $('.photo_style').remove();
         window.close();
@@ -182,12 +193,13 @@ function speak(){
     };
 
     let commandstwo = {
+  // Suprise Pharse number one: one of three images will apear each time you say the pharse
       'tools and toys': function() {
         generateSuprise(supriseKidsArray,supriseKids);
 
         $suprise.attr("src",suprise1);
         $div.append($suprise);
-
+        //the setTimeout will make the X image go away after 3 seconds
         setTimeout(function() {
           $div.hide();
         }, 3000); //end of timer
@@ -195,6 +207,7 @@ function speak(){
     };
 
     let commandsthree = {
+    // Suprise Pharse number two: one of three images will apear each time you say the pharse
       'dogs and makeup': function() {
         generateSuprise(supriseMakeupArray,supriseMakeup);
 
@@ -208,6 +221,7 @@ function speak(){
       }
     };
     let commandsfour = {
+      // Suprise Pharse number three: one of three images will apear each time you say the pharse
       'cars and education': function() {
         generateSuprise(supriseLearnArray,supriseLearn);
 
@@ -225,5 +239,6 @@ function speak(){
     annyang.addCommands(commandsthree);
     annyang.addCommands(commandsfour);
     annyang.start();
+    annyang.debug();
   } // end of annyang
 }// end of speak function

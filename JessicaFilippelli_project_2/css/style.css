@@ -15,8 +15,8 @@ width: 100%;
 }
 
 .column {
-  background:red;
-  height:150px;
+
+  height:1500px;
   width:100%;
   position:absolute;
   z-index:1;
