@@ -38,7 +38,7 @@ let $learn;
 
 let img = 0;
 
-//the main image arrays wheyou push them in a empty array 
+//the main image arrays wheyou push them in a empty array
 let photoArray =[];
 let photoArraytwo =[];
 let photoArraythree =[];
@@ -84,7 +84,7 @@ function setup() {
   }
 
   //or X pop up image
-  $div = $("#no_kids");
+  $div = $("#no");
   $suprise = $("#suprise");
 
   speak();
@@ -185,7 +185,7 @@ function generateSuprise(supriseImageArray,photoArraySuprise){
 function speak(){
   if (annyang) {
     let commands = {
-
+//when the user is done with the project they say this to clear the screen
       'stop the madness': function() {
         $('.photo_style').remove();
         window.close();
