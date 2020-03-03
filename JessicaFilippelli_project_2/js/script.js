@@ -68,18 +68,15 @@ function setup() {
 
   //to know when the voice ended for second clown
   function voiceEndTest(){
-    console.log("DONE");
     clownActive =false;
   }
 
   //to know when the voice ended for first clown
   kids.onended = function(){
-    console.log("end");
     clownActive =false;
   }
   //to know when the voice ended for first clown
   learn.onended = function(){
-    console.log("end");
     clownActive =false;
   }
 
@@ -213,7 +210,6 @@ function speak(){
 
         $suprise.attr("src",suprise2);
         $div.append($suprise);
-        console.log("u working?");
 
         setTimeout(function() {
           $div.hide();
