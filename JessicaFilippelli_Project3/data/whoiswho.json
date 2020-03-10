@@ -70,11 +70,43 @@
 
   {
     "name": "Rubeus Hagrid",
+    "house": "Gryffindor",
+    "hair": "Black",
+    "blood_status": "Part-Human (Half-giant)",
+    "patronus": "None"
+  },
+
+  {
+    "name": "Albus Percival Wulfric Brian Dumbledore",
+    "house": "Gryffindor",
+    "hair": "Silver",
+    "blood_status": "Half-blood",
+    "patronus": "Phoenix"
+  },
+
+  {
+    "name": "Sirius Black",
+    "house": "Gryffindor",
+    "hair": "Black",
+    "blood_status": "Pure-blood",
+    "patronus": "Non-corporeal"
+  },
+
+  {
+    "name": "Draco Lucius Malfoy",
+    "house": "Slytherin",
+    "hair": "Silver-blonde[",
+    "blood_status": "Pure-blood",
+    "patronus": "None"
+  },
+
+  {
+    "name": "Tom Marvolo Riddle",
     "house": "Slytherin",
     "hair": "Black",
     "blood_status": "Half-blood",
-    "patronus": "Doe"
-  },
+    "patronus": "None"
+  }
 
 
 
