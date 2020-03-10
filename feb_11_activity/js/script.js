@@ -146,7 +146,6 @@ $(document).ready(setup);
 
 function setup(){
 newRound();
-showScore();
 }
 
 
@@ -189,9 +188,17 @@ if ($(this).text() == correctAnimal){
 
 }
 else ($('.guess').effect('shake'));
-//sayBackwards(correctAnimal);
+
 
 }
+
+function updateScore(){
+  // $("score").remove();
+  showScore();
+  $score.text ("SCORE " + score);
+  score++;
+}
+
 
 function sayBackwards(text){
   let backwardsText = text.split('').reverse().join('');
