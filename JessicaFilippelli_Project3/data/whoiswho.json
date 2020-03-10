@@ -1,0 +1,117 @@
+{
+
+  "who_is_who":
+  [
+    {
+      "name": "Harry James Potter",
+      "house": "Gryffindor",
+      "hair": "Jet-Black",
+      "blood_status": "Half-Blood",
+      "patronus": "Stag"
+
+    },
+
+    {
+      "name": "Hermione Jean Granger",
+      "house": "Gryffindor",
+      "hair": "Brown",
+      "blood_status": "Muggle-born",
+      "patronus": "Otter"
+    },
+
+    {
+      "name": "Ronald Bilius Weasley",
+      "house": "Gryffindor",
+      "hair": "Red",
+      "blood_status": "Pure-blood",
+      "patronus": "Jack Russell terrier"
+    },
+
+    {
+      "name": "Ginevra Molly Weasley",
+      "house": "Gryffindor",
+      "hair": "Red",
+      "blood_status": "Pure-blood",
+      "patronus": "Horse"
+
+    },
+
+  {
+    "name": "Neville Longbottom",
+    "house": "Gryffindor",
+    "hair": "Blond",
+    "blood_status": "Pure-blood",
+    "patronus": "Non-corporeal"
+  },
+
+  {
+    "name": "Luna Lovegood",
+    "house": "Ravenclaw",
+    "hair": "Dirty-blonde",
+    "blood_status": "Pure-blood",
+    "patronus": "Hare"
+  },
+
+  {
+    "name": "Minerva McGonagall",
+    "house": "Gryffindor",
+    "hair": "Black",
+    "blood_status": "Half-blood",
+    "patronus": "Cat"
+  },
+
+  {
+    "name": "Severus Snape",
+    "house": "Slytherin",
+    "hair": "Black",
+    "blood_status": "Half-blood",
+    "patronus": "Doe"
+  },
+
+  {
+    "name": "Rubeus Hagrid",
+    "house": "Gryffindor",
+    "hair": "Black",
+    "blood_status": "Part-Human (Half-giant)",
+    "patronus": "None"
+  },
+
+  {
+    "name": "Albus Percival Wulfric Brian Dumbledore",
+    "house": "Gryffindor",
+    "hair": "Silver",
+    "blood_status": "Half-blood",
+    "patronus": "Phoenix"
+  },
+
+  {
+    "name": "Sirius Black",
+    "house": "Gryffindor",
+    "hair": "Black",
+    "blood_status": "Pure-blood",
+    "patronus": "Non-corporeal"
+  },
+
+  {
+    "name": "Draco Lucius Malfoy",
+    "house": "Slytherin",
+    "hair": "Silver-blonde[",
+    "blood_status": "Pure-blood",
+    "patronus": "None"
+  },
+
+  {
+    "name": "Tom Marvolo Riddle",
+    "house": "Slytherin",
+    "hair": "Black",
+    "blood_status": "Half-blood",
+    "patronus": "None"
+  }
+
+
+
+
+
+
+  ]
+}

@@ -12,12 +12,6 @@ to match your project! Write JavaScript to do amazing things below!
 
 $(document).ready(setup);
 
-<<<<<<< HEAD
-
-function setup() {
-
-}
-=======
 function setup() {
   //done call that function
   //fail call the othe functon
@@ -55,4 +49,3 @@ function getRandomArrayElement(array){
 let element = array[Math.floor(Math.random()*array.length)];
 return element;
 }
->>>>>>> 683063cd40432166f18923263f2c6998e7ae4a91

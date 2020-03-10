@@ -7,7 +7,7 @@
 //for example if someone does not like a video, they can stop watching it. so a user can pick how much
 //they want to see and not see.
 
-//my Arrays are in a different script to save space in the main JS file 
+//my Arrays are in a different script to save space in the main JS file
 
 //the class Photo is what creates a new image and its style
 class Photo{
@@ -105,12 +105,9 @@ function setup() {
   $( "#makeup" ).click(function() {
     $("#makeup").effect('slide');
     changeMakeup();
-<<<<<<< HEAD
-    //responsiveVoice.speak("I'VE NEVER TRIED ANYTHING QUITE LIKE THIS. BITE CHANGE MAKER FOUNDATION AND POWDER REVIEW AND WEAR TESTS", "UK English Female");
-=======
     clownActive =true;
     responsiveVoice.speak("I'VE NEVER TRIED ANYTHING QUITE LIKE THIS. BITE CHANGE MAKER FOUNDATION AND POWDER REVIEW AND WEAR TESTS", "UK English Female", {onend: voiceEndTest});
->>>>>>> 2fdfe1ac6757e55b127640e3ca2871e84095b764
+
   });
 
   //thrid image of clowns
