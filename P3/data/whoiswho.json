@@ -44,7 +44,7 @@
     "patronus": "Non-corporeal"
   },
 
-  {Minerva McGonagall
+  {
     "name": "Luna Lovegood",
     "house": "Ravenclaw",
     "hair": "Dirty-blonde",
@@ -54,10 +54,26 @@
 
   {
     "name": "Minerva McGonagall",
-    "house": "Ravenclaw",
-    "hair": "Dirty-blonde",
+    "house": "Gryffindor",
+    "hair": "Black",
     "blood_status": "Half-blood",
-    "patronus": "Hare"
+    "patronus": "Cat"
+  },
+
+  {
+    "name": "Severus Snape",
+    "house": "Slytherin",
+    "hair": "Black",
+    "blood_status": "Half-blood",
+    "patronus": "Doe"
+  },
+
+  {
+    "name": "Rubeus Hagrid",
+    "house": "Slytherin",
+    "hair": "Black",
+    "blood_status": "Half-blood",
+    "patronus": "Doe"
   },
 
 
