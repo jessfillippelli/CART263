@@ -1,0 +1,69 @@
+{
+
+  "who_is_who":
+  [
+    {
+      "name": "Harry James Potter",
+      "house": "Gryffindor",
+      "hair": "Jet-Black",
+      "blood_status": "Half-Blood",
+      "patronus": "Stag"
+
+    },
+
+    {
+      "name": "Hermione Jean Granger",
+      "house": "Gryffindor",
+      "hair": "Brown",
+      "blood_status": "Muggle-born",
+      "patronus": "Otter"
+    },
+
+    {
+      "name": "Ronald Bilius Weasley",
+      "house": "Gryffindor",
+      "hair": "Red",
+      "blood_status": "Pure-blood",
+      "patronus": "Jack Russell terrier"
+    },
+
+    {
+      "name": "Ginevra Molly Weasley",
+      "house": "Gryffindor",
+      "hair": "Red",
+      "blood_status": "Pure-blood",
+      "patronus": "Horse"
+
+    },
+
+  {
+    "name": "Neville Longbottom",
+    "house": "Gryffindor",
+    "hair": "Blond",
+    "blood_status": "Pure-blood",
+    "patronus": "Non-corporeal"
+  },
+
+  {Minerva McGonagall
+    "name": "Luna Lovegood",
+    "house": "Ravenclaw",
+    "hair": "Dirty-blonde",
+    "blood_status": "Pure-blood",
+    "patronus": "Hare"
+  },
+
+  {
+    "name": "Minerva McGonagall",
+    "house": "Ravenclaw",
+    "hair": "Dirty-blonde",
+    "blood_status": "Half-blood",
+    "patronus": "Hare"
+  },
+
+
+
+
+
+
+  ]
+}
