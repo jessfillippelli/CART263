@@ -19,5 +19,6 @@ $.getJSON("data/data.json", tarotLoaded);
 
 function tarotLoaded(data){
   tarot = data;
-  console.log(tarot);
+  let foolshadowMeaning = tarot.tarot_interpretations[0].meanings.shadow[0];
+  console.log(foolshadowMeaning);
 }
