@@ -35,6 +35,10 @@ background-color: pink;
   background: red;
 }
 
+.gametwotext{
+  font-size: 100px;
+  position: absolute;
+}
 
 /* Create two equal columns that sits next to each other */
 .column {

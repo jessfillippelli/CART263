@@ -64,20 +64,18 @@ function initializeGame(){
                 .html( "Dropped!" );
           }
         });
-        //
-        // for (let i =0; i<masterArray.length;i++){
-        //   console.log(masterArray[i])
-        // }
 
 
-      //console.log(getRandomPerson());
-      let $container = $("<div>");
+
+    //display the data text
+      let $container = $(".gametwotext");
       let person = getRandomPerson();
       $container.text(person.name + person.house + person.hair + person.blood_status + person.patronus);
           $('#game_two').append($container);
 
       }
 
+//make the data random
       function getRandomPerson(){
           let randomPerson = masterArray[Math.floor(Math.random()*masterArray.length)];
           return randomPerson;
