@@ -27,21 +27,22 @@ $.getJSON("data/whoiswho.json",function( data ) {
 
 
 //put data into an array
- for(let i = 0; i<items.length; i++){
+ for(let i = 0; i<items.length; i++){ //start of for loop
     let tempArray = items[i];
     for(let j = 0; j<tempArray.length;j++){
       masterArray.push(tempArray[j])
     }
+  } // end of for loop
 
-    }
+
+
+
 
 //start game
   initializeGame();
 
 })
-/*.done(function() {
-    console.log( "second success" );
-  })*/
+
   .fail(function(error) {
     console.log( "error"+ error );
   })
@@ -63,9 +64,21 @@ function initializeGame(){
                 .html( "Dropped!" );
           }
         });
+        //
+        // for (let i =0; i<masterArray.length;i++){
+        //   console.log(masterArray[i])
+        // }
 
-        for (let i =0; i<masterArray.length;i++){
-          console.log(masterArray[i])
-        }
 
+      //console.log(getRandomPerson());
+      let $container = $("<div>");
+      let person = getRandomPerson();
+      $container.text(person.name + person.house + person.hair + person.blood_status + person.patronus);
+          $('#game_two').append($container);
+
+      }
+
+      function getRandomPerson(){
+          let randomPerson = masterArray[Math.floor(Math.random()*masterArray.length)];
+          return randomPerson;
       }
