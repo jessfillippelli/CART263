@@ -15,6 +15,9 @@ $(document).ready(setup);
 
 
 function setup() {
+$.getJSON("data/whoiswho.json")
+
+
   $( function() {
       $( "#list_one" ).sortable();
       $( "#list_one" ).disableSelection();
