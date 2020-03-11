@@ -11,9 +11,9 @@ background-color: pink;
   #list_one li { margin: 0 3px 10px 3px; padding: 0.4em; padding-left: 1.5em; font-size: 1.4em; height: 18px; }
   #list_one li span { flex; margin-left: -1.3em; }
 
-
+ /* width: 100px; height: 100px; padding: 0.5em; */
 /* for  draggable */
-  #draggable { width: 100px; height: 100px; padding: 0.5em; float: left; margin: 10px 10px 10px 0; }
+  #draggable { float: left; margin: 10px 10px 10px 0; }
   #droppable { width: 150px; height: 150px; padding: 0.5em; float: left; margin: 10px; }
 
 /* main page button style */
@@ -28,3 +28,22 @@ background-color: pink;
     display: inline-block;
     font-size: 16px;
   }
+
+
+#game_two{
+  height: 100%;
+  background: red;
+}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+  -ms-flex: 50%; /* IE 10 */
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}

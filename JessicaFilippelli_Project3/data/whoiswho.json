@@ -1,7 +1,5 @@
 {
-
-  "who_is_who":
-  [
+  "students": [
     {
       "name": "Harry James Potter",
       "house": "Gryffindor",
@@ -20,98 +18,128 @@
     },
 
     {
-      "name": "Ronald Bilius Weasley",
+          "name": "Ronald Bilius Weasley",
+          "house": "Gryffindor",
+          "hair": "Red",
+          "blood_status": "Pure-blood",
+          "patronus": "Jack Russell terrier"
+        },
+
+        {
+          "name": "Ginevra Molly Weasley",
+          "house": "Gryffindor",
+          "hair": "Red",
+          "blood_status": "Pure-blood",
+          "patronus": "Horse"
+
+        },
+
+      {
+        "name": "Neville Longbottom",
+        "house": "Gryffindor",
+        "hair": "Blond",
+        "blood_status": "Pure-blood",
+        "patronus": "Non-corporeal"
+      },
+
+      {
+        "name": "Luna Lovegood",
+        "house": "Ravenclaw",
+        "hair": "Dirty-blonde",
+        "blood_status": "Pure-blood",
+        "patronus": "Hare"
+      }
+
+  ],
+  "professors": [
+    {
+      "name": "Minerva McGonagall",
       "house": "Gryffindor",
-      "hair": "Red",
-      "blood_status": "Pure-blood",
-      "patronus": "Jack Russell terrier"
+      "hair": "Black",
+      "blood_status": "Half-blood",
+      "patronus": "Cat"
     },
 
     {
-      "name": "Ginevra Molly Weasley",
-      "house": "Gryffindor",
-      "hair": "Red",
-      "blood_status": "Pure-blood",
-      "patronus": "Horse"
-
+      "name": "Severus Snape",
+      "house": "Slytherin",
+      "hair": "Black",
+      "blood_status": "Half-blood",
+      "patronus": "Doe"
     },
 
-  {
-    "name": "Neville Longbottom",
-    "house": "Gryffindor",
-    "hair": "Blond",
-    "blood_status": "Pure-blood",
-    "patronus": "Non-corporeal"
-  },
+    {
+      "name": "Rubeus Hagrid",
+      "house": "Gryffindor",
+      "hair": "Black",
+      "blood_status": "Part-Human (Half-giant)",
+      "patronus": "None"
+    },
 
-  {
-    "name": "Luna Lovegood",
-    "house": "Ravenclaw",
-    "hair": "Dirty-blonde",
-    "blood_status": "Pure-blood",
-    "patronus": "Hare"
-  },
+    {
+      "name": "Filius Flitwick",
+      "house": "Ravenclaw",
+      "hair": "White",
+      "blood_status": "Part-Goblin",
+      "patronus": "Non-corporeal"
+    },
 
-  {
-    "name": "Minerva McGonagall",
-    "house": "Gryffindor",
-    "hair": "Black",
-    "blood_status": "Half-blood",
-    "patronus": "Cat"
-  },
+    {
+      "name": "Pomona Sprout",
+      "house": "Hufflepuff",
+      "hair": "White",
+      "blood_status": "Half-blood or Pure-blood",
+      "patronus": "Non-corporeal"
+    },
 
-  {
-    "name": "Severus Snape",
-    "house": "Slytherin",
-    "hair": "Black",
-    "blood_status": "Half-blood",
-    "patronus": "Doe"
-  },
+    {
+      "name": "Horace Eugene Flaccus Slughorn",
+      "house": "Slytherin",
+      "hair": "Bald",
+      "blood_status": "Half-blood or Pure-blood",
+      "patronus": "Non-corporeal"
+    },
+  ],
+  "Order_of_the_Phoenix": [
 
-  {
-    "name": "Rubeus Hagrid",
-    "house": "Gryffindor",
-    "hair": "Black",
-    "blood_status": "Part-Human (Half-giant)",
-    "patronus": "None"
-  },
+    {
+      "name": "Albus Percival Wulfric Brian Dumbledore",
+      "house": "Gryffindor",
+      "hair": "Silver",
+      "blood_status": "Half-blood",
+      "patronus": "Phoenix"
+    },
 
-  {
-    "name": "Albus Percival Wulfric Brian Dumbledore",
-    "house": "Gryffindor",
-    "hair": "Silver",
-    "blood_status": "Half-blood",
-    "patronus": "Phoenix"
-  },
+    {
+      "name": "Sirius Black",
+      "house": "Gryffindor",
+      "hair": "Black",
+      "blood_status": "Pure-blood",
+      "patronus": "Non-corporeal"
+    },
 
-  {
-    "name": "Sirius Black",
-    "house": "Gryffindor",
-    "hair": "Black",
-    "blood_status": "Pure-blood",
-    "patronus": "Non-corporeal"
-  },
+    {
+      "name": "Alastor Moody",
+      "house": "Unknown",
+      "hair": "Black",
+      "blood_status": "Pure-blood",
+      "patronus": "Non-corporeal"
+    },
 
-  {
-    "name": "Draco Lucius Malfoy",
-    "house": "Slytherin",
-    "hair": "Silver-blonde[",
-    "blood_status": "Pure-blood",
-    "patronus": "None"
-  },
+    {
+      "name": "Kingsley Shacklebolt",
+      "house": "Unknown",
+      "hair": "Black",
+      "blood_status": "Pure-blood",
+      "patronus": "Non-corporeal"
+    },
 
-  {
-    "name": "Tom Marvolo Riddle",
-    "house": "Slytherin",
-    "hair": "Black",
-    "blood_status": "Half-blood",
-    "patronus": "None"
-  }
-
-
-
-
-
-
+    {
+      "name": "Remus John Lupin",
+      "house": "Gryffindor",
+      "hair": "Light brown flecked with grey",
+      "blood_status": "Half-blood",
+      "patronus": "Wolf"
+    },
   ]
 }
