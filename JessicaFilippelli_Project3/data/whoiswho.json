@@ -141,5 +141,116 @@
       "blood_status": "Half-blood",
       "patronus": "Wolf"
     },
+
+    {
+      "name": "Nymphadora Tonks",
+      "house": "Hufflepuff",
+      "hair": "Variable",
+      "blood_status": "Half-blood",
+      "patronus": "Wolf"
+    }
+
+  ],
+  "Ministry_of_Magic": [
+
+    {
+      "name": "Rufus Scrimgeour",
+      "house": "Unknown",
+      "hair": "Tawny",
+      "blood_status": "Half-blood",
+      "patronus": "Non-corporeal"
+    },
+
+    {
+      "name": "Cornelius Oswald Fudge",
+      "house": "Unknown",
+      "hair": "Grey",
+      "blood_status": "Pure-blood or Half-blood",
+      "patronus": "Non-corporeal"
+    },
+
+    {
+      "name": "Dolores Jane Umbridge",
+      "house": "Slytherin",
+      "hair": "Iron grey",
+      "blood_status": "Half-blood",
+      "patronus": "Persian cat"
+    },
+
+    {
+      "name": "Dolores Jane Umbridge",
+      "house": "Slytherin",
+      "hair": "Iron grey",
+      "blood_status": "Half-blood",
+      "patronus": "Persian cat"
+    },
+
+    {
+      "name": "Pius Thicknesse",
+      "house": "Unknown",
+      "hair": "Black and silver",
+      "blood_status": "Pure-blood or half-blood",
+      "patronus": "Unknown"
+    },
+
+    {
+      "name": "Bartemius Crouch",
+      "house": "Unknown",
+      "hair": "Grey",
+      "blood_status": "Pure-blood",
+      "patronus": "Non-corporeal"
+    },
+
+    {
+      "name": "Arthur Weasley",
+      "house": "Gryffindor",
+      "hair": "Red",
+      "blood_status": "Pure-blood",
+      "patronus": "Weasel"
+    }
+  ],
+  "Death_Eaters": [
+
+    {
+  "name": "Draco Lucius Malfoy",
+  "house": "Slytherin",
+  "hair": "Silver-blonde[",
+  "blood_status": "Pure-blood",
+  "patronus": "None"
+},
+
+{
+  "name": "Tom Marvolo Riddle",
+  "house": "Slytherin",
+  "hair": "Black",
+  "blood_status": "Half-blood",
+  "patronus": "None"
+},
+
+{
+  "name": "Bellatrix Lestrange",
+  "house": "Slytherin",
+  "hair": "Black",
+  "blood_status": "Pure-blood",
+  "patronus": "None"
+},
+
+{
+  "name": "Lucius Malfoy",
+  "house": "Slytherin",
+  "hair": "White-blond",
+  "blood_status": "Pure-blood",
+  "patronus": "None"
+},
+
+{
+  "name": "Peter Pettigrew",
+  "house": "Gryffindor",
+  "hair": "White-blond",
+  "blood_status": "Half-blood or pure-blood",
+  "patronus": "None"
+},
+
+
   ]
 }
