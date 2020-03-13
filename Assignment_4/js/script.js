@@ -13,9 +13,13 @@ $(document).ready(setup);
 
 function setup() {
 
-  $("button").click(function(){
-            location.reload(true);
-        });
+
+  $('#k').click(function() {
+      location.reload();
+  });
+  // $("button").click(function(){
+  //           location.reload(true);
+  //       });
   //done call that function
   //fail call the othe functon
 $.getJSON("data/data.json").done(dataLoaded).fail(dataNotLoaded);
