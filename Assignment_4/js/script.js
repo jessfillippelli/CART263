@@ -35,9 +35,13 @@ let randomCat = getRandomArrayElement(data.cats);
 //room
 let randomRoom = getRandomArrayElement(data.rooms);
 
+//nhl data
+let randomnNhlTeams = getRandomArrayElement(data.nhlteams[i].name);
+
+//netflix data
 let randomncategories = getRandomArrayElement(data.categories);
 
-let randomDecription = ` adours ${randomCondiment} ${randomncategories} ${verb} like a  ${randomCat} in a ${randomRoom}`;
+let randomDecription = ` ${randomNnhlTeams} adours ${randomCondiment} ${randomncategories} ${verb} like a  ${randomCat} in a ${randomRoom}`;
 $('body').append(randomDecription);
 
 }//end of data
