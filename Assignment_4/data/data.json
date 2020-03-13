@@ -308,8 +308,9 @@
 		"Za'atar",
 		"Zacuscă"
 	],
-	"description": "Current (as of 2016) teams in the NHL and where they play",
-	"nhl_teams": [{
+
+	"nhlteams": [
+    {
 			"city": "Boston",
 			"state": "MA",
 			"conference": "Eastern",

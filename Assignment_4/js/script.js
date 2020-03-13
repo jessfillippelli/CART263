@@ -35,7 +35,9 @@ let randomCat = getRandomArrayElement(data.cats);
 //room
 let randomRoom = getRandomArrayElement(data.rooms);
 
-let randomDecription = `${randomCondiment} ${verb} like a  ${randomCat} in a ${randomRoom}`;
+let randomncategories = getRandomArrayElement(data.categories);
+
+let randomDecription = ` adours ${randomCondiment} ${randomncategories} ${verb} like a  ${randomCat} in a ${randomRoom}`;
 $('body').append(randomDecription);
 
 }//end of data
