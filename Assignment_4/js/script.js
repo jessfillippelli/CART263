@@ -5,14 +5,17 @@
 Title of Project
 Author Name
 
-This is a template. Fill in the title, author, and this description
-to match your project! Write JavaScript to do amazing things below!
+
 
 *********************************************************************/
 
 $(document).ready(setup);
 
 function setup() {
+
+  $("button").click(function(){
+            location.reload(true);
+        });
   //done call that function
   //fail call the othe functon
 $.getJSON("data/data.json").done(dataLoaded).fail(dataNotLoaded);
@@ -36,12 +39,12 @@ let randomCat = getRandomArrayElement(data.cats);
 let randomRoom = getRandomArrayElement(data.rooms);
 
 //nhl data
-let randomnNhlTeams = getRandomArrayElement(data.nhlteams[i].name);
+let randomnhlteams = getRandomArrayElement(data.nhlteams);
 
 //netflix data
 let randomncategories = getRandomArrayElement(data.categories);
 
-let randomDecription = ` ${randomNnhlTeams} adours ${randomCondiment} ${randomncategories} ${verb} like a  ${randomCat} in a ${randomRoom}`;
+let randomDecription = ` ${randomnhlteams} adours ${randomCondiment} ${randomncategories} ${verb} like a  ${randomCat} in a ${randomRoom}`;
 $('body').append(randomDecription);
 
 }//end of data
