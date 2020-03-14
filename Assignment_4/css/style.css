@@ -6,3 +6,7 @@ font-family: impact;
 /* .button{
   margin-left: 15%;
 } */
+#content {
+  font-family: serif;
+  font-size: 1.5em;
+}

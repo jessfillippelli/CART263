@@ -11,12 +11,14 @@ Author Name
 
 $(document).ready(setup);
 
+let vowels = [ "a", "e", "i", "o", "u", "y"];
+
 function setup() {
 
-
-  $('#k').click(function() {
-      location.reload();
-  });
+$('#content').on('click', getRandomArrayElement);
+  // $('#k').click(function() {
+  //     location.reload();
+  // });
   // $("button").click(function(){
   //           location.reload(true);
   //       });
@@ -34,6 +36,12 @@ let verb = "is";
 //tell you how long the word is
 if (randomCondiment.charAt(randomCondiment.length -1 ) === "s"){
   verb = "are";
+}
+
+//rooms.length, cats.length, condiments.length,
+
+if (randomnhlteams.charAt(nhlteams.lenght,) === "a"){
+  verb ="an";
 }
 
 //cat
@@ -61,4 +69,7 @@ function getRandomArrayElement(array){
   console.log(array);
 let element = array[Math.floor(Math.random()*array.length)];
 return element;
+
+
+
 }
