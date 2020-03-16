@@ -1,75 +1,57 @@
 "use strict";
-
-/********************************************************************
-
-Title of Project
-Author Name
-
-
-
-*********************************************************************/
-
 $(document).ready(setup);
 
-let vowels = [ "a", "e", "i", "o", "u", "y"];
-
 function setup() {
+  $('#content').on('click', getRandomArrayElement);
+  $.getJSON("data/data.json").done(gotData).fail(dataNotLoaded);
+}//end of set up
 
-$('#content').on('click', getRandomArrayElement);
-  // $('#k').click(function() {
-  //     location.reload();
-  // });
-  // $("button").click(function(){
-  //           location.reload(true);
-  //       });
-  //done call that function
-  //fail call the othe functon
-$.getJSON("data/data.json").done(dataLoaded).fail(dataNotLoaded);
-}
-
-function dataLoaded(data){
-    console.log(data.condiments);
 
 //Condiment
-let randomCondiment = getRandomArrayElement(data.condiments);
-let verb = "is";
-//tell you how long the word is
-if (randomCondiment.charAt(randomCondiment.length -1 ) === "s"){
-  verb = "are";
-}
 
-//rooms.length, cats.length, condiments.length,
+function gotData(data){
+  let randomCondiment = getRandomArrayElement(data.condiments);
+  let verb = "is";
+  //let verb = "an";
+  //tell you how long the word is
+  //cat
+  let randomCat = getRandomArrayElement(data.cats);
+  //room
+  let randomRoom = getRandomArrayElement(data.rooms);
+  //nhl data
+  let randomNhlTeams = getRandomArrayElement(data.nhlteams);
+  //netflix data
+  let randomCategories = getRandomArrayElement(data.categories);
 
-if (randomnhlteams.charAt(nhlteams.lenght,) === "a"){
-  verb ="an";
-}
+  if (randomCategories.charAt(randomCategories.length -1 ) === "s"){
+    verb = "are";
+  }
 
-//cat
-let randomCat = getRandomArrayElement(data.cats);
+  let vowels = [ "a", "e", "i", "o", "u", "y"];
+  let articleCat= "a";
+  let articleRoom = "a";
 
-//room
-let randomRoom = getRandomArrayElement(data.rooms);
+  for (let i=0; i < vowels.length; i++){
 
-//nhl data
-let randomnhlteams = getRandomArrayElement(data.nhlteams);
+    if (randomCat.charAt(0).toLowerCase() === vowels[i]){
+      articleCat ="an";
+    }
 
-//netflix data
-let randomncategories = getRandomArrayElement(data.categories);
+    if (randomRoom.charAt(0).toLowerCase() === vowels[i]){
+      articleRoom ="an";
+    }
 
-let randomDecription = ` ${randomnhlteams} adours ${randomCondiment} ${randomncategories} ${verb} like a  ${randomCat} in a ${randomRoom}`;
-$('body').append(randomDecription);
+  }
 
-}//end of data
+  let randomDecription = `${randomNhlTeams} adores ${randomCondiment} and ${randomCategories} ${verb} like ${articleCat} ${randomCat} in ${articleRoom} ${randomRoom}`;
+  $('body').append(randomDecription);
+} //end of got data
 
+
+//end of data
 function dataNotLoaded(request, text, error){
-
 }
-
 function getRandomArrayElement(array){
-  console.log(array);
-let element = array[Math.floor(Math.random()*array.length)];
-return element;
-
-
-
+  let element = array[Math.floor(Math.random()*array.length)];
+  return element;
 }
