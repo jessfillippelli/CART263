@@ -3,7 +3,11 @@ $(document).ready(setup);
 
 function setup() {
   $('#content').on('click', getRandomArrayElement);
-  $.getJSON("data/data.json").done(gotData).fail(dataNotLoaded);
+
+  refresh();
+  $('#screen').click(function() {
+  refresh();
+});
 }//end of set up
 
 
@@ -54,4 +58,10 @@ function dataNotLoaded(request, text, error){
 function getRandomArrayElement(array){
   let element = array[Math.floor(Math.random()*array.length)];
   return element;
+}
+
+function refresh(){
+    $.getJSON("data/data.json").done(gotData).fail(dataNotLoaded);
+//location.reload();
+$('#screen').empty();
 }
