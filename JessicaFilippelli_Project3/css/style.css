@@ -36,26 +36,32 @@ width: 100vw;
   }
 
 
+/* everything for game two */
 #game_two{
   height: 50%;
   background: red;
   /* padding-bottom: 100%; */
 }
 
+#gametwo_caption{
+text-align: center;
+}
+
+/* for the data text */
 .gametwotext{
   font-size: 10px;
   position: relative;
 
 }
 
-/* Create two equal columns that sits next to each other */
+/* belong to the images */
 .column {
   -ms-flex: 50%; /* IE 10 */
   flex: 50%;
-  padding: 0 4px;
+  margin-left: 17%;
 }
 
 .column img {
-  margin-top: 35%;
+  margin-top: 15%;
 
 }

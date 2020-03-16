@@ -71,7 +71,8 @@ function initializeGame(){
       let $container = $(".gametwotext");
       let person = getRandomPerson();
       $container.text(person.name + person.house + person.hair + person.blood_status + person.patronus);
-          $('#game_two').append($container);
+          $('#game_two').append($
+          );
 
       }
 
