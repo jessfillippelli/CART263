@@ -5,8 +5,7 @@
 Title of Project: Fan HP quiz
 Author Name: Jessica Filippelli
 
-This is a template. Fill in the title, author, and this description
-to match your project! Write JavaScript to do amazing things below!
+This is a Harry Potter Quiz.
 
 *********************************************************************/
 
@@ -63,7 +62,7 @@ function initializeGame(){
         let $container = $(".gametwotext");
         //let person = getRandomPerson();
         //$container.text(person.name + person.house + person.hair + person.blood_status + person.patronus);
-      // $container.text("person.name \n + person.house \n + person.hair \n + person.blood_status \n + person.patronus");
+      $container.text("person.name \n + person.house \n + person.hair \n + person.blood_status \n + person.patronus");
 
       let person = getRandomElement(students.name);
       let house = getRandomElement(students.house);
