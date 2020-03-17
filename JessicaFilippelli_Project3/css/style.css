@@ -40,23 +40,24 @@ width: 100vw;
 #game_two{
   height: 50%;
   background: red;
-  /* padding-bottom: 100%; */
 }
 
+/* caption  */
 #gametwo_caption{
 text-align: center;
+font-family: 'Kaushan Script', cursive;
+font-size: 10px;
 }
 
 /* for the data text */
 .gametwotext{
-  font-size: 10px;
+  font-size: 45px;
   position: relative;
-
 }
 
 /* belong to the images */
 .column {
-  -ms-flex: 50%; /* IE 10 */
+  -ms-flex: 50%;
   flex: 50%;
   margin-left: 17%;
 }
