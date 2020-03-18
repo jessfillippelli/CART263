@@ -12,7 +12,8 @@ This is a Harry Potter Quiz
 $(document).ready(setup);
 //  THIS IS THA ARRAY THAT WILL BE CONTAINING YOUR DATA FROM THE JSON FILE
 let people = [];
-
+//in drop i can compare with random person
+let randomPerson;
 
 function setup() {
 
@@ -45,12 +46,18 @@ $.getJSON("data/whoiswho.json",function( data ) {
 
 function initializeGame(){
 
-      $( "#list_one" ).sortable();
+      // $( "#list_one" ).sortable();
       $( "#list_one" ).disableSelection();
       $("#game_one").hide();
       $( ".draggable" ).draggable();
         $( "#droppable" ).droppable({
 
+//where to relize what is the correct name is
+//for evverything single image
+//can comparie in drop
+//acc name with image class with that Name
+//can check name with class
+//every image can have the right name
           drop: function( event, ui ) {
             $( this )
               .addClass( "ui-state-highlight" )
@@ -62,12 +69,12 @@ function initializeGame(){
         //display the data text
         let $container = $(".gametwotext");
         // get a random stuent from the students array
-        let randomPerson = getRandomElement(people);
+        randomPerson = getRandomElement(people);
         console.log(randomPerson);
 
       //  $('#game_two').append($);
       //  see in the index.html where the container is coming from
-      $container.text(randomPerson.name +" \n" + randomPerson.house +" \n" + randomPerson.hair +" \n" +randomPerson.blood_status +" \n"  + randomPerson.patronus);
+      $container.html("Name: "+randomPerson.Name + "<br> "  + "House: "randomPerson.House + "<br> " + "Hair: "randomPerson.Hair + "<br> " + "Blood_status: "randomPerson.Blood_status + "<br> "  + "Patronus: "randomPerson.Patronus);
 
       }
 
