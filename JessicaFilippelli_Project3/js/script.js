@@ -5,12 +5,13 @@
 Title of Project: Fan HP quiz
 Author Name: Jessica Filippelli
 
-This is a Harry Potter Quiz.
+This is a Harry Potter Quiz
 
 *********************************************************************/
 
 $(document).ready(setup);
-let masterArray = [];
+//  THIS IS THA ARRAY THAT WILL BE CONTAINING YOUR DATA FROM THE JSON FILE
+let people = [];
 
 
 function setup() {
@@ -29,7 +30,7 @@ $.getJSON("data/whoiswho.json",function( data ) {
  for(let i = 0; i<items.length; i++){ //start of for loop
     let tempArray = items[i];
     for(let j = 0; j<tempArray.length;j++){
-      masterArray.push(tempArray[j])
+      people.push(tempArray[j])
     }
   } // end of for loop
 //start game
@@ -60,24 +61,15 @@ function initializeGame(){
 
         //display the data text
         let $container = $(".gametwotext");
-        //let person = getRandomPerson();
-        //$container.text(person.name + person.house + person.hair + person.blood_status + person.patronus);
-      $container.text("person.name \n + person.house \n + person.hair \n + person.blood_status \n + person.patronus");
+        // get a random stuent from the students array
+        let randomPerson = getRandomElement(people);
+        console.log(randomPerson);
 
-      let person = getRandomElement(students.name);
-      let house = getRandomElement(students.house);
-      let hair = getRandomElement(students.hair);
-      let blood = getRandomElement(students.blood_status);
-      let patrons = getRandomElement(students.patronus);
-        $('#game_two').append($
-        );
+      //  $('#game_two').append($);
+      //  see in the index.html where the container is coming from
+      $container.text(randomPerson.name +" \n" + randomPerson.house +" \n" + randomPerson.hair +" \n" +randomPerson.blood_status +" \n"  + randomPerson.patronus);
+
       }
-
-      // //make the data random
-      // function getRandomPerson(person.name){
-      //   // let randomPerson = masterArray[Math.floor(Math.random()*masterArray.length)];
-      //   // return randomPerson;
-      // }
 
       function getRandomElement(array){
         return array[Math.floor(Math.random() * array.length)];
