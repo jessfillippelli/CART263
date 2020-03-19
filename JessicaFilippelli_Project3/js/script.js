@@ -53,11 +53,11 @@ function initializeGame(){
   $( "#droppable" ).droppable({
 
     //where to relize what is the correct name is
-    //for evverything single image
     //can comparie in drop
-    //acc name with image class with that Name
-    //can check name with class
+    //acc name with image class/ID with that Name
+    //can check name with class/ID
     //every image can have the right name
+    //WHERE I PUT THE COMPARE FUNCTION
     drop: function( event, ui ) {
       $( this )
       .addClass( "ui-state-highlight" )

@@ -1,5 +1,6 @@
 {
 	"students": [{
+		  'id': "harry",
 			"Name": "Harry James Potter",
 			"House": "Gryffindor",
 			"Hair": "Jet-Black",
@@ -9,6 +10,7 @@
 		},
 
 		{
+			'id': "Hermione",
 			"Name": "Hermione Jean Granger",
 			"House": "Gryffindor",
 			"Hair": "Brown",
@@ -17,6 +19,7 @@
 		},
 
 		{
+			'id': "Ron",
 			"Name": "Ronald Bilius Weasley",
 			"House": "Gryffindor",
 			"Hair": "Red",
@@ -25,6 +28,7 @@
 		},
 
 		{
+			'id': "Ginny",
 			"Name": "Ginevra Molly Weasley",
 			"House": "Gryffindor",
 			"Hair": "Red",
@@ -34,6 +38,7 @@
 		},
 
 		{
+			'id': "neville",
 			"Name": "Neville Longbottom",
 			"House": "Gryffindor",
 			"Hair": "Blond",
@@ -42,6 +47,7 @@
 		},
 
 		{
+			'id': "luna",
 			"Name": "Luna Lovegood",
 			"House": "Ravenclaw",
 			"Hair": "Dirty-blonde",
@@ -51,6 +57,7 @@
 
 	],
 	"professors": [{
+		  'id': "ProfessorMcGonagall",
 			"Name": "Minerva McGonagall",
 			"House": "Gryffindor",
 			"Hair": "Black",
@@ -59,6 +66,7 @@
 		},
 
 		{
+			'id': "Snape",
 			"Name": "Severus Snape",
 			"House": "Slytherin",
 			"Hair": "Black",
@@ -67,6 +75,7 @@
 		},
 
 		{
+			'id': "Rubeus",
 			"Name": "Rubeus Hagrid",
 			"House": "Gryffindor",
 			"Hair": "Black",
@@ -75,6 +84,7 @@
 		},
 
 		{
+		  'id': "Flit",
 			"Name": "Filius Flitwick",
 			"House": "Ravenclaw",
 			"Hair": "White",
@@ -83,6 +93,7 @@
 		},
 
 		{
+			'id': "spourt",
 			"Name": "Pomona Sprout",
 			"House": "Hufflepuff",
 			"Hair": "White",
@@ -91,6 +102,7 @@
 		},
 
 		{
+			'id': "Slughorn",
 			"Name": "Horace Eugene Flaccus Slughorn",
 			"House": "Slytherin",
 			"Hair": "Bald",
@@ -101,6 +113,7 @@
 	"Order_of_the_Phoenix": [
 
 		{
+			'id': "Dumbledore",
 			"Name": "Albus Percival Wulfric Brian Dumbledore",
 			"House": "Gryffindor",
 			"Hair": "Silver",
@@ -109,6 +122,7 @@
 		},
 
 		{
+			'id': "Black",
 			"Name": "Sirius Black",
 			"House": "Gryffindor",
 			"Hair": "Black",
@@ -117,6 +131,7 @@
 		},
 
 		{
+			'id': "moody",
 			"Name": "Alastor Moody",
 			"House": "Unknown",
 			"Hair": "Black",
@@ -125,6 +140,7 @@
 		},
 
 		{
+			'id': "kingsley",
 			"Name": "Kingsley Shacklebolt",
 			"House": "Unknown",
 			"Hair": "Black",
@@ -133,6 +149,7 @@
 		},
 
 		{
+			'id': "Lupin",
 			"Name": "Remus John Lupin",
 			"House": "Gryffindor",
 			"Hair": "Light brown flecked with grey",
@@ -141,6 +158,7 @@
 		},
 
 		{
+			'id': "tonks",
 			"Name": "Nymphadora Tonks",
 			"House": "Hufflepuff",
 			"Hair": "Variable",
@@ -152,6 +170,7 @@
 	"Ministry_of_Magic": [
 
 		{
+			'id': "scrimgeour",
 			"Name": "Rufus Scrimgeour",
 			"House": "Unknown",
 			"Hair": "Tawny",
@@ -160,6 +179,7 @@
 		},
 
 		{
+			'id': "Fudge",
 			"Name": "Cornelius Oswald Fudge",
 			"House": "Unknown",
 			"Hair": "Grey",
@@ -168,6 +188,7 @@
 		},
 
 		{
+			'id': "Umbridge",
 			"Name": "Dolores Jane Umbridge",
 			"House": "Slytherin",
 			"Hair": "Iron grey",
@@ -176,6 +197,7 @@
 		},
 
 		{
+			'id': "Thicknesse",
 			"Name": "Pius Thicknesse",
 			"House": "Unknown",
 			"Hair": "Black and silver",
@@ -184,6 +206,7 @@
 		},
 
 		{
+			'id': "Crouch",
 			"Name": "Bartemius Crouch",
 			"House": "Unknown",
 			"Hair": "Grey",
@@ -192,6 +215,7 @@
 		},
 
 		{
+      'id': "Arthur",
 			"Name": "Arthur Weasley",
 			"House": "Gryffindor",
 			"Hair": "Red",
@@ -202,6 +226,7 @@
 	"Death_Eaters": [
 
 		{
+			'id': "Draco",
 			"Name": "Draco Lucius Malfoy",
 			"House": "Slytherin",
 			"Hair": "Silver-blonde[",
@@ -210,6 +235,7 @@
 		},
 
 		{
+			'id': "tom",
 			"Name": "Tom Marvolo Riddle",
 			"House": "Slytherin",
 			"Hair": "Black",
@@ -218,6 +244,7 @@
 		},
 
 		{
+			'id': "Bellatrix",
 			"Name": "Bellatrix Lestrange",
 			"House": "Slytherin",
 			"Hair": "Black",
@@ -226,6 +253,7 @@
 		},
 
 		{
+			'id': "Lucius",
 			"Name": "Lucius Malfoy",
 			"House": "Slytherin",
 			"Hair": "White-blond",
@@ -234,6 +262,7 @@
 		},
 
 		{
+			'id': "Pettigrew",
 			"Name": "Peter Pettigrew",
 			"House": "Gryffindor",
 			"Hair": "White-blond",
