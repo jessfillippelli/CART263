@@ -74,8 +74,7 @@ function initializeGame(){
 
       //  $('#game_two').append($);
       //  see in the index.html where the container is coming from
-      $container.html("Name: "+randomPerson.Name + "<br> "  + "House: "randomPerson.House + "<br> " + "Hair: "randomPerson.Hair + "<br> " + "Blood_status: "randomPerson.Blood_status + "<br> "  + "Patronus: "randomPerson.Patronus);
-
+$container.html("Name: "+randomPerson.Name + "<br> "  + "House: "+randomPerson.House + "<br> " + "Hair: " + randomPerson.Hair + "<br> " + "Blood status: "+randomPerson.Blood_status + "<br> "  + "Patronus: "+randomPerson.Patronus);
       }
 
       function getRandomElement(array){
