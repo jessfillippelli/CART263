@@ -15,6 +15,8 @@ let people = [];
 //in drop i can compare with random person
 let randomPerson;
 
+let rightAnswer = new Audio("assets/sounds/Pop.mp3");
+
 function setup() {
 
   //get data
@@ -47,7 +49,7 @@ function setup() {
 
 //all the game code goes in here
 function initializeGame(){
-rightMatch()
+//rightMatch()
   // $( "#list_one" ).sortable();
   $( "#list_one" ).disableSelection();
   $("#game_one").hide();
@@ -65,8 +67,18 @@ rightMatch()
       .addClass( "ui-state-highlight" )
       .find( "div" )
       .html( "Dropped!" );
+      rightMatch()
     }
   });
+
+
+  function rightMatch(){
+    if( data.students.id === image.id) {
+     right.play();
+  }
+  }//end of right math function
+
+
 
   //display the data text
   let $container = $(".gametwotext");
@@ -82,10 +94,3 @@ rightMatch()
 function getRandomElement(array){
   return array[Math.floor(Math.random() * array.length)];
 }
-
-
-function rightMatch(){
-  if( data.students.id === image.id) {
- this function happens
-}
-}//end of right math function
