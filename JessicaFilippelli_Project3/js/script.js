@@ -44,8 +44,10 @@ function setup() {
 
 }//end of set up
 
-function initializeGame(){
 
+//all the game code goes in here
+function initializeGame(){
+rightMatch()
   // $( "#list_one" ).sortable();
   $( "#list_one" ).disableSelection();
   $("#game_one").hide();
@@ -80,3 +82,10 @@ function initializeGame(){
 function getRandomElement(array){
   return array[Math.floor(Math.random() * array.length)];
 }
+
+
+function rightMatch(){
+  if( data.students.id === image.id) {
+ this function happens
+}
+}//end of right math function
