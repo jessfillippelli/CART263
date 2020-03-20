@@ -1,6 +1,6 @@
 {
 	"students": [{
-		  'id': "Harry",
+		  "id": "Harry",
 			"Name": "Harry James Potter",
 			"House": "Gryffindor",
 			"Hair": "Jet-Black",
@@ -10,7 +10,7 @@
 		},
 
 		{
-			'id': "Hermione",
+			"id": "Hermione",
 			"Name": "Hermione Jean Granger",
 			"House": "Gryffindor",
 			"Hair": "Brown",
@@ -19,7 +19,7 @@
 		},
 
 		{
-			'id': "Ron",
+			"id": "Ron",
 			"Name": "Ronald Bilius Weasley",
 			"House": "Gryffindor",
 			"Hair": "Red",
@@ -28,7 +28,7 @@
 		},
 
 		{
-			'id': "Ginny",
+			"id": "Ginny",
 			"Name": "Ginevra Molly Weasley",
 			"House": "Gryffindor",
 			"Hair": "Red",
@@ -38,7 +38,7 @@
 		},
 
 		{
-			'id': "neville",
+			"id": "neville",
 			"Name": "Neville Longbottom",
 			"House": "Gryffindor",
 			"Hair": "Blond",
@@ -47,7 +47,7 @@
 		},
 
 		{
-			'id': "luna",
+			"id": "luna",
 			"Name": "Luna Lovegood",
 			"House": "Ravenclaw",
 			"Hair": "Dirty-blonde",
@@ -66,7 +66,7 @@
 		},
 
 		{
-			'id': "Snape",
+			"id": "Snape",
 			"Name": "Severus Snape",
 			"House": "Slytherin",
 			"Hair": "Black",
@@ -75,7 +75,7 @@
 		},
 
 		{
-			'id': "Rubeus",
+			"id": "Rubeus",
 			"Name": "Rubeus Hagrid",
 			"House": "Gryffindor",
 			"Hair": "Black",
@@ -84,7 +84,7 @@
 		},
 
 		{
-		  'id': "Flit",
+		  "id": "Flit",
 			"Name": "Filius Flitwick",
 			"House": "Ravenclaw",
 			"Hair": "White",
@@ -93,7 +93,7 @@
 		},
 
 		{
-			'id': "spourt",
+			"id": "spourt",
 			"Name": "Pomona Sprout",
 			"House": "Hufflepuff",
 			"Hair": "White",
@@ -102,7 +102,7 @@
 		},
 
 		{
-			'id': "Slughorn",
+			"id": "Slughorn",
 			"Name": "Horace Eugene Flaccus Slughorn",
 			"House": "Slytherin",
 			"Hair": "Bald",
@@ -113,7 +113,7 @@
 	"Order_of_the_Phoenix": [
 
 		{
-			'id': "Dumbledore",
+			"id": "Dumbledore",
 			"Name": "Albus Percival Wulfric Brian Dumbledore",
 			"House": "Gryffindor",
 			"Hair": "Silver",
@@ -122,7 +122,7 @@
 		},
 
 		{
-			'id': "Black",
+			"id": "Black",
 			"Name": "Sirius Black",
 			"House": "Gryffindor",
 			"Hair": "Black",
@@ -131,7 +131,7 @@
 		},
 
 		{
-			'id': "moody",
+			"id": "moody",
 			"Name": "Alastor Moody",
 			"House": "Unknown",
 			"Hair": "Black",
@@ -140,7 +140,7 @@
 		},
 
 		{
-			'id': "kingsley",
+			"id": "kingsley",
 			"Name": "Kingsley Shacklebolt",
 			"House": "Unknown",
 			"Hair": "Black",
@@ -149,7 +149,7 @@
 		},
 
 		{
-			'id': "Lupin",
+			"id": "Lupin",
 			"Name": "Remus John Lupin",
 			"House": "Gryffindor",
 			"Hair": "Light brown flecked with grey",
@@ -158,7 +158,7 @@
 		},
 
 		{
-			'id': "tonks",
+			"id": "tonks",
 			"Name": "Nymphadora Tonks",
 			"House": "Hufflepuff",
 			"Hair": "Variable",
@@ -170,7 +170,7 @@
 	"Ministry_of_Magic": [
 
 		{
-			'id': "scrimgeour",
+			"id": "scrimgeour",
 			"Name": "Rufus Scrimgeour",
 			"House": "Unknown",
 			"Hair": "Tawny",
@@ -188,7 +188,7 @@
 		},
 
 		{
-			'id': "Umbridge",
+			"id": "Umbridge",
 			"Name": "Dolores Jane Umbridge",
 			"House": "Slytherin",
 			"Hair": "Iron grey",
@@ -197,7 +197,7 @@
 		},
 
 		{
-			'id': "Thicknesse",
+			"id": "Thicknesse",
 			"Name": "Pius Thicknesse",
 			"House": "Unknown",
 			"Hair": "Black and silver",
@@ -206,7 +206,7 @@
 		},
 
 		{
-			'id': "Crouch",
+			"id": "Crouch",
 			"Name": "Bartemius Crouch",
 			"House": "Unknown",
 			"Hair": "Grey",
@@ -215,7 +215,7 @@
 		},
 
 		{
-      'id': "Arthur",
+      "id": "Arthur",
 			"Name": "Arthur Weasley",
 			"House": "Gryffindor",
 			"Hair": "Red",
@@ -226,7 +226,7 @@
 	"Death_Eaters": [
 
 		{
-			'id': "Draco",
+			"id": "Draco",
 			"Name": "Draco Lucius Malfoy",
 			"House": "Slytherin",
 			"Hair": "Silver-blonde[",
@@ -235,7 +235,7 @@
 		},
 
 		{
-			'id': "tom",
+			"id": "tom",
 			"Name": "Tom Marvolo Riddle",
 			"House": "Slytherin",
 			"Hair": "Black",
@@ -244,7 +244,7 @@
 		},
 
 		{
-			'id': "Bellatrix",
+			"id": "Bellatrix",
 			"Name": "Bellatrix Lestrange",
 			"House": "Slytherin",
 			"Hair": "Black",
@@ -253,7 +253,7 @@
 		},
 
 		{
-			'id': "Lucius",
+			"id": "Lucius",
 			"Name": "Lucius Malfoy",
 			"House": "Slytherin",
 			"Hair": "White-blond",
@@ -262,7 +262,7 @@
 		},
 
 		{
-			'id': "Pettigrew",
+			"id": "Pettigrew",
 			"Name": "Peter Pettigrew",
 			"House": "Gryffindor",
 			"Hair": "White-blond",
