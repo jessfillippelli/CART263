@@ -49,7 +49,7 @@ function setup() {
 
 //all the game code goes in here
 function initializeGame(){
-//rightMatch()
+
   // $( "#list_one" ).sortable();
   $( "#list_one" ).disableSelection();
   $("#game_one").hide();
@@ -67,18 +67,11 @@ function initializeGame(){
       .addClass( "ui-state-highlight" )
       .find( "div" )
       .html( "Dropped!" );
-      rightMatch()
-    }
+  if (ui.draggable.attr("id") === randomPerson.id) {
+    //right.play();
+  }  
+    } //end of drop function
   });
-
-
-  function rightMatch(){
-    if( data.students.id === image.id) {
-     right.play();
-  }
-  }//end of right math function
-
-
 
   //display the data text
   let $container = $(".gametwotext");
