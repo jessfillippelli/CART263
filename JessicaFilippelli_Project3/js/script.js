@@ -69,12 +69,13 @@ function initializeGame(){
       .html( "Dropped!" );
   if (ui.draggable.attr("id") === randomPerson.id) {
     console.log("u working?");
-    right.play();
+    rightAnswer.play();
+
   }
 
 //when it is wrong this will happen
   if (ui.draggable.attr("id") ==! randomPerson.id) {
-    //wont match maybe will add a pop up saying u wrong
+    responsiveVoice.speak("wrong. try again", "UK English Female");
   }
     } //end of drop function
   });
