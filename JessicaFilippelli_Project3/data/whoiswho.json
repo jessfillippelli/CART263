@@ -57,7 +57,7 @@
 
 	],
 	"professors": [{
-		  'id': "ProfessorMcGonagall",
+		  "id": "ProfessorMcGonagall",
 			"Name": "Minerva McGonagall",
 			"House": "Gryffindor",
 			"Hair": "Black",
@@ -179,7 +179,7 @@
 		},
 
 		{
-			'id': "Fudge",
+			"id": "Fudge",
 			"Name": "Cornelius Oswald Fudge",
 			"House": "Unknown",
 			"Hair": "Grey",
