@@ -17,6 +17,9 @@ let randomPerson;
 
 let rightAnswer = new Audio("assets/sounds/Pop.mp3");
 
+//for score
+let $totalMatches;
+
 function setup() {
 
   //get data
