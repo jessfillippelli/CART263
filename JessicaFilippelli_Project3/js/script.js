@@ -18,6 +18,9 @@ let randomPerson;
 let rightAnswer = new Audio("assets/sounds/Pop.mp3");
 
 //for score
+//HOW MANY WAS found
+let $matchesFound =0;
+//HOW MANY MATCHES WERE MADE
 let $totalMatches;
 
 function setup() {
@@ -31,6 +34,8 @@ function setup() {
       items.push( val );
     });
 
+//FOR score
+$('#total').text($totalMatches);
 
     //put data into an array
     for(let i = 0; i<items.length; i++){ //start of for loop
@@ -53,9 +58,8 @@ function setup() {
 //all the game code goes in here
 function initializeGame(){
 
-  // $( "#list_one" ).sortable();
+
   $( "#list_one" ).disableSelection();
-  $("#game_one").hide();
   $( ".draggable" ).draggable();
   $( "#droppable" ).droppable({
 
@@ -92,7 +96,7 @@ function initializeGame(){
   randomPerson = getRandomElement(people);
   console.log(randomPerson);
 
-  //  $('#game_two').append($);
+
   //  see in the index.html where the container is coming from
   $container.html("Name: "+randomPerson.Name + "<br> "  + "House: "+randomPerson.House + "<br> " + "Hair: " + randomPerson.Hair + "<br> " + "Blood status: "+randomPerson.Blood_status + "<br> "  + "Patronus: "+randomPerson.Patronus);
 }
@@ -102,9 +106,9 @@ function getRandomElement(array){
 }
 
 //function for the score
-function matchesFound(){
+function theMatches(){
    $(this).addClass('found');
    // $(this).off('mouseover');
-  $totalMatches++;
-  $('#found').text($totalMatches);
+  $matchesFounds++;
+  $('#found').text($matchesFound);
  }
