@@ -18,9 +18,9 @@ let randomPerson;
 let rightAnswer = new Audio("assets/sound/Pop.mp3");
 
 //for score
-//HOW MANY WAS found
+//how many matches were found
 let $matchesFound =0;
-//HOW MANY MATCHES WERE MADE
+//How many matches were made
 let $totalMatches;
 
 function setup() {
@@ -74,14 +74,18 @@ function initializeGame(){
       .addClass( "ui-state-highlight" )
       .find( "div" )
       .html( "Dropped!" );
-//when you get the answer right
+
+//when you get the answer RIGHT
   if (ui.draggable.attr("id") === randomPerson.id) {
     console.log("right");
+    theMatches();
     rightAnswer.play();
+    setTimeout(nextRound,1000);
+    ui.draggable.remove();
 
   }
 
-//when it is wrong this will happen
+//when you get the answer WRONG
   if (ui.draggable.attr("id") ==! randomPerson.id) {
 
     responsiveVoice.speak("wrong. try again", "UK English Female");
@@ -108,7 +112,6 @@ function getRandomElement(array){
 //function for the score
 function theMatches(){
    $(this).addClass('found');
-   // $(this).off('mouseover');
-  $matchesFounds++;
+  $matchesFound++;
   $('#found').text($matchesFound);
  }
