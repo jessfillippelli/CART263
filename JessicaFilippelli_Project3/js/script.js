@@ -15,12 +15,12 @@ let people = [];
 //in drop i can compare with random person
 let randomPerson;
 
-let rightAnswer = new Audio("assets/sound/Pop.mp3");
+let rightAnswer = new Audio("../assets/sound/Pop.mp3");
 
 //for score
-//how many matches were found
+//HOW MANY WAS found
 let $matchesFound =0;
-//How many matches were made
+//HOW MANY MATCHES WERE MADE
 let $totalMatches;
 
 function setup() {
@@ -74,10 +74,11 @@ function initializeGame(){
       .addClass( "ui-state-highlight" )
       .find( "div" )
       .html( "Dropped!" );
-
-//when you get the answer RIGHT
+//when you get the answer right
   if (ui.draggable.attr("id") === randomPerson.id) {
     console.log("right");
+
+
     theMatches();
     rightAnswer.play();
     setTimeout(nextRound,1000);
@@ -85,11 +86,13 @@ function initializeGame(){
 
   }
 
-//when you get the answer WRONG
-  if (ui.draggable.attr("id") ==! randomPerson.id) {
+//when it is wrong this will happen
+  if (ui.draggable.attr("id") !== randomPerson.id) {
 
     responsiveVoice.speak("wrong. try again", "UK English Female");
       console.log("wrong");
+      setTimeout(nextRound,1000);
+       ui.draggable.reset();
   }
     } //end of drop function
   });
@@ -98,11 +101,21 @@ function initializeGame(){
   let $container = $(".gametwotext");
   // get a random stuent from the students array
   randomPerson = getRandomElement(people);
-  console.log(randomPerson);
 
 
   //  see in the index.html where the container is coming from
   $container.html("Name: "+randomPerson.Name + "<br> "  + "House: "+randomPerson.House + "<br> " + "Hair: " + randomPerson.Hair + "<br> " + "Blood status: "+randomPerson.Blood_status + "<br> "  + "Patronus: "+randomPerson.Patronus);
+}
+
+// clear and reset;
+function nextRound(){
+  //display the data text
+  let $container = $(".gametwotext");
+  // get a random stuent from the students array
+  randomPerson = getRandomElement(people);
+  console.log(randomPerson);
+  //  see in the index.html where the container is coming from
+$container.html("Name: "+randomPerson.Name + "<br> "  + "House: "+randomPerson.House + "<br> " + "Hair: " + randomPerson.Hair + "<br> " + "Blood status: "+randomPerson.Blood_status + "<br> "  + "Patronus: "+randomPerson.Patronus);
 }
 
 function getRandomElement(array){
@@ -111,7 +124,8 @@ function getRandomElement(array){
 
 //function for the score
 function theMatches(){
-   $(this).addClass('found');
+  // $(this).addClass('found');
+   // $(this).off('mouseover');
   $matchesFound++;
   $('#found').text($matchesFound);
  }
