@@ -15,7 +15,7 @@ let people = [];
 //in drop i can compare with random person
 let randomPerson;
 
-let rightAnswer = new Audio("assets/sounds/Pop.mp3");
+let rightAnswer = new Audio("assets/sound/Pop.mp3");
 
 //for score
 //HOW MANY WAS found
