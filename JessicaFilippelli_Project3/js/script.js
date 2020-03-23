@@ -70,15 +70,18 @@ function initializeGame(){
       .addClass( "ui-state-highlight" )
       .find( "div" )
       .html( "Dropped!" );
+//when you get the answer right
   if (ui.draggable.attr("id") === randomPerson.id) {
-    console.log("u working?");
+    console.log("right");
     rightAnswer.play();
 
   }
 
 //when it is wrong this will happen
   if (ui.draggable.attr("id") ==! randomPerson.id) {
+
     responsiveVoice.speak("wrong. try again", "UK English Female");
+      console.log("wrong");
   }
     } //end of drop function
   });
@@ -97,3 +100,11 @@ function initializeGame(){
 function getRandomElement(array){
   return array[Math.floor(Math.random() * array.length)];
 }
+
+//function for the score
+function matchesFound(){
+   $(this).addClass('found');
+   // $(this).off('mouseover');
+  $totalMatches++;
+  $('#found').text($totalMatches);
+ }
