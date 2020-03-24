@@ -60,7 +60,10 @@ function initializeGame(){
 
 
   $( "#list_one" ).disableSelection();
-  $( ".draggable" ).draggable();
+  $( ".draggable" ).draggable({
+    //tell it if it got drop on the box it should go back cuz it was valid
+    revert: "valid"
+  });
   $( "#droppable" ).droppable({
 
     //where to relize what is the correct name is
@@ -77,22 +80,18 @@ function initializeGame(){
 //when you get the answer right
   if (ui.draggable.attr("id") === randomPerson.id) {
     console.log("right");
-
-
     theMatches();
     rightAnswer.play();
     setTimeout(nextRound,1000);
     ui.draggable.remove();
-
   }
 
 //when it is wrong this will happen
   if (ui.draggable.attr("id") !== randomPerson.id) {
-
     responsiveVoice.speak("wrong. try again", "UK English Female");
       console.log("wrong");
       setTimeout(nextRound,1000);
-       ui.draggable.reset();
+       //ui.draggable.reset();
   }
     } //end of drop function
   });
@@ -107,7 +106,7 @@ function initializeGame(){
   $container.html("Name: "+randomPerson.Name + "<br> "  + "House: "+randomPerson.House + "<br> " + "Hair: " + randomPerson.Hair + "<br> " + "Blood status: "+randomPerson.Blood_status + "<br> "  + "Patronus: "+randomPerson.Patronus);
 }
 
-// clear and reset;
+// clear and reset
 function nextRound(){
   //display the data text
   let $container = $(".gametwotext");
@@ -124,8 +123,6 @@ function getRandomElement(array){
 
 //function for the score
 function theMatches(){
-  // $(this).addClass('found');
-   // $(this).off('mouseover');
   $matchesFound++;
   $('#found').text($matchesFound);
  }

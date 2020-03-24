@@ -4,10 +4,7 @@ height: 100vh;
 width: 100vw;
 }
 
-/* for Sortable */
-#list_one { list-style-type: flex; margin: 0; padding: 0; width: 16%; }
-  #list_one li { margin: 0 3px 10px 3px; padding: 0.4em; padding-left: 1.5em; font-size: 1.4em; height: 18px; }
-  #list_one li span { flex; margin-left: -1.3em; }
+
 
  /* width: 100px; height: 100px; padding: 0.5em; */
 /* for  draggable */
