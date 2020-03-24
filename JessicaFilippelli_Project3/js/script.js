@@ -88,7 +88,7 @@ function initializeGame(){
 
 //when it is wrong this will happen
   if (ui.draggable.attr("id") !== randomPerson.id) {
-    responsiveVoice.speak("wrong. try again", "UK English Female");
+    responsiveVoice.speak("wrong", "UK English Female");
       console.log("wrong");
       setTimeout(nextRound,1000);
        //ui.draggable.reset();
