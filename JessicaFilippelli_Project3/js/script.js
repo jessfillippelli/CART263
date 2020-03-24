@@ -93,6 +93,13 @@ function initializeGame(){
       setTimeout(nextRound,1000);
        //ui.draggable.reset();
   }
+
+//this three lines are for when you get a match right, that the data does not reapear 
+  let randomPick = Math.floor(Math.random() * people.length);
+  randomPerson = people[randomPick];
+  people.splice(randomPick,1);
+  console.log(people);
+
     } //end of drop function
   });
 
@@ -102,9 +109,12 @@ function initializeGame(){
   randomPerson = getRandomElement(people);
 
 
+
   //  see in the index.html where the container is coming from
   $container.html("Name: "+randomPerson.Name + "<br> "  + "House: "+randomPerson.House + "<br> " + "Hair: " + randomPerson.Hair + "<br> " + "Blood status: "+randomPerson.Blood_status + "<br> "  + "Patronus: "+randomPerson.Patronus);
-}
+
+
+}//end of initializeGame
 
 // clear and reset
 function nextRound(){
@@ -119,6 +129,7 @@ $container.html("Name: "+randomPerson.Name + "<br> "  + "House: "+randomPerson.H
 
 function getRandomElement(array){
   return array[Math.floor(Math.random() * array.length)];
+
 }
 
 //function for the score
