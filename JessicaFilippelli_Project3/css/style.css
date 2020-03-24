@@ -6,10 +6,10 @@ width: 100vw;
 
 
 
- /* width: 100px; height: 100px; padding: 0.5em; */
+
 /* for  draggable */
   .draggable { float: left; margin: 10px 10px 10px 0; }
-  /* #droppable { width: 150px; height: 150px; padding: 0.5em; float: left; margin: 100px; } */
+
 #droppable{
   width: 150px;
   height: 150px;
@@ -41,7 +41,7 @@ footer{
 }
 
 /* everything for game two */
-#game_two{
+#the_game{
   background: red;
 }
 
@@ -50,7 +50,6 @@ footer{
 text-align: center;
 font-family: 'Kaushan Script', cursive;
 font-size: 50px;
-/* padding-left: 15%; */
 }
 
 p {
@@ -66,10 +65,4 @@ p {
 .column {
   -ms-flex: 50%;
   flex: 50%;
-  /* margin-left: 17%; */
-}
-
-.column img {
-  /* margin-top: 15%; */
-
 }
