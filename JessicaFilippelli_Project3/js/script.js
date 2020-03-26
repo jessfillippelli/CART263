@@ -5,7 +5,7 @@
 Title of Project: Fan HP quiz
 Author Name: Jessica Filippelli
 
-This is a Harry Potter Quiz. A user has to match all the images with the right data to see how much they 
+This is a Harry Potter Quiz. A user has to match all the images with the right data to see how much they
 know about the Harry Potter characters
 
 *********************************************************************/
@@ -25,7 +25,6 @@ let $matchesFound =0;
 let $totalMatches;
 
 function setup() {
-
   //get data
   $.getJSON("data/whoiswho.json",function( data ) {
     console.log("load")
@@ -58,11 +57,9 @@ $('#total').text($totalMatches);
 
 //all the game code goes in here
 function initializeGame(){
-
-
   $( "#list_one" ).disableSelection();
   $( ".draggable" ).draggable({
-    //tell it if it got drop on the box it should go back cuz it was valid
+    //to tell if a image got drop on the box it should go back to where it was (only if it wrong) cuz it was valid object for the dropable
     revert: "valid"
   });
   $( "#droppable" ).droppable({
@@ -83,6 +80,7 @@ function initializeGame(){
     console.log("right");
     theMatches();
     rightAnswer.play();
+    //setTimeout becasue to get it some time to change the data. Cuz it was moving to fast. if there was a wrong anwer and a right answer it would happen at the same time
     setTimeout(nextRound,1000);
     ui.draggable.remove();
   }
