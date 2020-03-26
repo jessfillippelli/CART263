@@ -5,7 +5,8 @@
 Title of Project: Fan HP quiz
 Author Name: Jessica Filippelli
 
-This is a Harry Potter Quiz
+This is a Harry Potter Quiz. A user has to match all the images with the right data to see how much they 
+know about the Harry Potter characters
 
 *********************************************************************/
 
@@ -94,7 +95,7 @@ function initializeGame(){
        //ui.draggable.reset();
   }
 
-//this three lines are for when you get a match right, that the data does not reapear 
+//this three lines are for when you get a match right, that the data does not reapear
   let randomPick = Math.floor(Math.random() * people.length);
   randomPerson = people[randomPick];
   people.splice(randomPick,1);
