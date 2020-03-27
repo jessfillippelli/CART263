@@ -24,6 +24,15 @@ let $matchesFound =0;
 //HOW MANY MATCHES WERE MADE
 let $totalMatches;
 
+function findId(arr,e){
+  for(let i =0; i<arr.length;i++){
+    if(arr[i].id === e.id){
+      return i;
+    }
+  }
+  return -1;
+}
+
 function setup() {
   //get data
   $.getJSON("data/whoiswho.json",function( data ) {
@@ -80,11 +89,23 @@ function initializeGame(){
     console.log("right");
     theMatches();
     rightAnswer.play();
+    //remove the current person once the user matches it right so it will not show up again
+    console.log("old length:: "+people.length);
+    let theId = findId(people,randomPerson);
+    if(theId!==-1){
+      console.log("id to remove:: "+theId);
+      people.splice(theId,1);
+    }
+    console.log(people);
+    console.log("new length:: "+people.length);
+
+
     //setTimeout becasue to get it some time to change the data.
     //becasue the data was moving to fast. if there was a wrong anwer and a right answer it would happen at the same time
     //so the audio for right answer and responsiveVoice for wrong answer were happening at the same time
     setTimeout(nextRound,1000);
     ui.draggable.remove();
+
   }
 
 //when it is wrong: this will happen
@@ -92,14 +113,8 @@ function initializeGame(){
     responsiveVoice.speak("wrong", "UK English Female");
       console.log("wrong");
       setTimeout(nextRound,1000);
-      
+       //ui.draggable.reset();
   }
-
-//this three lines are for when you get a match right, that the data does not reapear
-  let randomPick = Math.floor(Math.random() * people.length);
-  randomPerson = people[randomPick];
-  people.splice(randomPick,1);
-  console.log(people);
 
     } //end of drop function
   });
