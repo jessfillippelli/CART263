@@ -24,6 +24,7 @@ let $matchesFound =0;
 //HOW MANY MATCHES WERE MADE
 let $totalMatches;
 
+//to findout if the data, to not let ot show up again if it was right
 function findId(arr,e){
   for(let i =0; i<arr.length;i++){
     if(arr[i].id === e.id){
@@ -73,22 +74,19 @@ function initializeGame(){
   });
   $( "#droppable" ).droppable({
 
-    //where to relize what is the correct name is
-    //can comparie in drop
-    //acc name with image class/ID with that Name
-    //can check name with class/ID
-    //every image can have the right name
-    //WHERE I PUT THE COMPARE FUNCTION
+
     drop: function( event, ui ) {
       $( this )
       .addClass( "ui-state-highlight" )
       .find( "div" )
       .html( "Dropped!" );
+
 //when it is right: this will happen
   if (ui.draggable.attr("id") === randomPerson.id) {
     console.log("right");
     theMatches();
     rightAnswer.play();
+
     //remove the current person once the user matches it right so it will not show up again
     console.log("old length:: "+people.length);
     let theId = findId(people,randomPerson);
