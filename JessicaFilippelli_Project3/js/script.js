@@ -86,6 +86,7 @@ function initializeGame(){
     console.log("right");
     theMatches();
     rightAnswer.play();
+    speak();
 
     //remove the current person once the user matches it right so it will not show up again
     console.log("old length:: "+people.length);
@@ -111,14 +112,14 @@ function initializeGame(){
     responsiveVoice.speak("wrong", "UK English Female");
       console.log("wrong");
       setTimeout(nextRound,1000);
-       //ui.draggable.reset();
+       speak();
   }
 
     } //end of drop function
   });
 
   //display the data text
-  let $container = $(".gametwotext");
+  let $container = $(".game");
   // get a random stuent from the students array
   randomPerson = getRandomElement(people);
 
@@ -133,7 +134,7 @@ function initializeGame(){
 // clear and reset
 function nextRound(){
   //display the data text
-  let $container = $(".gametwotext");
+  let $container = $(".game");
   // get a random stuent from the students array
   randomPerson = getRandomElement(people);
   console.log(randomPerson);
@@ -151,3 +152,20 @@ function theMatches(){
   $matchesFound++;
   $('#found').text($matchesFound);
  }
+
+
+
+ function speak(){
+     if (annyang) {
+       let commands = {
+   //when the user is done with the project they say this to clear the screen
+         'skip': function() {
+
+
+         }
+       }; //end of let commands
+       annyang.addCommands(commands);
+       annyang.start();
+       annyang.debug();
+     } //end of if annyang
+ } //end of speak function
