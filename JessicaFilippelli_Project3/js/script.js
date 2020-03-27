@@ -86,7 +86,7 @@ function initializeGame(){
     console.log("right");
     theMatches();
     rightAnswer.play();
-    speak();
+      speak();
 
     //remove the current person once the user matches it right so it will not show up again
     console.log("old length:: "+people.length);
@@ -157,12 +157,13 @@ function theMatches(){
 
  function speak(){
      if (annyang) {
-       let commands = {
+       let skip = {
    //when the user is done with the project they say this to clear the screen
-         'skip': function() {
 
-
-         }
+         // 'skip': function() {
+         // 
+         //
+         // }
        }; //end of let commands
        annyang.addCommands(commands);
        annyang.start();
