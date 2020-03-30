@@ -11,7 +11,7 @@ know about the Harry Potter characters
 *********************************************************************/
 
 $(document).ready(setup);
-//  THIS IS THA ARRAY THAT WILL BE CONTAINING YOUR DATA FROM THE JSON FILE
+//the array for the data in the JSON file
 let people = [];
 //in drop i can compare with random person
 let randomPerson;
@@ -19,9 +19,9 @@ let randomPerson;
 let rightAnswer = new Audio("../assets/sound/Pop.mp3");
 
 //for score
-//HOW MANY WAS found
+//how many matches were found
 let $matchesFound =0;
-//HOW MANY MATCHES WERE MADE
+//how many matches were there
 let $totalMatches;
 
 //to findout if the data, to not let ot show up again if it was right
@@ -35,11 +35,12 @@ function findId(arr,e){
 }
 
 function setup() {
+  //calling annyang
+  speak();
   //get data
   $.getJSON("data/whoiswho.json",function( data ) {
     console.log("load")
     let items = [];
-
     $.each( data, function( key, val ) {
       items.push( val );
     });
@@ -59,12 +60,10 @@ $('#total').text($totalMatches);
 
   })
   .fail(function(error) {
-    console.log( "error"+ error );
   })
 
 //hide the button - only want it to show when the game is over
 $('.restart').hide();
- //endGame();
 }//end of set up
 
 
@@ -86,16 +85,12 @@ function initializeGame(){
 
 //when it is right: this will happen
   if (ui.draggable.attr("id") === randomPerson.id) {
-    console.log("right");
     theMatches();
     rightAnswer.play();
-      //speak();
 
     //remove the current person once the user matches it right so it will not show up again
-  //  console.log("old length:: "+people.length);
     let theId = findId(people,randomPerson);
     if(theId!==-1){
-      //console.log("id to remove:: "+theId);
       people.splice(theId,1);
     }
 
@@ -104,7 +99,6 @@ function initializeGame(){
     //so the audio for right answer and responsiveVoice for wrong answer were happening at the same time
     setTimeout(nextRound,1000);
     ui.draggable.remove();
-
   }
 
 //when it is wrong: this will happen
@@ -112,9 +106,7 @@ function initializeGame(){
     responsiveVoice.speak("wrong", "UK English Female");
       console.log("wrong");
       setTimeout(nextRound,1000);
-       //speak();
   }
-
     } //end of drop function
   });
 
@@ -122,16 +114,11 @@ function initializeGame(){
   let $container = $(".game");
   // get a random stuent from the students array
   randomPerson = getRandomElement(people);
-
-
-
   //  see in the index.html where the container is coming from
   $container.html("Name: "+randomPerson.Name + "<br> "  + "House: "+randomPerson.House + "<br> " + "Hair: " + randomPerson.Hair + "<br> " + "Blood status: "+randomPerson.Blood_status + "<br> "  + "Patronus: "+randomPerson.Patronus);
-
-
 }//end of initializeGame
 
-// clear and reset
+// clear and reset and goes to another random person from the json file
 function nextRound(){
   //display the data text
   let $container = $(".game");
@@ -170,22 +157,17 @@ function theMatches(){
   }
 } //end of theMatches()
 
+function speak(){
+     if (annyang) {
+       let skipCommand = {
 
-
-
- //
- // function speak(){
- //     if (annyang) {
- //       let skip = {
- //   //when the user is done with the project they say this to clear the screen
- //
- //         // 'skip': function() {
- //         //
- //         //
- //         // }
- //       }; //end of let commands
- //       annyang.addCommands(commands);
- //       annyang.start();
- //       annyang.debug();
- //     } //end of if annyang
- // } //end of speak function
+          'skip': function() {
+            //when they say skip it goes to another random person
+            nextRound();
+         }
+       }; //end of let commands
+       annyang.addCommands(skipCommand);
+       annyang.start();
+       annyang.debug();
+     } //end of if annyang
+ } //end of speak function
