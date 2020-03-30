@@ -24,6 +24,8 @@ let $matchesFound =0;
 //HOW MANY MATCHES WERE MADE
 let $totalMatches;
 
+//let endGame = 29;
+
 //to findout if the data, to not let ot show up again if it was right
 function findId(arr,e){
   for(let i =0; i<arr.length;i++){
@@ -61,7 +63,8 @@ $('#total').text($totalMatches);
   .fail(function(error) {
     console.log( "error"+ error );
   })
-
+ endGame();
+ $('.ui-dialog-content').css('display','none');
 }//end of set up
 
 
@@ -86,17 +89,17 @@ function initializeGame(){
     console.log("right");
     theMatches();
     rightAnswer.play();
-      speak();
+      //speak();
 
     //remove the current person once the user matches it right so it will not show up again
-    console.log("old length:: "+people.length);
+  //  console.log("old length:: "+people.length);
     let theId = findId(people,randomPerson);
     if(theId!==-1){
-      console.log("id to remove:: "+theId);
+      //console.log("id to remove:: "+theId);
       people.splice(theId,1);
     }
-    console.log(people);
-    console.log("new length:: "+people.length);
+  //  console.log(people);
+  //  console.log("new length:: "+people.length);
 
 
     //setTimeout becasue to get it some time to change the data.
@@ -112,7 +115,7 @@ function initializeGame(){
     responsiveVoice.speak("wrong", "UK English Female");
       console.log("wrong");
       setTimeout(nextRound,1000);
-       speak();
+       //speak();
   }
 
     } //end of drop function
@@ -150,23 +153,43 @@ function getRandomElement(array){
 //function for the score
 function theMatches(){
   $matchesFound++;
+    console.log($matchesFound);
   $('#found').text($matchesFound);
+  //you won stament
+  if ($matchesFound  === 1){
+    console.log("you won");
+    endGame();
+  }
  }
 
+function endGame(){
+
+  $( function() {
+      $( "#dialog" ).dialog();
+    } );
+    $( ".restart" ).click(function() {
+      $('.ui-dialog-content').css('display','none');
+
+//$('.ui-dialog-content').dialog('close');
+
+});
+}
 
 
- function speak(){
-     if (annyang) {
-       let skip = {
-   //when the user is done with the project they say this to clear the screen
 
-         // 'skip': function() {
-         // 
-         //
-         // }
-       }; //end of let commands
-       annyang.addCommands(commands);
-       annyang.start();
-       annyang.debug();
-     } //end of if annyang
- } //end of speak function
+ //
+ // function speak(){
+ //     if (annyang) {
+ //       let skip = {
+ //   //when the user is done with the project they say this to clear the screen
+ //
+ //         // 'skip': function() {
+ //         //
+ //         //
+ //         // }
+ //       }; //end of let commands
+ //       annyang.addCommands(commands);
+ //       annyang.start();
+ //       annyang.debug();
+ //     } //end of if annyang
+ // } //end of speak function
