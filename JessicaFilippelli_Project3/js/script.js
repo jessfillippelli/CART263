@@ -62,6 +62,7 @@ $('#total').text($totalMatches);
     console.log( "error"+ error );
   })
 
+//hide the button - only want it to show when the game is over
 $('.restart').hide();
  //endGame();
 }//end of set up
@@ -152,12 +153,16 @@ function theMatches(){
     console.log($matchesFound);
   $('#found').text($matchesFound);
 
-  //you won stament
+  //you won stament when the game is over
   $('.ui-dialog-content').dialog("close");
   $('.restart').show();
 
+  //$('.restart').hide();
+  //to hide the you won text as soon as you open the game. with out this it would show up
+  $("#win").show();
+
   if ($matchesFound  === 1){
-    // open the dialog
+    // open the dialog when the game is over
     $( function() {
         $( "#dialog" ).dialog();
       } );
