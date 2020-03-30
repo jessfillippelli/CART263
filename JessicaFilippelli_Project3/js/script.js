@@ -24,8 +24,6 @@ let $matchesFound =0;
 //HOW MANY MATCHES WERE MADE
 let $totalMatches;
 
-//let endGame = 29;
-
 //to findout if the data, to not let ot show up again if it was right
 function findId(arr,e){
   for(let i =0; i<arr.length;i++){
@@ -46,7 +44,7 @@ function setup() {
       items.push( val );
     });
 
-//FOR score
+//for score
 $('#total').text($totalMatches);
 
     //put data into an array
@@ -63,8 +61,9 @@ $('#total').text($totalMatches);
   .fail(function(error) {
     console.log( "error"+ error );
   })
+
+$('.restart').hide();
  endGame();
- $('.ui-dialog-content').css('display','none');
 }//end of set up
 
 
@@ -98,9 +97,6 @@ function initializeGame(){
       //console.log("id to remove:: "+theId);
       people.splice(theId,1);
     }
-  //  console.log(people);
-  //  console.log("new length:: "+people.length);
-
 
     //setTimeout becasue to get it some time to change the data.
     //becasue the data was moving to fast. if there was a wrong anwer and a right answer it would happen at the same time
@@ -155,25 +151,20 @@ function theMatches(){
   $matchesFound++;
     console.log($matchesFound);
   $('#found').text($matchesFound);
+
   //you won stament
+  $('.ui-dialog-content').dialog("close");
+  $('.restart').show();
+
   if ($matchesFound  === 1){
+    // open the dialog
+    $( function() {
+        $( "#dialog" ).dialog();
+      } );
     console.log("you won");
-    endGame();
   }
- }
+} //end of theMatches()
 
-function endGame(){
-
-  $( function() {
-      $( "#dialog" ).dialog();
-    } );
-    $( ".restart" ).click(function() {
-      $('.ui-dialog-content').css('display','none');
-
-//$('.ui-dialog-content').dialog('close');
-
-});
-}
 
 
 
