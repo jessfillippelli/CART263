@@ -63,7 +63,7 @@ $('#total').text($totalMatches);
   })
 
 $('.restart').hide();
- endGame();
+ //endGame();
 }//end of set up
 
 
