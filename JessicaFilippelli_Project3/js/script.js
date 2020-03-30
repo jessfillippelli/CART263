@@ -137,10 +137,8 @@ function getRandomElement(array){
 //function for the score
 function theMatches(){
   $matchesFound++;
-    console.log($matchesFound);
   $('#found').text($matchesFound);
-
-  //you won stament when the game is over
+  //"you won" stament when the game is over
   $('.ui-dialog-content').dialog("close");
   $('.restart').show();
 
