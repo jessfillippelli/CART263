@@ -54,20 +54,12 @@
   font-size: 16px;
 }
 
-#game_footer{
-  width: 100vw;
-  text-align: center;
-  padding-top: 1%;
-  padding-bottom: 1%;
-}
-
 #mainPage_footer{
   width: 100vw;
   text-align: center;
   padding-top: 10%;
   padding-bottom: 1%;
 }
-
 
 /* everything for game two */
 #the_game{
