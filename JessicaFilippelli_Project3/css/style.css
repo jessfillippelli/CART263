@@ -1,14 +1,36 @@
 body {
-background-color: #696969;
-height: 100vh;
-width: 100vw;
+  background-color: #696969;
+  height: 100vh;
+  width: 100vw;
 }
 
 
+.gryffindor{
+  height: 25vh;
+  width: 100vw;
+  background-color: #7f0909;
+}
 
+.hufflepuff{
+  height: 25vh;
+  width: 100vw;
+  background-color: #eee117;
+}
+
+.ravenclaw{
+    height: 25vh;
+  width: 100vw;
+  background-color: #000a90;
+}
+
+.slytherin{
+  height: 25vh;
+  width: 100vw;
+  background-color: #0d6217;
+}
 
 /* for  draggable */
-  .draggable { float: left; margin: 10px 10px 10px 0; }
+.draggable { float: left; margin: 10px 10px 10px 0; }
 
 #droppable{
   width: 150px;
@@ -20,24 +42,21 @@ width: 100vw;
 }
 
 /* main page button style */
-  .button {
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    /* margin-top: 5px; */
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-  }
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
 
 footer{
   width: 100%;
-  padding-top: 40%;
-  padding-bottom: 4%;
   text-align: center;
-
 }
 
 /* everything for game two */
@@ -47,8 +66,8 @@ footer{
 
 /* caption for the game */
 #gametwo_caption{
-text-align: center;
-font-size: 50px;
+  text-align: center;
+  font-size: 50px;
 }
 
 p {
