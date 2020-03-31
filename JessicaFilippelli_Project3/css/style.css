@@ -1,7 +1,7 @@
-body {
-  background-color: #696969;
-  height: 100vh;
-  width: 100vw;
+*{
+  box-sizing: none;
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -65,7 +65,7 @@ footer{
 }
 
 /* caption for the game */
-#gametwo_caption{
+#caption{
   text-align: center;
   font-size: 50px;
 }
