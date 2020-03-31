@@ -142,11 +142,11 @@ function theMatches(){
   $('.ui-dialog-content').dialog("close");
   $('.restart').show();
 
-  //$('.restart').hide();
   //to hide the you won text as soon as you open the game. with out this it would show up
   $("#win").show();
 
-  if ($matchesFound  === 1){
+  //a user would have to get to 29 matches to win
+  if ($matchesFound  === 29){
     // open the dialog when the game is over
     $( function() {
         $( "#dialog" ).dialog();
