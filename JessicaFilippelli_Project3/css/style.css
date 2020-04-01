@@ -6,7 +6,8 @@
 
 /* style for the data */
 .game{
-text-align: center;
+  text-align: center;
+  font-family: 'Kaushan Script', cursive;
 }
 
 .gryffindor{
@@ -22,7 +23,7 @@ text-align: center;
 }
 
 .ravenclaw{
-    height: 25vh;
+  height: 25vh;
   width: 100vw;
   background-color: #000a90;
 }
@@ -33,13 +34,31 @@ text-align: center;
   background-color: #0d6217;
 }
 
+/* start of score */
 #score{
   width: 100vw;
   text-align: center;
+  align-items: center;
   margin-left: 4px;
   padding-left: 10px;
   margin-right: 10px;
 }
+
+ #score_center{
+  align-items: center;
+}
+
+/* end of score */
+
+/* start of anayan style */
+
+#skip{
+  text-align: center;
+  padding-top: 13px;
+  font-family: 'Kaushan Script', cursive;
+}
+
+/* end of anayan style */
 
 /* dialog box */
 #win{
