@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+/* style for the data */
+.game{
+text-align: center;
+}
 
 .gryffindor{
   height: 25vh;
@@ -29,6 +33,32 @@
   background-color: #0d6217;
 }
 
+#score{
+  width: 100vw;
+  text-align: center;
+  margin-left: 4px;
+  padding-left: 10px;
+  margin-right: 10px;
+}
+
+/* dialog box */
+#win{
+  font-size: 20px;
+  font-family: 'Kaushan Script', cursive;
+  text-align: center;
+  padding-bottom: 10px;
+  margin: 0px;
+}
+
+.restart{
+    background-color: #000000;
+    padding: 15px 32px;
+    border: none;
+    color: white;
+}
+
+/* end of dialog box */
+
 /* for  draggable */
 .draggable { float: left; margin: 10px 10px 10px 0; }
 
@@ -43,7 +73,7 @@
 
 /* main page button style */
 .button {
-  background-color: #4CAF50;
+  background-color: red;
   border: none;
   color: white;
   padding: 15px 32px;
