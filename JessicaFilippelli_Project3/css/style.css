@@ -8,6 +8,8 @@
 .game{
   text-align: center;
   font-family: 'Kaushan Script', cursive;
+  font-size: 100%;
+  padding-bottom: 2px;
 }
 
 .gryffindor{
@@ -55,6 +57,7 @@
 #skip{
   text-align: center;
   padding-top: 13px;
+  padding-bottom: 13px;
   font-family: 'Kaushan Script', cursive;
 }
 
@@ -96,7 +99,6 @@
   border: none;
   color: white;
   padding: 15px 32px;
-
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -122,12 +124,10 @@
 }
 
 p {
-
   margin-left:9%;
   margin-right:50%;
   font-size: 19px;
   font-family: 'PT Mono', monospace;
-
 }
 
 h1{
