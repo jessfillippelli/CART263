@@ -40,6 +40,8 @@
 #score{
   margin: 0 auto;
   text-align: center;
+  font-size: 19px;
+  font-family: 'PT Mono', monospace;
 }
 
  #score_center{
@@ -117,12 +119,6 @@
   font-size: 50px;
 }
 
-p {
-  margin-left:9%;
-  margin-right:50%;
-  font-size: 19px;
-  font-family: 'PT Mono', monospace;
-}
 
 h1{
   font-size: 25px;
