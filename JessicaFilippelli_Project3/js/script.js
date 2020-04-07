@@ -72,7 +72,7 @@ function initializeGame(){
   $( "#list_one" ).disableSelection();
   $( ".draggable" ).draggable({
     //to tell if a image got drop on the box it should go back to where it was (only if it wrong) cuz it was valid object for the dropable
-    revert: "valid"
+    revert: true
   });
   $( "#droppable" ).droppable({
 
@@ -146,7 +146,7 @@ function theMatches(){
 
   //a user would have to get to 29 matches to win
   if ($matchesFound  === 29){
-    //to show text and button only when you have 29 matches AKA complete the game 
+    //to show text and button only when you have 29 matches AKA complete the game
     $("#win").show();
     $('.restart').show();
     // open the dialog when the game is over
